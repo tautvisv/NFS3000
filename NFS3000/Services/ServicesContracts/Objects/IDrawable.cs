@@ -7,6 +7,6 @@ namespace Services.ServicesContracts.Objects
     {
         int Priority { get; }
         IDictionary<Coordinates, char> Content { get; }
-        bool UpdatesNeeded { get; }
+        bool UpdateScreen { get; }
     }
 }

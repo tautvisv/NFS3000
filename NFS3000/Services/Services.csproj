@@ -52,6 +52,8 @@
     <Compile Include="ServicesContracts\Objects\ILocation.cs" />
     <Compile Include="ServicesContracts\Objects\IUsable.cs" />
     <Compile Include="Services\Objects\Body.cs" />
+    <Compile Include="Services\Objects\HighScoreItem.cs" />
+    <Compile Include="Services\Objects\Meniu.cs" />
     <Compile Include="Services\Objects\Tire.cs" />
     <Compile Include="Services\Objects\Engine.cs" />
     <Compile Include="ServicesContracts\Objects\ICar.cs" />
