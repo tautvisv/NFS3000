@@ -1,7 +1,6 @@
 ﻿namespace Services.ServicesContracts.Objects
 {
-    interface IItem
+    interface IObsticle : ICollectable
     {
-        void Upgrade();
     }
 }

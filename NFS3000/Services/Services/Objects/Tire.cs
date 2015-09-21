@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Services.Services.Objects
 {
-    class Engine : IItem
+    class Tire : IItem
     {
         public void Upgrade()
         {
