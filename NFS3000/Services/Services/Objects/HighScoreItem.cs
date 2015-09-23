@@ -10,7 +10,7 @@ namespace Services.Services.Objects
         {
             var data = scoreLine.Split(new[] { Spliter,'\n','\r' }, StringSplitOptions.RemoveEmptyEntries);
             Name = data.FirstOrDefault();
-            Score = Int32.Parse(data.LastOrDefault()??"0");
+            Score = Int32.Parse(data.Skip(1).LastOrDefault()??"0");
         }
 
         public string Name { get; private set; }
