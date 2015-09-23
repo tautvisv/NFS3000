@@ -4,11 +4,13 @@ namespace MainGameLauncher
 {
     public class MainProgram
     {
-        public static UI UISingleton;
         static void Main(string[] args)
         {
-            UISingleton = UI.Instance();
+            var UISingleton = UI.Instance();
             UISingleton.Draw();
+            Console.ReadKey();
+            var ScoreCounterSingleton = ScoreCounter.Instance();
+            ScoreCounterSingleton.ResetScores();
             Console.ReadKey();
         }
     }

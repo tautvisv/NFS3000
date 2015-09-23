@@ -42,15 +42,15 @@
   <Interface Name="Services.ServicesContracts.IScoreCounter" Collapsed="true">
     <Position X="6.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAQAAgAgAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAQAAgAgAAAAAA=</HashCode>
       <FileName>ServicesContracts\IScoreCounter.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Services.ServicesContracts.IUIItem" Collapsed="true">
+  <Interface Name="Services.ServicesContracts.IUI" Collapsed="true">
     <Position X="8" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ServicesContracts\IUIItem.cs</FileName>
+      <FileName>ServicesContracts\IUI.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Services.ServicesContracts.Objects.ICar" Collapsed="true">
@@ -63,11 +63,11 @@
   <Interface Name="Services.ServicesContracts.Objects.IDrawable" Collapsed="true">
     <Position X="0.75" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAgAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAgAAAAAEAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServicesContracts\Objects\IDrawable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Services.ServicesContracts.Objects.IIncrementScore" Collapsed="true">
+  <Interface Name="Services.ServicesContracts.Objects.IIncrementScore">
     <Position X="6.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
