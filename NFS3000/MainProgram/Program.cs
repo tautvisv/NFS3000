@@ -4,10 +4,13 @@ namespace MainGameLauncher
 {
     public class MainProgram
     {
-        public static UI UISingleton;
         static void Main(string[] args)
         {
-            UISingleton = UI.Instance();
+            var UISingleton = UI.Instance();
+            UISingleton.Draw();
+            var myFile = FileSingleton.Instance();
+            myFile.Write("veikia!!!!!!");
+            myFile.Dispose();
             Console.ReadKey();
         }
     }
