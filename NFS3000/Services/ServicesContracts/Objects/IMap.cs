@@ -1,6 +1,6 @@
 ﻿namespace Services.ServicesContracts.Objects
 {
-    interface IMap : IDrawable
+    public interface IMap : IDrawable
     {
     }
 }

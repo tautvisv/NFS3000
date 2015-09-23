@@ -3,7 +3,7 @@ using System;
 
 namespace Services.Services.Objects
 {
-    class Nitro : IItem
+    public class Nitro : IItem
     {
         public void Upgrade()
         {

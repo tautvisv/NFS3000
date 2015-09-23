@@ -1,6 +1,6 @@
 ﻿namespace Services.ServicesContracts.Objects
 {
-    interface IItem
+    public interface IItem
     {
         void Upgrade();
     }

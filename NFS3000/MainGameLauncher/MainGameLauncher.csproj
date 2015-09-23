@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B98E3AA4-90AE-42A5-9D25-FB29237ED1AB}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{DEF200B8-18C4-4234-AA26-58B2110711D3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Services</RootNamespace>
-    <AssemblyName>Services</AssemblyName>
+    <RootNamespace>MainGameLauncher</RootNamespace>
+    <AssemblyName>MainGameLauncher</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -39,30 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServicesContracts\IUI.cs" />
-    <Compile Include="ServicesContracts\Objects\ICollectable.cs" />
-    <Compile Include="ServicesContracts\Objects\IDrawable.cs" />
-    <Compile Include="ServicesContracts\Objects\IMap.cs" />
-    <Compile Include="ServicesContracts\Objects\IObsticle.cs" />
-    <Compile Include="Services\Objects\Coordinates.cs" />
-    <Compile Include="ServicesContracts\Objects\IIncrementScore.cs" />
-    <Compile Include="ServicesContracts\IScoreCounter.cs" />
-    <Compile Include="ServicesContracts\Objects\IItem.cs" />
-    <Compile Include="ServicesContracts\Objects\ILocation.cs" />
-    <Compile Include="ServicesContracts\Objects\IUsable.cs" />
-    <Compile Include="Services\Objects\Body.cs" />
-    <Compile Include="Services\Objects\HighScoreItem.cs" />
-    <Compile Include="Services\Objects\Meniu.cs" />
-    <Compile Include="Services\Objects\Singletons\UI.cs" />
-    <Compile Include="Services\Objects\Tire.cs" />
-    <Compile Include="Services\Objects\Engine.cs" />
-    <Compile Include="ServicesContracts\Objects\ICar.cs" />
-    <Compile Include="ServicesContracts\Objects\IPlayer.cs" />
-    <Compile Include="Services\Objects\Nitro.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="LD1.cd" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{b98e3aa4-90ae-42a5-9d25-fb29237ed1ab}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

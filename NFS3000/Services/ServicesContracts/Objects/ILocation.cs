@@ -2,7 +2,7 @@
 
 namespace Services.ServicesContracts.Objects
 {
-    interface ILocation
+    public interface ILocation
     {
         Coordinates GetPosition { get; }
     }

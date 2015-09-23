@@ -1,6 +1,6 @@
 ﻿namespace Services.Services.Objects
 {
-    struct Coordinates
+    public struct Coordinates
     {
         public int X;
         public int Y;

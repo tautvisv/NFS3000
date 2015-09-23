@@ -2,7 +2,7 @@
 
 namespace Services.ServicesContracts.Objects
 {
-    interface ICar : ILocation, IDrawable
+    public interface ICar : ILocation, IDrawable
     {
         string Name { get; set; }
 

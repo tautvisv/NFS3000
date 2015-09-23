@@ -8,7 +8,7 @@ namespace Services.ServicesContracts
     /// <summary>
     /// IDisposable will handle high score write to file
     /// </summary>
-    interface IScoreCounter : IDisposable
+    public interface IScoreCounter : IDisposable
     {
         void AddPlayer(IPlayer player);
         int GetScore(IPlayer player);

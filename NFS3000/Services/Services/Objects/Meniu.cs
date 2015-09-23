@@ -4,7 +4,7 @@ using Services.ServicesContracts.Objects;
 
 namespace Services.Services.Objects
 {
-    class Meniu : IDrawable
+    public class Meniu : IDrawable
     {
         private IDrawable Start { get; set; }
         private IDrawable HighScores { get; set; }

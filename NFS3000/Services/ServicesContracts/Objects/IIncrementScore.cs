@@ -1,6 +1,6 @@
 ﻿namespace Services.ServicesContracts.Objects
 {
-    interface IIncrementScore
+    public interface IIncrementScore
     {
         int IncrementScore(int score);
     }

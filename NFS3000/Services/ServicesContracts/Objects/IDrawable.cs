@@ -3,7 +3,7 @@ using Services.Services.Objects;
 
 namespace Services.ServicesContracts.Objects
 {
-    interface IDrawable
+    public interface IDrawable
     {
         int Priority { get; }
         IDictionary<Coordinates, char> Content { get; }

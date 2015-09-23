@@ -3,7 +3,7 @@ using System;
 
 namespace Services.Services.Objects
 {
-    class Body : IItem
+    public class Body : IItem
     {
         public void Upgrade()
         {

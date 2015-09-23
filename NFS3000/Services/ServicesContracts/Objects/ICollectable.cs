@@ -1,6 +1,6 @@
 ﻿namespace Services.ServicesContracts.Objects
 {
-    interface ICollectable : IDrawable
+    public interface ICollectable : IDrawable
     {
         /// <summary>
         /// Creates new object.

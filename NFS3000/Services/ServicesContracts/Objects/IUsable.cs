@@ -1,6 +1,6 @@
 ﻿namespace Services.ServicesContracts.Objects
 {
-    interface IUsable : IItem
+    public interface IUsable : IItem
     {
         int Count { get; }
 

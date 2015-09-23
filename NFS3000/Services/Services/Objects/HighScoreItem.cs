@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Services.Services.Objects
 {
-    class HighScoreItem
+    public class HighScoreItem
     {
         private const char Spliter = ';';
         public HighScoreItem(string scoreLine)
