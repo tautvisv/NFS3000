@@ -56,6 +56,7 @@
     <Compile Include="Services\Objects\HighScoreItem.cs" />
     <Compile Include="Services\Objects\Map.cs" />
     <Compile Include="Services\Objects\Meniu.cs" />
+    <Compile Include="Services\Objects\Player.cs" />
     <Compile Include="Services\Objects\Singletons\FileSingleton.cs" />
     <Compile Include="Services\Objects\Singletons\ScoreCounter.cs" />
     <Compile Include="Services\Objects\Singletons\UI.cs" />

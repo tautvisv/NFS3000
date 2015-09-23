@@ -8,7 +8,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Services.Services.Objects.Car" BaseTypeListCollapsed="true">
+  <Class Name="Services.Services.Objects.Car" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="11.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEiAAAAAEAAABAAQAQAAAAAIABAAAAAAAAAA=</HashCode>
