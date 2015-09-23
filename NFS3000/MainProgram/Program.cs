@@ -1,5 +1,6 @@
 ﻿using System;
 using Services.Services.Objects.Singletons;
+
 namespace MainGameLauncher
 {
     public class MainProgram
