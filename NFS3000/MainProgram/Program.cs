@@ -8,6 +8,7 @@ namespace MainGameLauncher
         static void Main(string[] args)
         {
             UISingleton = UI.Instance();
+            UISingleton.Draw();
             Console.ReadKey();
         }
     }
