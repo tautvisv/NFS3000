@@ -7,7 +7,7 @@ namespace MainGameLauncher
         public static UI UISingleton;
         static void Main(string[] args)
         {
-            UISingleton..Draw();
+            UISingleton = UI.Instance();
             Console.ReadKey();
         }
     }

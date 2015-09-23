@@ -12,12 +12,10 @@ namespace Services.Services.Objects.Singletons
     {
         private IList<IDrawable> drawables;
         private static UI instance;
-        private static object lockInstanceObj;
+        private static object lockInstanceObj = new object();
 
-        public static UI Instance
+        public static UI Instance()
         {
-            get
-            {
                 lock (lockInstanceObj)
                 {
                     if (instance == null)
@@ -26,7 +24,6 @@ namespace Services.Services.Objects.Singletons
                     }
                 }
                 return instance;
-            }
         }
 
         private UI()
