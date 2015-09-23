@@ -45,6 +45,7 @@
     <Compile Include="ServicesContracts\Objects\IDrawable.cs" />
     <Compile Include="ServicesContracts\Objects\IMap.cs" />
     <Compile Include="ServicesContracts\Objects\IObsticle.cs" />
+    <Compile Include="Services\Objects\Car.cs" />
     <Compile Include="Services\Objects\Coordinates.cs" />
     <Compile Include="ServicesContracts\Objects\IIncrementScore.cs" />
     <Compile Include="ServicesContracts\IScoreCounter.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="ServicesContracts\Objects\IUsable.cs" />
     <Compile Include="Services\Objects\Body.cs" />
     <Compile Include="Services\Objects\HighScoreItem.cs" />
+    <Compile Include="Services\Objects\Map.cs" />
     <Compile Include="Services\Objects\Meniu.cs" />
     <Compile Include="Services\Objects\Singletons\FileSingleton.cs" />
     <Compile Include="Services\Objects\Singletons\ScoreCounter.cs" />

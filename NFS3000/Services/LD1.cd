@@ -1,23 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Services.Services.Objects.Body" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="6.25" Y="1" Width="1.5" />
+    <Position X="11.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\Objects\Body.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="Services.Services.Objects.Car" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEiAAAAAEAAABAAQAQAAAAAIABAAAAAAAAAA=</HashCode>
+      <FileName>Services\Objects\Car.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Class Name="Services.Services.Objects.Engine" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="8" Y="1" Width="1.5" />
+    <Position X="14.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\Objects\Engine.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="Services.Services.Objects.HighScoreItem" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgEAAAAAAQAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Services\Objects\HighScoreItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.Services.Objects.Map" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAEAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Objects\Map.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Services.Services.Objects.Meniu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQiAAAAAEAAAAAAAAQAAAAAAAAAAAQAAAAAQ=</HashCode>
+      <FileName>Services\Objects\Meniu.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Class Name="Services.Services.Objects.Nitro" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="6.25" Y="2" Width="1.5" />
+    <Position X="16.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\Objects\Nitro.cs</FileName>
@@ -25,85 +56,123 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Services.Services.Objects.Tire" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="8" Y="2" Width="1.5" />
+    <Position X="13" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\Objects\Tire.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="Services.Services.Objects.Singletons.FileSingleton" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAABAAAAARAAAAAWAAAA=</HashCode>
+      <FileName>Services\Objects\Singletons\FileSingleton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Services.Services.Objects.Singletons.ScoreCounter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACQAAAAAAAAAAAAgAABAAAAQQAgAgAQAAAA=</HashCode>
+      <FileName>Services\Objects\Singletons\ScoreCounter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Services.Services.Objects.Singletons.UI" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAABAAAAAQAAAAIQAAAA=</HashCode>
+      <FileName>Services\Objects\Singletons\UI.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Struct Name="Services.Services.Objects.Coordinates" Collapsed="true">
-    <Position X="6.25" Y="3.25" Width="1.5" />
+    <Position X="11.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
       <FileName>Services\Objects\Coordinates.cs</FileName>
     </TypeIdentifier>
   </Struct>
   <Interface Name="Services.ServicesContracts.IScoreCounter" Collapsed="true">
-    <Position X="6.25" Y="5.25" Width="1.5" />
+    <Position X="14.75" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAQAAgAgAAAAAA=</HashCode>
       <FileName>ServicesContracts\IScoreCounter.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Services.ServicesContracts.IUI" Collapsed="true">
-    <Position X="8" Y="5.25" Width="1.5" />
+    <Position X="16.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServicesContracts\IUI.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Services.ServicesContracts.Objects.ICar" Collapsed="true">
-    <Position X="0.75" Y="4.25" Width="1.5" />
+    <Position X="6.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAAAAAAAAAABAAQAAAAAAAIABAAAAAAAAAA=</HashCode>
       <FileName>ServicesContracts\Objects\ICar.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="Services.ServicesContracts.Objects.ICollectable" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServicesContracts\Objects\ICollectable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Interface Name="Services.ServicesContracts.Objects.IDrawable" Collapsed="true">
-    <Position X="0.75" Y="1" Width="1.5" />
+    <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAEAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServicesContracts\Objects\IDrawable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Services.ServicesContracts.Objects.IIncrementScore">
-    <Position X="6.25" Y="4.5" Width="1.5" />
+  <Interface Name="Services.ServicesContracts.Objects.IIncrementScore" Collapsed="true">
+    <Position X="11.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServicesContracts\Objects\IIncrementScore.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Services.ServicesContracts.Objects.IItem" Collapsed="true">
-    <Position X="3.5" Y="4" Width="1.5" />
+    <Position X="2.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServicesContracts\Objects\IItem.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Services.ServicesContracts.Objects.ILocation" Collapsed="true">
-    <Position X="3.75" Y="3" Width="1.5" />
+    <Position X="8.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServicesContracts\Objects\ILocation.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Services.ServicesContracts.Objects.IMap" Collapsed="true">
-    <Position X="0.75" Y="2.25" Width="1.5" />
+    <Position X="5.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServicesContracts\Objects\IMap.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="Services.ServicesContracts.Objects.IObsticle" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServicesContracts\Objects\IObsticle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Interface Name="Services.ServicesContracts.Objects.IPlayer" Collapsed="true">
-    <Position X="8" Y="4.5" Width="1.5" />
+    <Position X="13" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServicesContracts\Objects\IPlayer.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Services.ServicesContracts.Objects.IUsable" Collapsed="true">
-    <Position X="3.5" Y="5.25" Width="1.5" />
+    <Position X="2.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServicesContracts\Objects\IUsable.cs</FileName>
