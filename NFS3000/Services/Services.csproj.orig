@@ -54,8 +54,11 @@
     <Compile Include="Services\Objects\Body.cs" />
     <Compile Include="Services\Objects\HighScoreItem.cs" />
     <Compile Include="Services\Objects\Meniu.cs" />
-    <Compile Include="Services\Objects\Singletons\FileSingleton.cs" />
+<<<<<<< HEAD
     <Compile Include="Services\Objects\Singletons\ScoreCounter.cs" />
+=======
+    <Compile Include="Services\Objects\Singletons\FileSingleton.cs" />
+>>>>>>> origin/master
     <Compile Include="Services\Objects\Singletons\UI.cs" />
     <Compile Include="Services\Objects\Tire.cs" />
     <Compile Include="Services\Objects\Engine.cs" />
