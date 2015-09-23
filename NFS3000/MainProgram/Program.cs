@@ -10,6 +10,7 @@ namespace MainGameLauncher
         {
             UISingleton = UI.Instance();
             UISingleton.Draw();
+            UISingleton.Draw();
             Console.ReadKey();
             var ScoreCounterSingleton = ScoreCounter.Instance();
             ScoreCounterSingleton.ResetScores();

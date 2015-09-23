@@ -32,7 +32,7 @@ namespace Services.Services.Objects.Singletons
         }
         public void Draw()
         {
-            Console.WriteLine("I am drawing enviroment!!!");
+            Console.WriteLine("I am drawing enviroment!");
         }
 
         public void AddDrawableItem(IDrawable drawable)

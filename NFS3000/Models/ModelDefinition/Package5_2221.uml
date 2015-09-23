@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3d7b1959-4ff1-4fde-9402-3ff8d2f34dfe"
+  name="ServicesContracts"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e66b32d7-d8db-4caf-a936-dc74884aec28"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DServices.ServicesContracts"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="eda41db6-b443-4b01-ae56-f2c322abcc71"
+        LastKnownName="Objects"
+        LastKnownLocation="Package6_2221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="5ce2da6b-db34-4d05-b488-ae75335c3307"
+        name="IScoreCounter"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="5a93fde6-a2e6-4f52-9999-5b87bd872ee1"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIScoreCounter"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3f7811b6-9d65-4039-9a6e-5720676078ac"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="59f6d063-2694-4600-afe7-5726cb63abad">
+                <propertyInstance
+                  Id="9d595902-51b9-4c87-b5bb-9098d92c418b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7c5c42a2-72ad-46c4-a076-1c2191fc0b79">
+                <propertyInstance
+                  Id="6a636880-2c88-463c-9603-59a3c4ba4a08"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f5bcaa95-2777-495f-9fbe-f8fa366345c0">
+                <propertyInstance
+                  Id="b818c95a-cd6a-47ef-9a09-e7148e640402"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1d889d08-d87e-4828-b02e-ededf23d58ca">
+                <propertyInstance
+                  Id="d3d55cd3-cf17-4c63-8c04-7abcf4ff53dd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="ff42d2a9-984b-455b-b087-8691149da665"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="14d77bfa-7afe-47f3-b345-5cb5a8e10a4f"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package7_2221.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperations>
+          <operation
+            Id="c798d982-d5b8-4176-8713-d0dfd40d7068"
+            name="AddPlayer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2d854b06-2f09-483c-b5c4-020ada3ce1a4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIScoreCounter Member%3D(Name%3DAddPlayer OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aedd0db7-4b01-4fd7-adf6-a23dc0a763c3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5be7768-ec44-417a-83ed-a2ec094bec33">
+                    <propertyInstance
+                      Id="ec32d124-c731-40bd-8844-6c90909294b8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0de4e46e-98a2-4dc5-85bd-1da4f0ef549e">
+                    <propertyInstance
+                      Id="4dde1acb-e170-42f4-8b50-cd68321212ff"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ab34761-21f3-41d6-badc-e8c5bcdb53d5">
+                    <propertyInstance
+                      Id="9cafca08-bb3e-42b8-8616-e6b63730536b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bb5a780-6e23-472c-91e9-736f9c52143d">
+                    <propertyInstance
+                      Id="67297e74-bbb0-49a9-994d-121ebf51153a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1aaf5861-47e5-491e-9b5a-f12110581327">
+                    <propertyInstance
+                      Id="7ed67634-fc95-4be6-8c80-a43031e9b860"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c885f58f-c129-4d25-8786-2a39f7d01de2">
+                    <propertyInstance
+                      Id="f0529bf7-9afc-4e44-b18e-a0f200feaa73"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b57989f-99b5-42cf-b6ba-3b8052154c12"
+                  name="player"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="31c63592-cb72-45d3-8d5c-30ec4bd64365"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIScoreCounter Member%3D(Name%3DAddPlayer OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer)]) ParameterIdentifier%3Dplayer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="3a3321e4-7735-4527-8f68-2c8dfebd7bd8"
+                      LastKnownName="IPlayer"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a04b4d74-123f-4bd9-b724-15e13ae4c3e4"
+            name="GetScore"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a6a4db95-d2fe-426e-9394-f7278a27fb93"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIScoreCounter Member%3D(Name%3DGetScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8a6b5b42-c44c-4be2-a35b-cbd8bac12e52"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93c3874f-cd56-46d5-a92f-ebf8f26005d6">
+                    <propertyInstance
+                      Id="0eac3abe-b277-4095-95f4-9da35bf72851"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cea7594-a0e3-41d5-8407-2eb4870ded0c">
+                    <propertyInstance
+                      Id="00b9d780-e03a-422d-9162-749a6d61078f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9a7891b-7163-4adc-af8d-c55a5d96d720">
+                    <propertyInstance
+                      Id="3b76643c-fee8-4acd-a015-9255467a1ecd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a710795f-6338-4492-a1ef-9a06a0db0362">
+                    <propertyInstance
+                      Id="35554a6c-74db-40b7-b707-081a7d7d0ad0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c0f2dac-0c88-445b-93f8-0008c8b5df97">
+                    <propertyInstance
+                      Id="ff56c07c-4896-46a6-845e-5121383d27b9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a3da848-985e-46a6-ad38-073f62b1b503">
+                    <propertyInstance
+                      Id="c61f4454-1786-4ac7-ba82-fbd6fbc18f5d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5118fd32-9c8e-447b-9d24-1548e028437a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Models.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e03cd2d6-1550-4abf-9730-86b1653d8366"
+                  name="player"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3415e70e-3ae4-413e-b5d4-247743a99fec"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIScoreCounter Member%3D(Name%3DGetScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer)]) ParameterIdentifier%3Dplayer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="3a3321e4-7735-4527-8f68-2c8dfebd7bd8"
+                      LastKnownName="IPlayer"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="aeaffc1b-3f7f-40e9-aa91-79ec92a983af"
+            name="GetHighScores"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="62fdc4a3-e34d-4027-a04f-f5dd1199dbae"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIScoreCounter Member%3DGetHighScores"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ed710d59-8f9d-485e-9f73-2f402702ee21"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bfd4307-7ccc-4a40-bef8-32e5862f8e3b">
+                    <propertyInstance
+                      Id="197bb1f1-a795-4b92-b549-76420f8eb201"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d8245ac-daf1-481b-ab2b-b3fed80fa30e">
+                    <propertyInstance
+                      Id="55937748-c7d2-4986-8737-d1181b334618"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="864a8b3c-d480-4829-ade7-bd9538c9612f">
+                    <propertyInstance
+                      Id="131efd27-fa89-4197-93b2-be77f65302a8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe5a15aa-a914-4027-be31-a417d0b5ba39">
+                    <propertyInstance
+                      Id="bb49b568-763f-4f12-89ef-af3153ce7b58"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54260ed5-705f-49b5-8d1b-770fc43b68b1">
+                    <propertyInstance
+                      Id="2c83123b-cc27-4562-b9d2-bc0d97d99180"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93b762dd-cbd2-4d44-a81c-f6d605605a62">
+                    <propertyInstance
+                      Id="3f9b2bd4-f9e1-4f50-b539-b005d9956cbc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0297aec3-94f6-44e5-9fec-c49ab849b2d4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="262da603-e440-4a35-9e0a-f08a25892bd1"
+                      LastKnownName="IList&lt;HighScoreItem‎&gt;"
+                      LastKnownLocation="Package9_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2af0dd30-988c-4b31-85e3-d5db1e905dd5"
+            name="UpdateScore"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="41c34b17-8ebc-4cde-a624-8350f3f9967f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIScoreCounter Member%3D(Name%3DUpdateScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIIncrementScore)%2C(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6882b43f-272d-4727-9bee-3efe64699fd4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24b3cdb7-50ac-42ad-8be2-ecaf5f63e5b6">
+                    <propertyInstance
+                      Id="3d44d961-a546-43c1-93d1-3899e5cf90fa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5b3cd85-a8df-4c2a-9e17-2a1d1fbb560e">
+                    <propertyInstance
+                      Id="c9a50805-8bd9-42f3-876a-aa52a0d45e56"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1f0f443-6244-43db-9ea9-7efbf71c1e14">
+                    <propertyInstance
+                      Id="a8d1714d-e13d-4078-8948-8b8d1b372a90"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5424296d-b3fd-4630-b916-5331c20b0791">
+                    <propertyInstance
+                      Id="901d6f54-5525-43db-ba56-d11a0385a38e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82e34e9a-c551-411a-b326-fe458d6911fe">
+                    <propertyInstance
+                      Id="6bf7789f-43ca-494f-b1d2-58694a9584af"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58afbe52-aebd-474c-9917-5736b177fdba">
+                    <propertyInstance
+                      Id="4483ed89-e0a0-4cc3-b5de-2be93a12e0cc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1a4ae868-7203-434c-9141-a620a3c0938b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Models.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f9797c50-3771-4002-8ca5-ce381de7c441"
+                  name="thisEvent"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="133925f2-79c3-45e9-a129-db827cc71520"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIScoreCounter Member%3D(Name%3DUpdateScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIIncrementScore)%2C(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer)]) ParameterIdentifier%3DthisEvent"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a5d8937e-46b6-4611-ab38-8f7a7a7c88c3"
+                      LastKnownName="IIncrementScore"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="03d1bb32-c105-4350-ab2c-4c532e8375e3"
+                  name="player"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="48234244-0e0b-4165-a065-75a135a760de"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIScoreCounter Member%3D(Name%3DUpdateScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIIncrementScore)%2C(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer)]) ParameterIdentifier%3Dplayer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="3a3321e4-7735-4527-8f68-2c8dfebd7bd8"
+                      LastKnownName="IPlayer"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fdbc18a8-d94d-4b62-8c8c-6ec835c07038"
+            name="ResetScores"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e0bf64f5-7332-4ad7-9f95-af05041c30df"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIScoreCounter Member%3DResetScores"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7d39333b-03e0-47b4-a6b2-98fa0a2e9561"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0886794a-6762-4d05-9d72-44b77ab3c231">
+                    <propertyInstance
+                      Id="2b43162e-c412-4e05-9be1-0408f9e5d842"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d38b4dd9-c866-453b-9e1e-34c27ff71d7e">
+                    <propertyInstance
+                      Id="e28e61f7-d486-4121-908b-f67035be784c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4163e7aa-f0ef-45b9-b714-28c7172de17c">
+                    <propertyInstance
+                      Id="809f96b0-8736-4123-ae0c-6c80fdd19913"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2cf943e-1eb9-40bf-83ad-d94b1a2e26a0">
+                    <propertyInstance
+                      Id="878b1b01-7620-4d20-ba7c-1f95a1ad849d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1121371-7f28-432a-b77d-d9180b8a5690">
+                    <propertyInstance
+                      Id="e64450da-243e-42b9-9917-a492d444eb9f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33202826-a57d-4f7b-8809-2582b69d1602">
+                    <propertyInstance
+                      Id="80427d53-dd6f-4df0-bf39-627c00a2a6b2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="bf9d4726-69cb-4057-8b02-958967161368"
+        name="IUI"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="01220f3c-55a4-44b8-8ba4-213c5f132fef"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIUI"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1c1c5f94-a386-47ce-9d65-800dc7486e1f"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a558db1f-0d5b-4bbf-9735-c87a6527ea4a">
+                <propertyInstance
+                  Id="6b55ee3a-6636-4727-a2a1-60cf0e343802"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60b384c0-e4cd-4229-a3a4-d22275b4d563">
+                <propertyInstance
+                  Id="0f7064a6-cfb3-4c88-bb2f-70a2997a5b4d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e1fdf01b-e6c8-49eb-8c76-c9476a9ce533">
+                <propertyInstance
+                  Id="7517a11f-cd63-4219-9c4c-8982bf291742"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="866cc242-716c-4b86-ac67-40db11cb95ac">
+                <propertyInstance
+                  Id="ae5475ce-510d-4356-9a04-3763e2988925"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="4eeac1e8-5d3e-4701-8156-a4f573b840bb"
+            name="Draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e9b0bcf5-6f53-4e8d-ba26-4d02ddfddcb4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIUI Member%3DDraw"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8603a54a-7721-4df6-924a-5122f733a512"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0a7474e-bec7-48a6-a148-7e3a3f892be8">
+                    <propertyInstance
+                      Id="03077fe7-ec2c-4efa-a376-12af6d007b77"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84c20988-e28e-4780-ad88-a1e0d8d64f90">
+                    <propertyInstance
+                      Id="de83c0f7-4868-4ba9-9f06-715a39674849"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0acb8afd-1f2b-4067-b381-1e07f5cbade0">
+                    <propertyInstance
+                      Id="1785d903-1081-4479-bc35-77f2b31bdf6e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b46e8eb-a80d-48a8-82a8-ec26c6a01f4b">
+                    <propertyInstance
+                      Id="b4a3757d-826b-4828-aeed-c0b8f3bd8144"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cafb6daa-540b-491b-bef7-fe22ddac2bb5">
+                    <propertyInstance
+                      Id="64032c7d-9f07-49fd-93da-4c47e9467afa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f5d27aa-0e52-411a-b0f5-a22ab2eb1af0">
+                    <propertyInstance
+                      Id="57644c83-abfe-451d-8412-dbcbfd2bf1da"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="552e836b-238c-4bf8-8973-313fef541593"
+            name="AddDrawableItem"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="af4c6631-e4c0-4a32-aa88-fe6a761408dd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIUI Member%3D(Name%3DAddDrawableItem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f1d8685b-f1a9-4bb0-8fa4-6c79bd26ca5c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfc4d1a9-140e-4655-b85b-00f6a6aec344">
+                    <propertyInstance
+                      Id="db086840-9a5a-4a40-8030-11a26f466e6d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a0db0dd-60fa-4ca5-983d-0885601bc5d0">
+                    <propertyInstance
+                      Id="519dff04-cc66-433b-b96b-c8d7428ee709"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87ed2ff6-cc79-41b8-aa5b-2a7ccb538041">
+                    <propertyInstance
+                      Id="8e48d565-8bb8-4c27-a8d2-8e395b26153c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7b278f5-c68c-4a06-9f24-ffe59a03105c">
+                    <propertyInstance
+                      Id="877caf6b-d744-45e8-99c9-2b0f59e1fcec"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40168ff5-fa9a-45e7-a9ee-658df9ff36f2">
+                    <propertyInstance
+                      Id="46d9edf1-c577-46a1-8203-7a870ed7eaff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a765dd7-1d60-4815-8308-c0f07f4c5bce">
+                    <propertyInstance
+                      Id="6b58e128-a0ce-4813-a250-ce248597ff26"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e0aa1611-a3ca-4f44-942a-c02ccc32801d"
+                  name="drawable"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b4d33e25-647c-4573-9c21-c242d4b09f11"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts Type%3DIUI Member%3D(Name%3DAddDrawableItem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable)]) ParameterIdentifier%3Ddrawable"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="634dc659-bb1d-438b-8b28-5874cf391521"
+                      LastKnownName="IDrawable"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
