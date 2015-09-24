@@ -1,10 +1,12 @@
 ﻿using System;
 using System.IO;
 
+using Services.ServicesContracts;
+
 namespace Services.Services.Objects.Singletons
 {
-    
-    public class FileSingleton:IDisposable
+
+    public class FileSingleton : IDisposable, IDataWriter
     {
         private StreamWriter file;
         private static FileSingleton instance;
@@ -22,10 +24,6 @@ namespace Services.Services.Objects.Singletons
                 return instance;
         }
 
-        public void Write(string text)
-        {
-            file.Write(text);
-        }
         private FileSingleton()
         {
             file = new StreamWriter("HighScores.txt");
@@ -41,6 +39,16 @@ namespace Services.Services.Objects.Singletons
         {
             file.Flush();
             file.Close();
+        }
+
+        public void Write(object obj)
+        {
+            file.Write(obj);
+        }
+
+        public string[] Read()
+        {
+            throw new NotImplementedException();
         }
     }
 }
