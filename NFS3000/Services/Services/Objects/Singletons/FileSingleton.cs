@@ -9,22 +9,22 @@ namespace Services.Services.Objects.Singletons
     public class FileSingleton : IDisposable, IDataWriter
     {
         private StreamWriter file;
-        private static FileSingleton instance;
-        private static object lockInstanceObj = new object();
+
+        protected static FileSingleton instance;
+        protected static object lockInstanceObj = new object();
 
         public static FileSingleton Instance()
         {
-                lock (lockInstanceObj)
+            lock (lockInstanceObj)
+            {
+                if (instance == null)
                 {
-                    if (instance == null)
-                    {
-                        instance = new FileSingleton();
-                    }
+                    instance = new FileSingleton();
                 }
-                return instance;
+            }
+            return instance;
         }
-
-        private FileSingleton()
+        protected FileSingleton()
         {
             file = new StreamWriter("HighScores.txt");
         }
@@ -50,5 +50,6 @@ namespace Services.Services.Objects.Singletons
         {
             throw new NotImplementedException();
         }
+
     }
 }

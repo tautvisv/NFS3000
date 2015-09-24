@@ -55,6 +55,13 @@
     <Content Include="ModelDefinition\Package_2221.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="singletons.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="singletons.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>singletons.classdiagram</DependentUpon>
+    </Content>
     <Content Include="UML Class diagram.classdiagram">
       <SubType>Content</SubType>
     </Content>

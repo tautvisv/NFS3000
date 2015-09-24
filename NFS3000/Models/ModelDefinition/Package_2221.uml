@@ -69,85 +69,7 @@
         </appliedStereotypesInternal>
         <targetEnds>
           <association
-            Id="f6b3a595-becc-4a84-b38e-e4f73ac81510"
-            isDerived="false"
-            sourceEndRoleName="MainProgram"
-            targetEndRoleName="FileSingleton"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="c7b06bc8-ced6-477c-a423-4d6fe47e870e"
-              LastKnownName="FileSingleton"
-              LastKnownLocation="Package4_2221.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e83a0f27-82eb-42b2-b0b2-c6230b75bf9f"
-                  name="MainProgram"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="933d2e9f-5311-45b6-81a5-de3ef0f3ed75"
-                  name="FileSingleton"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="73383f20-4994-4869-b86d-5a30a590df7a"
-            isDerived="false"
-            sourceEndRoleName="MainProgram"
-            targetEndRoleName="ScoreCounter"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="f6c15cae-1d19-406a-9692-24dcec3d6d1b"
-              LastKnownName="ScoreCounter"
-              LastKnownLocation="Package4_2221.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="22c50c7c-17dc-4de8-a4cd-5daf95d79f1d"
-                  name="MainProgram"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="6879cb7e-0438-4527-a977-8c1cc8e05a6b"
-                  name="ScoreCounter"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="21df68f0-f875-4021-8a45-5d75e3b44e9c"
+            Id="d022a006-b593-4909-9237-6f175e052194"
             isDerived="false"
             sourceEndRoleName="MainProgram"
             targetEndRoleName="UI"
@@ -160,20 +82,20 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="d8bb28fc-3bcb-484c-8bd6-24a479063ad7"
+                  Id="878f784e-12f3-44c2-84f5-c9403ab0086b"
                   name="MainProgram"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Composite"
+                  aggregation="None"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="1c6f64fb-b85f-4196-9924-14e93f834018"
+                  Id="2e9d01d1-2430-4f99-b9e6-89274d3eaece"
                   name="UI"
                   isLeaf="false"
                   isStatic="false"
@@ -181,7 +103,85 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true" />
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="09ed8cd8-599f-4c21-be32-07ca8cd59211"
+            isDerived="false"
+            sourceEndRoleName="MainProgram"
+            targetEndRoleName="FileSingleton"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c7b06bc8-ced6-477c-a423-4d6fe47e870e"
+              LastKnownName="FileSingleton"
+              LastKnownLocation="Package4_2221.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="800cafc5-d1e1-457e-8bfe-9b9009396e33"
+                  name="MainProgram"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff4afaf7-124d-49cf-ab21-b65afbb7368b"
+                  name="FileSingleton"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b1a93cba-529a-4aab-bdfb-b7112e29bb2d"
+            isDerived="false"
+            sourceEndRoleName="MainProgram"
+            targetEndRoleName="ScoreCounter"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f6c15cae-1d19-406a-9692-24dcec3d6d1b"
+              LastKnownName="ScoreCounter"
+              LastKnownLocation="Package4_2221.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3508cced-bcf4-4577-b2d7-84526bbf62ba"
+                  name="MainProgram"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0cae714-7e81-4e37-9c39-979f11361887"
+                  name="ScoreCounter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -356,7 +356,7 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="39ff6149-d815-4295-854f-ef2f6b877805"
+            Id="e676ba4d-7dde-4035-abf9-b9102e15978c"
             name="MainProgram"
             isLeaf="false"
             isStatic="false"
@@ -365,54 +365,54 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="2fd3e1ce-e3dc-4ee2-a1ee-640e142ad961"
+                Id="c815abd3-b4fc-483e-ade7-46fc3f33b432"
                 handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FMainProgram%2Fbin%2FDebug%2FMainProgram.exe&quot; Namespace%3DMainGameLauncher Type%3DMainProgram Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="1eb03596-4617-4fc4-b6da-041046c18111"
+                Id="4807b27c-2003-4940-ad49-a482be64d67f"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="354e16c6-21f3-4e98-a086-b80e8c7e8743">
+                    Id="ab83e822-e1b7-41b1-97b4-ee5b613578ba">
                     <propertyInstance
-                      Id="7a737a67-864e-4161-82da-aac995a5d25e"
+                      Id="67a49919-48dd-4548-bfff-77abb173ec46"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="f131e49c-5cea-4497-9c84-4305b076ca0c">
+                    Id="9ef9332a-f76c-4747-9dfb-5429e1d7d1b6">
                     <propertyInstance
-                      Id="28899022-94ff-4784-92a2-1eac8f6164e0"
+                      Id="d927f94d-37db-4e0f-8027-ab3a0c3757d5"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="06ea51bf-0e35-4f8e-951c-671ceaedcfac">
+                    Id="41a7bcc9-6852-4ee7-8402-720ae0542d3c">
                     <propertyInstance
-                      Id="5d91e0a3-2dcf-459f-84c9-ed3b1652f01b"
+                      Id="3e598657-fb73-4505-b2d5-0f95303582aa"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="e76be776-21eb-4749-bd19-bb22d9f0706b">
+                    Id="e6856851-5ce1-47a2-a03a-eac75cf14c73">
                     <propertyInstance
-                      Id="6b41e94e-60eb-496d-aafc-a2432a241b2d"
+                      Id="81accf44-06ae-417f-8030-c3c86d64d4b0"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="70c5260e-547a-4312-b8fa-5c6713040b78">
+                    Id="52c67222-d7b5-47ae-bc3a-552e2e0bdd2c">
                     <propertyInstance
-                      Id="0dc82ce0-3376-48db-8770-a77a40014c56"
+                      Id="fe35909a-5678-4da7-9327-b3b8c8f906fe"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="8aa71d73-11aa-43b2-a295-fb5cf103065f">
+                    Id="e154751d-9004-47c8-bf4c-2949d67b0853">
                     <propertyInstance
-                      Id="08ae4400-32a2-4a3a-aaf2-076e4afbc166"
+                      Id="5734b4eb-6cbf-40eb-8366-4d4563f9295b"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
