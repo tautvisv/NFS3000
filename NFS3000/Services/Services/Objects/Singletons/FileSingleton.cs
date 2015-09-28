@@ -5,7 +5,6 @@ using Services.ServicesContracts;
 
 namespace Services.Services.Objects.Singletons
 {
-
     public class FileSingleton : IDisposable, IDataWriter
     {
         private StreamWriter file;

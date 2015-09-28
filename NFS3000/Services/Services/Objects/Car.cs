@@ -3,18 +3,19 @@ using Services.ServicesContracts.Objects;
 
 namespace Services.Services.Objects
 {
-    class Car : ICar
+    public class Car : ICar
     {
+        public Car()
+        {
+            Priority = 100;
+        }
+
         public Coordinates GetPosition { get; private set; }
 
+        public Coordinates GlobalPosition { get; private set; }
         public int Priority { get; private set; }
 
         public IDictionary<Coordinates, char> Content { get; private set; }
-
-        public bool UpdateScreen
-        {
-            get { throw new System.NotImplementedException(); }
-        }
 
         public string Name { get; set; }
 

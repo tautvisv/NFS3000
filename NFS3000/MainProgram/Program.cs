@@ -9,14 +9,6 @@ namespace MainGameLauncher
         static void Main(string[] args)
         {
             UISingleton = UI.Instance();
-            UISingleton.Draw();
-            UISingleton.Draw();
-            Console.ReadKey();
-            var ScoreCounterSingleton = ScoreCounter.Instance();
-            ScoreCounterSingleton.ResetScores();
-            var myFile = FileSingleton.Instance();
-            myFile.Write("veikia!!!!!!");
-            myFile.Dispose();
             Console.ReadKey();
         }
     }
