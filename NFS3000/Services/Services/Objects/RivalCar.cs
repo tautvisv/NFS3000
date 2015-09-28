@@ -14,7 +14,6 @@ namespace Services.Services.Objects
         {
             Content = ModelLoader.Instance().LoadModel(Globals.MODELS_PATH + "CarRival" + Globals.MODELS_FILES_EXTENSION);
             Priority = 99;
-            GlobalPosition = new Coordinates(20,5);
         }
     }
 }

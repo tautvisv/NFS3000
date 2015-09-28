@@ -42,21 +42,38 @@ namespace Services.Services.Objects.Singletons
         public void Draw(TextBox mainBox)
         {
             ClearView();
+            int counter = 0;
+            int nextY = 0;
+            int nextX = 0;
+
             foreach (var drawable in drawables.OrderBy(t=>t.Priority))
             {
+                //DELETE THIS
+                if (counter%2 == 0)
+                {
+                    nextY = new Random().Next(0, 15);
+                    nextX = 0;
+                }
+                else
+                {
+                    nextX = new Random().Next(0, 55);
+                    nextY = 0;
+                }
+                counter++;
                 foreach (var pixel in drawable.Content)
                 {
-                    view[drawable.GlobalPosition.Y + pixel.Key.Y][drawable.GlobalPosition.X + pixel.Key.X] = pixel.Value;
+                    view[drawable.GlobalPosition.Y + pixel.Key.Y + nextY][nextX + drawable.GlobalPosition.X + pixel.Key.X] = pixel.Value;
                 }
             }
-            //TODO tiksliai nežinau ką daro, bet gali praversiti
-            //mainBox.Refresh();
+            
             var sb = new StringBuilder();
             foreach (var line in view)
             {
                 sb.AppendLine(new string(line));
             }
             mainBox.Text = sb.ToString();
+            //TODO tiksliai nežinau ką daro, bet gali praversiti
+            //mainBox.Refresh();
         }
 
         public void AddDrawableItem(IDrawable drawable)

@@ -11,7 +11,6 @@ namespace Services.Services.Objects
         {
             Content = ModelLoader.Instance().LoadModel(Globals.MODELS_PATH + "Car" + Globals.MODELS_FILES_EXTENSION);
             Priority = 100;
-            GlobalPosition = new Coordinates(1, 1);
         }
 
         public Coordinates Position { get; protected set; }
