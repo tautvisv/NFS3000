@@ -34,6 +34,7 @@
             // MainBox
             // 
             this.MainBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainBox.Enabled = false;
             this.MainBox.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.MainBox.Location = new System.Drawing.Point(0, 0);
             this.MainBox.Multiline = true;
@@ -51,11 +52,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 333);
             this.Controls.Add(this.MainBox);
+            this.DoubleBuffered = true;
             this.MinimumSize = new System.Drawing.Size(680, 372);
             this.Name = "MainForm";
             this.Text = "NFS3000";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.MainForm_PreviewKeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

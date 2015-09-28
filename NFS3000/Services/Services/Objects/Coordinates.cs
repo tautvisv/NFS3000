@@ -1,4 +1,6 @@
-﻿namespace Services.Services.Objects
+﻿using System;
+
+namespace Services.Services.Objects
 {
     public struct Coordinates
     {
@@ -10,5 +12,9 @@
 
         public int X;
         public int Y;
+        public override string ToString()
+        {
+            return String.Format("X:{0}, Y:{1}",X,Y);
+        }
     }
 }

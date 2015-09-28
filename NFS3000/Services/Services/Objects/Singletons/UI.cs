@@ -46,17 +46,17 @@ namespace Services.Services.Objects.Singletons
             {
                 foreach (var pixel in drawable.Content)
                 {
-                    view[pixel.Key.Y][pixel.Key.X] = pixel.Value;
+                    view[drawable.GlobalPosition.Y + pixel.Key.Y][drawable.GlobalPosition.X + pixel.Key.X] = pixel.Value;
                 }
             }
-            mainBox.Clear();
+            //TODO tiksliai nežinau ką daro, bet gali praversiti
+            //mainBox.Refresh();
             var sb = new StringBuilder();
             foreach (var line in view)
             {
                 sb.AppendLine(new string(line));
             }
             mainBox.Text = sb.ToString();
-            Console.WriteLine("I am drawing environment!");
         }
 
         public void AddDrawableItem(IDrawable drawable)

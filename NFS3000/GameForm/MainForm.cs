@@ -20,10 +20,7 @@ namespace GameForm
 
         private void MainBox_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData == Keys.Escape)
-            {
-                this.Close();
-            }
+            throw new NotImplementedException();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -31,6 +28,7 @@ namespace GameForm
             Control.CheckForIllegalCrossThreadCalls = false;
             var drawable = new Car();
             Ui.Instance().AddDrawableItem(drawable);
+            Ui.Instance().AddDrawableItem(new RivalCar());
             this.Name = Globals.PROGRAM_NAME;
             paintThread = new Thread(() =>
             {
@@ -46,6 +44,16 @@ namespace GameForm
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             paintThread.Abort();
+        }
+
+        private void MainForm_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+           
+            if (e.KeyData == Keys.Escape)
+            {
+                this.Close();
+            }
+        
         }
     }
 }

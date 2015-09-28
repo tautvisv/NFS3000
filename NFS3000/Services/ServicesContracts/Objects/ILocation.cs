@@ -4,6 +4,6 @@ namespace Services.ServicesContracts.Objects
 {
     public interface ILocation
     {
-        Coordinates GetPosition { get; }
+        Coordinates Position { get; }
     }
 }
