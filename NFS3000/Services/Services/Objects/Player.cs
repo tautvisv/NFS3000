@@ -2,7 +2,7 @@
 
 namespace Services.Services.Objects
 {
-    internal class Player : IPlayer
+    public class Player : IPlayer
     {
         public string Name { get; set; }
 

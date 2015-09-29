@@ -36,33 +36,23 @@ namespace Services.Services.Objects.Singletons
         private Ui()
         {
             drawables = new List<IDrawable>();
+            UpdateScreen = true;
+            ClearView();
         }
 
         [STAThread]
         public void Draw(TextBox mainBox)
         {
+            if (!UpdateScreen)
+            {
+                return;
+            }
             ClearView();
-            int counter = 0;
-            int nextY = 0;
-            int nextX = 0;
-
             foreach (var drawable in drawables.OrderBy(t=>t.Priority))
             {
-                //DELETE THIS
-                if (counter%2 == 0)
-                {
-                    nextY = new Random().Next(0, 15);
-                    nextX = 0;
-                }
-                else
-                {
-                    nextX = new Random().Next(0, 55);
-                    nextY = 0;
-                }
-                counter++;
                 foreach (var pixel in drawable.Content)
                 {
-                    view[drawable.GlobalPosition.Y + pixel.Key.Y + nextY][nextX + drawable.GlobalPosition.X + pixel.Key.X] = pixel.Value;
+                    view[drawable.Position.Y + pixel.Key.Y][drawable.Position.X + pixel.Key.X] = pixel.Value;
                 }
             }
             
@@ -72,8 +62,7 @@ namespace Services.Services.Objects.Singletons
                 sb.AppendLine(new string(line));
             }
             mainBox.Text = sb.ToString();
-            //TODO tiksliai nežinau ką daro, bet gali praversiti
-            //mainBox.Refresh();
+            mainBox.Refresh();
         }
 
         public void AddDrawableItem(IDrawable drawable)

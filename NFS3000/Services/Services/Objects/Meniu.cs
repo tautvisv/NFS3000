@@ -10,7 +10,7 @@ namespace Services.Services.Objects
         private IDrawable HighScores { get; set; }
         private IDrawable Upgrades { get; set; }
         private IDrawable SetName { get; set; }
-        public Coordinates GlobalPosition { get; private set; }
+        public Coordinates Position { get; private set; }
 
         public int Priority
         {

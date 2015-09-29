@@ -5,7 +5,7 @@ namespace Services.Services.Objects
 {
     class Map : IMap
     {
-        public Coordinates GlobalPosition { get; private set; }
+        public Coordinates Position { get; private set; }
 
         public int Priority { get; private set; }
 

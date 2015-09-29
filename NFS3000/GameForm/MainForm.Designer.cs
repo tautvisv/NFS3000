@@ -44,7 +44,6 @@
             this.MainBox.Size = new System.Drawing.Size(664, 333);
             this.MainBox.TabIndex = 0;
             this.MainBox.WordWrap = false;
-            this.MainBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainBox_KeyDown);
             // 
             // MainForm
             // 

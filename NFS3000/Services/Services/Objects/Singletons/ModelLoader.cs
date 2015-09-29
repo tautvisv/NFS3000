@@ -32,7 +32,7 @@ namespace Services.Services.Objects.Singletons
         {
         }
 
-        public IDictionary<Coordinates, char> LoadModel(string file)
+        public IDictionary<Coordinates, char> LoadModel(string modelFileName)
         {
             lock (lockInstanceObj)
             {
@@ -40,7 +40,7 @@ namespace Services.Services.Objects.Singletons
                 string[] allLines;
                 try
                 {
-                    allLines = System.IO.File.ReadAllLines(Globals.MODELS_PATH + file);
+                    allLines = File.ReadAllLines(string.Format("{0}{1}{2}", Globals.MODELS_PATH, modelFileName, Globals.MODELS_FILES_EXTENSION));
                 }
                 catch (DirectoryNotFoundException e)
                 {
@@ -48,7 +48,7 @@ namespace Services.Services.Objects.Singletons
                 }
                 catch (FileNotFoundException e)
                 {
-                    throw new Exception(string.Format("Could not found model file: '{0}' in '{1}'.", file, Globals.MODELS_PATH), e);
+                    throw new Exception(string.Format("Could not found model modelFileName: '{0}' in '{1}'.", modelFileName, Globals.MODELS_PATH), e);
                 }
                 for (int lineNumber = 0; lineNumber < allLines.Length; lineNumber++)
                 {

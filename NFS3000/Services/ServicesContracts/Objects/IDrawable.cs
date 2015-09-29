@@ -5,7 +5,7 @@ namespace Services.ServicesContracts.Objects
 {
     public interface IDrawable
     {
-        Coordinates GlobalPosition { get; }
+        Coordinates Position { get; }
         int Priority { get; }
         IDictionary<Coordinates, char> Content { get; }
     }
