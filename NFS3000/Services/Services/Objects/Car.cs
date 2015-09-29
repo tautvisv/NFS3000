@@ -9,7 +9,7 @@ namespace Services.Services.Objects
     {
         public Car()
         {
-            Content = ModelLoader.Instance().LoadModel(Globals.MODELS_PATH + "Car" + Globals.MODELS_FILES_EXTENSION);
+            Content = ModelLoader.Instance().LoadModel("Car" + Globals.MODELS_FILES_EXTENSION);
             Priority = 100;
         }
 

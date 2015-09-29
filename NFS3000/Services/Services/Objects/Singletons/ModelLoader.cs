@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+
+using Data;
 
 using Services.ServicesContracts;
 
@@ -33,7 +37,19 @@ namespace Services.Services.Objects.Singletons
             lock (lockInstanceObj)
             {
                 var model = new Dictionary<Coordinates, char>();
-                var allLines = System.IO.File.ReadAllLines(file);
+                string[] allLines;
+                try
+                {
+                    allLines = System.IO.File.ReadAllLines(Globals.MODELS_PATH + file);
+                }
+                catch (DirectoryNotFoundException e)
+                {
+                    throw new Exception("Failed to open models directory!", e);
+                }
+                catch (FileNotFoundException e)
+                {
+                    throw new Exception(string.Format("Could not found model file: '{0}' in '{1}'.", file, Globals.MODELS_PATH), e);
+                }
                 for (int lineNumber = 0; lineNumber < allLines.Length; lineNumber++)
                 {
                     for (int lineCharNumber = 0; lineCharNumber < allLines[lineNumber].Length; lineCharNumber++)

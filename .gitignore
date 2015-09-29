@@ -8,11 +8,10 @@
 
 # Build results
 
-[Dd]ebug/
 [Rr]elease/
 x64/
 build/
-[Bb]in/
+# [Bb]in/
 [Oo]bj/
 
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
@@ -154,3 +153,5 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+
+!NFS3000/GameForm/bin/Debug/Models/
