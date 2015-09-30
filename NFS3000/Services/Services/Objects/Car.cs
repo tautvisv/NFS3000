@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Data;
 using Services.Services.Objects.Singletons;
 using Services.ServicesContracts.Objects;
 
 namespace Services.Services.Objects
 {
-    public class Car : ICar
+    public class Car : ICar, IMoveable
     {
         public Car()
         {
@@ -41,6 +42,38 @@ namespace Services.Services.Objects
             {
                 Content.Add(coordinates, numberChar);
             }
+        }
+
+        public void MoveLeft()
+        {
+            //TODO some boom logic
+            if(Position.X == 0)
+                return;
+            Position.X -= 1;
+        }
+
+        public void MoveRight()
+        {
+            //TODO some boom logic
+            if (Position.X == Globals.X_MAX_BOARD_SIZE-1)
+                return;
+            Position.X += 1;
+        }
+
+        public void MoveUp()
+        {
+            //TODO some boom logic
+            if (Position.Y == 0)
+                return;
+            Position.Y -= 1;
+        }
+
+        public void MoveDown()
+        {
+            //TODO some boom logic
+            if (Position.Y == Globals.Y_MAX_BOARD_SIZE-1)
+                return;
+            Position.Y += 1;
         }
     }
 }

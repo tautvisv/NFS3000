@@ -45,6 +45,7 @@
     <Compile Include="ServicesContracts\IModelLoader.cs" />
     <Compile Include="ServicesContracts\IPaint.cs" />
     <Compile Include="ServicesContracts\Objects\ICollectable.cs" />
+    <Compile Include="ServicesContracts\Objects\IMoveable.cs" />
     <Compile Include="ServicesContracts\Objects\IDrawable.cs" />
     <Compile Include="ServicesContracts\Objects\IMap.cs" />
     <Compile Include="ServicesContracts\Objects\IObsticle.cs" />

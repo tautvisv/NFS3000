@@ -71,16 +71,16 @@ namespace GameForm
             switch (e.KeyData)
             {
                 case Keys.Up:
-                    ((IDrawable)player.Car).Position.Y -= 1;
+                    ((IMoveable)player.Car).MoveUp();
                     return;
                 case Keys.Left:
-                    ((IDrawable)player.Car).Position.X -= 1;
+                    ((IMoveable)player.Car).MoveLeft();
                     return;
                 case Keys.Right:
-                    ((IDrawable)player.Car).Position.X += 1;
+                    ((IMoveable)player.Car).MoveRight();
                     return;
                 case Keys.Down:
-                    ((IDrawable)player.Car).Position.Y += 1;
+                    ((IMoveable)player.Car).MoveDown();
                     return;
                 default:
                     return;
@@ -97,16 +97,16 @@ namespace GameForm
             switch (e.KeyData)
             {
                 case Keys.W:
-                    ((IDrawable)player.Car).Position.Y -= 1;
+                    ((IMoveable)player.Car).MoveUp();
                     return;
                 case Keys.A:
-                    ((IDrawable)player.Car).Position.X -= 1;
+                    ((IMoveable)player.Car).MoveLeft();
                     return;
                 case Keys.D:
-                    ((IDrawable)player.Car).Position.X += 1;
+                    ((IMoveable)player.Car).MoveRight();
                     return;
                 case Keys.S:
-                    ((IDrawable)player.Car).Position.Y += 1;
+                    ((IMoveable)player.Car).MoveDown();
                     return;
                 default:
                     return;

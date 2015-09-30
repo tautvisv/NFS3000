@@ -63,6 +63,7 @@ namespace Services.Services.Objects.Singletons
             }
             mainBox.Text = sb.ToString();
             mainBox.Refresh();
+            UpdateScreen = false;
         }
 
         public void AddDrawableItem(IDrawable drawable)
