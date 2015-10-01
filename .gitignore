@@ -157,3 +157,7 @@ $RECYCLE.BIN/
 #NFS3000/GameForm/bin/Debug/*
 #!NFS3000/GameForm/bin/Debug/Models/
 Debug/*dll
+*.dll
+*.dll
+MainProgram
+MainGameLauncher
