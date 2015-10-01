@@ -64,7 +64,6 @@ namespace Services.Services.Objects.Singletons
                     sb.AppendLine(new string(line));
                 }
                 mainBox.Text = sb.ToString();
-                mainBox.Refresh();
                 UpdateScreen = false;
             }
         }
