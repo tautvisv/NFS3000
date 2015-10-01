@@ -154,5 +154,6 @@ $RECYCLE.BIN/
 # Mac desktop service store files
 .DS_Store
 
-NFS3000/GameForm/bin/Debug/*
-!NFS3000/GameForm/bin/Debug/Models/
+#NFS3000/GameForm/bin/Debug/*
+#!NFS3000/GameForm/bin/Debug/Models/
+Debug/*dll

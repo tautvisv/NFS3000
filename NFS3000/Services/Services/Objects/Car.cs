@@ -6,7 +6,7 @@ using Services.ServicesContracts.Objects;
 
 namespace Services.Services.Objects
 {
-    public class Car : ICar, IMoveable
+    public class Car : ICar
     {
         public Car()
         {
@@ -55,7 +55,7 @@ namespace Services.Services.Objects
         public void MoveRight()
         {
             //TODO some boom logic
-            if (Position.X == Globals.X_MAX_BOARD_SIZE-1)
+            if (Position.X > Globals.X_MAX_BOARD_SIZE-3)
                 return;
             Position.X += 1;
         }

@@ -47,23 +47,26 @@ namespace Services.Services.Objects.Singletons
             {
                 return;
             }
-            ClearView();
-            foreach (var drawable in drawables.OrderBy(t=>t.Priority))
+            lock (mainBox)
             {
-                foreach (var pixel in drawable.Content)
+                ClearView();
+                foreach (var drawable in drawables.OrderBy(t => t.Priority))
                 {
-                    view[drawable.Position.Y + pixel.Key.Y][drawable.Position.X + pixel.Key.X] = pixel.Value;
+                    foreach (var pixel in drawable.Content)
+                    {
+                        view[drawable.Position.Y + pixel.Key.Y][drawable.Position.X + pixel.Key.X] = pixel.Value;
+                    }
                 }
+
+                var sb = new StringBuilder();
+                foreach (var line in view)
+                {
+                    sb.AppendLine(new string(line));
+                }
+                mainBox.Text = sb.ToString();
+                mainBox.Refresh();
+                UpdateScreen = false;
             }
-            
-            var sb = new StringBuilder();
-            foreach (var line in view)
-            {
-                sb.AppendLine(new string(line));
-            }
-            mainBox.Text = sb.ToString();
-            mainBox.Refresh();
-            UpdateScreen = false;
         }
 
         public void AddDrawableItem(IDrawable drawable)

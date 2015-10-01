@@ -22,6 +22,7 @@ namespace GameForm
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            DoubleBuffered = true;
             this.Name = Globals.PROGRAM_NAME;
             Control.CheckForIllegalCrossThreadCalls = false;
 
@@ -67,24 +68,24 @@ namespace GameForm
             {
                 return;
             }
-            Ui.Instance().RequireScreenUpdate();
             switch (e.KeyData)
             {
                 case Keys.Up:
-                    ((IMoveable)player.Car).MoveUp();
-                    return;
+                    player.Car.MoveUp();
+                    break;
                 case Keys.Left:
-                    ((IMoveable)player.Car).MoveLeft();
-                    return;
+                    player.Car.MoveLeft();
+                    break;
                 case Keys.Right:
-                    ((IMoveable)player.Car).MoveRight();
-                    return;
+                    player.Car.MoveRight();
+                    break;
                 case Keys.Down:
-                    ((IMoveable)player.Car).MoveDown();
-                    return;
+                    player.Car.MoveDown();
+                    break;
                 default:
                     return;
             }
+            Ui.Instance().RequireScreenUpdate();
         }
 
         private static void SecondTypeControls(IPlayer player, PreviewKeyDownEventArgs e)
@@ -93,24 +94,24 @@ namespace GameForm
             {
                 return;
             }
-            Ui.Instance().RequireScreenUpdate();
             switch (e.KeyData)
             {
                 case Keys.W:
-                    ((IMoveable)player.Car).MoveUp();
-                    return;
+                    player.Car.MoveUp();
+                    break;
                 case Keys.A:
-                    ((IMoveable)player.Car).MoveLeft();
-                    return;
+                    player.Car.MoveLeft();
+                    break;
                 case Keys.D:
-                    ((IMoveable)player.Car).MoveRight();
-                    return;
+                    player.Car.MoveRight();
+                    break;
                 case Keys.S:
-                    ((IMoveable)player.Car).MoveDown();
-                    return;
+                    player.Car.MoveDown();
+                    break;
                 default:
                     return;
             }
+            Ui.Instance().RequireScreenUpdate();
         }
     }
 }
