@@ -11,7 +11,7 @@ namespace Services.Services.Objects.Singletons
     public class ModelLoader : IModelLoader
     {
         private static ModelLoader instance;
-        private static object lockInstanceObj = new object();
+        private static readonly object lockInstanceObj = new object();
 
         public static ModelLoader Instance()
         {

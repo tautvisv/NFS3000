@@ -16,13 +16,13 @@ namespace Services.Services.Objects.Singletons
         private readonly char[][] view = new char[Globals.Y_MAX_BOARD_SIZE][];
         private IList<IDrawable> drawables;
         private static Ui instance;
-        private static object lockInstanceObj = new object();
+        private static readonly object LockInstanceObj = new object();
 
         public static Ui Instance()
         {
             if (instance == null)
             {
-                lock (lockInstanceObj)
+                lock (LockInstanceObj)
                 {
                     if (instance == null)
                     {

@@ -9,8 +9,8 @@ namespace Services.Services.Objects.Singletons
     {
         private StreamWriter file;
 
-        protected static FileSingleton instance;
-        protected static object lockInstanceObj = new object();
+        private static FileSingleton instance;
+        private static readonly object lockInstanceObj = new object();
 
         public static FileSingleton Instance()
         {

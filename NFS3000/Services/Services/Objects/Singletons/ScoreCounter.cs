@@ -12,7 +12,7 @@ namespace Services.Services.Objects.Singletons
     {
         private static ScoreCounter instance;
         private static IList<HighScoreItem> highScores = new List<HighScoreItem>();
-        private static object lockInstanceObj = new object();
+        private static readonly object lockInstanceObj = new object();
         
 
         public static ScoreCounter Instance()
