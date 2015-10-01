@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForm", "GameForm\GameFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{718E9BB1-B674-4A52-AFBF-281FD8254606}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameConsole", "GameConsole\GameConsole.csproj", "{4D7DE392-A758-447A-9384-C9E2D0A8E78B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,16 @@ Global
 		{718E9BB1-B674-4A52-AFBF-281FD8254606}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{718E9BB1-B674-4A52-AFBF-281FD8254606}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{718E9BB1-B674-4A52-AFBF-281FD8254606}.Release|x86.ActiveCfg = Release|Any CPU
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,5 +92,6 @@ Global
 		{B98E3AA4-90AE-42A5-9D25-FB29237ED1AB} = {EAC05059-52A1-4A05-8106-D4A88B46CB32}
 		{D153CB21-5FD6-4C61-9012-8BBABFAD1F3F} = {FD42092E-BC34-41DF-864C-8C99BEE8CD23}
 		{718E9BB1-B674-4A52-AFBF-281FD8254606} = {EAC05059-52A1-4A05-8106-D4A88B46CB32}
+		{4D7DE392-A758-447A-9384-C9E2D0A8E78B} = {FD42092E-BC34-41DF-864C-8C99BEE8CD23}
 	EndGlobalSection
 EndGlobal

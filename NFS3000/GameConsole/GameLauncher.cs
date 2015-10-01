@@ -1,0 +1,101 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using Data;
+using Services.Services.Objects;
+using Services.Services.Objects.Singletons;
+using Services.ServicesContracts.Objects;
+
+namespace GameConsole
+{
+    internal class GameLauncher
+    {
+        Thread paintThread;
+        private Player player1;
+        private Player player2;
+
+        static void Main(string[] args)
+        {
+            var game = new GameLauncher();
+            game.Initialise();
+            game.StartGame();
+        }
+
+        public void Initialise()
+        {
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Black;
+            //TODO parinkti protingai aukštį bei plotį
+            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+            DoTestStuff();
+        }
+        public void StartGame()
+        {
+            while (true)
+            {
+                if (Console.KeyAvailable)
+                {
+                    var key = Console.ReadKey(true);
+                    if (key.Key == ConsoleKey.Escape)
+                    {
+                        Environment.Exit(0);
+                    }
+                    ChangePlayerDirection(key, player1);
+                }
+                else
+                {
+                    //Šitas padeda sutaupyti resursus, kad netikrintų visada
+                    Thread.Sleep(Globals.REFRESH_RATE);
+                }
+            }
+        }
+
+        public void ChangePlayerDirection(ConsoleKeyInfo key, IPlayer player)
+        {
+            switch (key.Key)
+            {
+                case ConsoleKey.UpArrow:
+                    player.Car.MoveUp();
+                    break;
+                case ConsoleKey.LeftArrow:
+                    player.Car.MoveLeft();
+                    break;
+                case ConsoleKey.RightArrow:
+                    player.Car.MoveRight();
+                    break;
+                case ConsoleKey.DownArrow:
+                    player.Car.MoveDown();
+                    break;
+                default:
+                    return;
+            }
+            //TODO Perkelti jaučiu reikia į move funkciją
+            Ui.Instance().RequireScreenUpdate();
+        }
+        public void DoTestStuff()
+        {
+            var car1 = new Car();
+            var car2 = new Car();
+            player2 = new Player { Car = car2 };
+            player1 = new Player { Car = car1 };
+            car1.SetCarNumber(1);
+            car2.SetCarNumber(2);
+            player1.Car = car1;
+            player2.Car = car2;
+            Ui.Instance().AddDrawableItem(car2);
+            Ui.Instance().AddDrawableItem(car1);
+            paintThread = new Thread(() =>
+            {
+                while (true)
+                {
+                    Ui.Instance().Draw();
+                    Thread.Sleep(Globals.REFRESH_RATE);
+                }
+            });
+            paintThread.Start(); 
+        }
+    }
+}

@@ -37,6 +37,10 @@ namespace Services.Services.Objects.Singletons
         {
             drawables = new List<IDrawable>();
             UpdateScreen = true;
+            for (var y = 0; y < Globals.Y_MAX_BOARD_SIZE; ++y)
+            {
+                view[y] = new char[Globals.X_MAX_BOARD_SIZE];
+            }
             ClearView();
         }
 
@@ -67,6 +71,36 @@ namespace Services.Services.Objects.Singletons
                 UpdateScreen = false;
             }
         }
+        /// <summary>
+        /// Piešia konsolėj
+        /// </summary>
+        [STAThread]
+        public void Draw()
+        {
+            if (!UpdateScreen)
+            {
+                return;
+            }
+            ClearView();
+
+            foreach (var drawable in drawables.OrderBy(t => t.Priority))
+            {
+                foreach (var pixel in drawable.Content)
+                {
+                    view[drawable.Position.Y + pixel.Key.Y][drawable.Position.X + pixel.Key.X] = pixel.Value;
+                }
+            }
+
+            var sb = new StringBuilder();
+            foreach (var line in view)
+            {
+                sb.AppendLine(new string(line));
+            }
+            Console.SetCursorPosition(0, 0);
+            Console.Write(sb.ToString());
+            UpdateScreen = false;
+
+        }
 
         public void AddDrawableItem(IDrawable drawable)
         {
@@ -80,14 +114,18 @@ namespace Services.Services.Objects.Singletons
 
         private void ClearView()
         {
-            for (int i = 0; i < Globals.Y_MAX_BOARD_SIZE; i++)
-            {
-                view[i] = new char[Globals.X_MAX_BOARD_SIZE];
-                for (int j = 0; j < Globals.X_MAX_BOARD_SIZE; j++)
-                {
-                    view[i][j] = Globals.BACKGROUND_DEFAULT_VALUE;
-                }
-            }
+            for (int y = 0; y < Globals.Y_MAX_BOARD_SIZE; ++y)
+                for (int x = 0; x < Globals.X_MAX_BOARD_SIZE; ++x)
+                    view[y][x] = Globals.BACKGROUND_DEFAULT_VALUE;
+
+            //for (int i = 0; i < Globals.Y_MAX_BOARD_SIZE; i++)
+            //{
+            //    view[i] = new char[Globals.X_MAX_BOARD_SIZE];
+            //    for (int j = 0; j < Globals.X_MAX_BOARD_SIZE; j++)
+            //    {
+            //        view[i][j] = Globals.BACKGROUND_DEFAULT_VALUE;
+            //    }
+            //}
         }
 
         private bool UpdateScreen { get; set; }

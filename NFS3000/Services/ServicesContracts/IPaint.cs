@@ -8,6 +8,7 @@ namespace Services.ServicesContracts
     public interface IPaint
     {
         void Draw(TextBox textBox);
+        void Draw();
         void AddDrawableItem(IDrawable drawable);
         void RequireScreenUpdate();
     }
