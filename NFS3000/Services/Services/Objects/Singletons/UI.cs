@@ -96,8 +96,8 @@ namespace Services.Services.Objects.Singletons
             {
                 sb.AppendLine(new string(line));
             }
-            Console.SetCursorPosition(0, 0);
             Console.Write(sb.ToString());
+            Console.SetCursorPosition(0, 0);
             UpdateScreen = false;
 
         }

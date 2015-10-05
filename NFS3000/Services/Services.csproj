@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
@@ -45,7 +49,7 @@
     <Compile Include="ServicesContracts\IModelLoader.cs" />
     <Compile Include="ServicesContracts\IPaint.cs" />
     <Compile Include="ServicesContracts\Objects\ICollectable.cs" />
-    <Compile Include="ServicesContracts\Objects\IMoveable.cs" />
+    <Compile Include="ServicesContracts\Objects\IMovable.cs" />
     <Compile Include="ServicesContracts\Objects\IDrawable.cs" />
     <Compile Include="ServicesContracts\Objects\IMap.cs" />
     <Compile Include="ServicesContracts\Objects\IObsticle.cs" />
@@ -60,6 +64,7 @@
     <Compile Include="Services\Objects\HighScoreItem.cs" />
     <Compile Include="Services\Objects\Map.cs" />
     <Compile Include="Services\Objects\Meniu.cs" />
+    <Compile Include="Services\Objects\Obsticle.cs" />
     <Compile Include="Services\Objects\Player.cs" />
     <Compile Include="Services\Objects\Singletons\FileSingleton.cs" />
     <Compile Include="Services\Objects\Singletons\ModelLoader.cs" />
@@ -70,9 +75,11 @@
     <Compile Include="ServicesContracts\Objects\ICar.cs" />
     <Compile Include="ServicesContracts\Objects\IPlayer.cs" />
     <Compile Include="Services\Objects\Nitro.cs" />
+    <Compile Include="Trash\MapStructure.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LD1.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">

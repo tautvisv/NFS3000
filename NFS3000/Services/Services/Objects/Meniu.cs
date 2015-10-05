@@ -21,10 +21,5 @@ namespace Services.Services.Objects
         {
             get { throw new NotImplementedException(); }
         }
-
-        public bool UpdateScreen
-        {
-            get { throw new NotImplementedException(); }
-        }
     }
 }

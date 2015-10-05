@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Services.ServicesContracts;
 using Services.ServicesContracts.Objects;
 
@@ -12,8 +9,15 @@ namespace Services.Services.Objects.Singletons
     {
         private static ScoreCounter instance;
         private static IList<HighScoreItem> highScores = new List<HighScoreItem>();
+        private static IDictionary<IPlayer, int> Scores { get; set; }
+        private static IList<IPlayer> Players { get; set; }
         private static readonly object lockInstanceObj = new object();
-        
+
+        private ScoreCounter()
+        {
+            Players = new List<IPlayer>();
+            Scores = new Dictionary<IPlayer, int>();
+        }
 
         public static ScoreCounter Instance()
         {
@@ -29,12 +33,12 @@ namespace Services.Services.Objects.Singletons
 
         public void AddPlayer(IPlayer player)
         {
-            throw new NotImplementedException();
+            Players.Add(player);
+            Scores.Add(player, 0);
         }
         public int GetScore(IPlayer player)
         {
-            throw new NotImplementedException();
-            return 0;
+            return Scores[player];
         }
         public IList<HighScoreItem> GetHighScores()
         {
@@ -42,13 +46,19 @@ namespace Services.Services.Objects.Singletons
         }
         public int UpdateScore(IIncrementScore thisEvent, IPlayer player)
         {
-            throw new NotImplementedException();
-            return 0;
+            return Scores[player] = thisEvent.IncrementScore(Scores[player]);
         }
         public void ResetScores()
         {
-            Console.WriteLine("I am doing something!!!");
-            highScores.Clear();
+            foreach (var score in Scores)
+            {
+                Scores[score.Key] = 0;
+            }
+        }
+
+        public int GetPlayerCount()
+        {
+            return Players.Count;
         }
 
         public void Dispose()

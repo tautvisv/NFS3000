@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using Data;
 using Services.Services.Objects;
 using Services.Services.Objects.Singletons;
@@ -26,10 +22,11 @@ namespace GameConsole
 
         public void Initialise()
         {
+            Console.CursorVisible = false;
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
             //TODO parinkti protingai aukštį bei plotį
-            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+            Console.SetWindowSize(Globals.X_MAX_BOARD_SIZE, Globals.Y_MAX_BOARD_SIZE);
             DoTestStuff();
         }
         public void StartGame()

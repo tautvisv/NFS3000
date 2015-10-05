@@ -15,5 +15,6 @@ namespace Services.ServicesContracts
         IList<HighScoreItem> GetHighScores();
         int UpdateScore(IIncrementScore thisEvent, IPlayer player);
         void ResetScores();
+        int GetPlayerCount();
     }
 }

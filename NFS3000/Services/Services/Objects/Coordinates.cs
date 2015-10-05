@@ -3,6 +3,7 @@ using System.Collections;
 
 namespace Services.Services.Objects
 {
+    [Serializable]
     public class Coordinates : IEquatable<Coordinates>
     {
         public Coordinates()

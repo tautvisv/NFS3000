@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{FD42092E-BC34-41DF-864C-8C99BEE8CD23}"
 EndProject
@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{EAC05059-5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{B98E3AA4-90AE-42A5-9D25-FB29237ED1AB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8B5D085E-5B4D-4F43-8D6F-8445C69223BE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{8B5D085E-5B4D-4F43-8D6F-8445C69223BE}"
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Models", "Models\Models.modelproj", "{5CE853C4-82E3-4CD5-A48F-D5EE7EA39C73}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -23,6 +23,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{718E9BB1-B674-4A52-AFBF-281FD8254606}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameConsole", "GameConsole\GameConsole.csproj", "{4D7DE392-A758-447A-9384-C9E2D0A8E78B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapGenerator", "MapGenerator\MapGenerator.csproj", "{D5620C86-AFA3-4840-96C3-2D22FB520FF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,6 +86,16 @@ Global
 		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{4D7DE392-A758-447A-9384-C9E2D0A8E78B}.Release|x86.ActiveCfg = Release|Any CPU
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,5 +105,6 @@ Global
 		{D153CB21-5FD6-4C61-9012-8BBABFAD1F3F} = {FD42092E-BC34-41DF-864C-8C99BEE8CD23}
 		{718E9BB1-B674-4A52-AFBF-281FD8254606} = {EAC05059-52A1-4A05-8106-D4A88B46CB32}
 		{4D7DE392-A758-447A-9384-C9E2D0A8E78B} = {FD42092E-BC34-41DF-864C-8C99BEE8CD23}
+		{D5620C86-AFA3-4840-96C3-2D22FB520FF1} = {8B5D085E-5B4D-4F43-8D6F-8445C69223BE}
 	EndGlobalSection
 EndGlobal

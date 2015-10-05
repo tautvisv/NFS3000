@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using Data;
 using Services.Services.Objects.Singletons;
@@ -12,8 +13,13 @@ namespace Services.Services.Objects
         {
             Content = ModelLoader.Instance().LoadModel("Car");
             Priority = 100;
-            Position =  new Coordinates(10, 10);
+            Position = new Coordinates(10, 10);
+            Width = Content.Max(t => t.Key.X) - Content.Min(t => t.Key.X);
+            Length = Content.Max(t => t.Key.Y) - Content.Min(t => t.Key.Y);
         }
+
+        private int Width { get; set; }
+        private int Length { get; set; }
 
         public Coordinates Position { get; protected set; }
         public int Priority { get; protected set; }
@@ -32,7 +38,7 @@ namespace Services.Services.Objects
 
         public void SetCarNumber(int number)
         {
-            char numberChar = number.ToString().FirstOrDefault();
+            char numberChar = number.ToString(CultureInfo.InvariantCulture).FirstOrDefault();
             var coordinates = new Coordinates(1, 3);
             if (Content.ContainsKey(coordinates))
             {
@@ -55,7 +61,7 @@ namespace Services.Services.Objects
         public void MoveRight()
         {
             //TODO some boom logic
-            if (Position.X > Globals.X_MAX_BOARD_SIZE-3)
+            if (Position.X > Globals.X_MAX_BOARD_SIZE-Width-2)
                 return;
             Position.X += 1;
         }
@@ -71,7 +77,7 @@ namespace Services.Services.Objects
         public void MoveDown()
         {
             //TODO some boom logic
-            if (Position.Y == Globals.Y_MAX_BOARD_SIZE-1)
+            if (Position.Y == Globals.Y_MAX_BOARD_SIZE-Length-1)
                 return;
             Position.Y += 1;
         }
