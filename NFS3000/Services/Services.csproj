@@ -48,10 +48,12 @@
     <Compile Include="ServicesContracts\IDataWriter.cs" />
     <Compile Include="ServicesContracts\IModelLoader.cs" />
     <Compile Include="ServicesContracts\IPaint.cs" />
+    <Compile Include="ServicesContracts\Objects\AIObject.cs" />
     <Compile Include="ServicesContracts\Objects\ICollectable.cs" />
     <Compile Include="ServicesContracts\Objects\IMovable.cs" />
     <Compile Include="ServicesContracts\Objects\IDrawable.cs" />
     <Compile Include="ServicesContracts\Objects\IMap.cs" />
+    <Compile Include="ServicesContracts\Objects\IMove.cs" />
     <Compile Include="ServicesContracts\Objects\IObsticle.cs" />
     <Compile Include="Services\Objects\Car.cs" />
     <Compile Include="Services\Objects\Coordinates.cs" />

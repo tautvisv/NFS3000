@@ -54,7 +54,7 @@ namespace Services.Services.Objects.Singletons
             lock (mainBox)
             {
                 ClearView();
-                foreach (var drawable in drawables.OrderBy(t => t.Priority))
+                foreach (var drawable in drawables)
                 {
                     foreach (var pixel in drawable.Content)
                     {
@@ -83,7 +83,7 @@ namespace Services.Services.Objects.Singletons
             }
             ClearView();
 
-            foreach (var drawable in drawables.OrderBy(t => t.Priority))
+            foreach (var drawable in drawables)
             {
                 foreach (var pixel in drawable.Content)
                 {
@@ -105,6 +105,7 @@ namespace Services.Services.Objects.Singletons
         public void AddDrawableItem(IDrawable drawable)
         {
             drawables.Add(drawable);
+            drawables = drawables.OrderBy(t => t.Priority).ToList();
         }
 
         public void RequireScreenUpdate()

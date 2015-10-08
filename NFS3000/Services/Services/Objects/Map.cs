@@ -1,27 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 using Data;
 
 using Newtonsoft.Json;
 
 using Services.Services.Objects.Factories;
+using Services.Services.Objects.Singletons;
 using Services.ServicesContracts.Objects;
 using Services.Trash;
+using System.Text;
 
 namespace Services.Services.Objects
 {
-    class Map : IMap
+    public class Map : AIObject, IMap
     {
         private Factory carFactory = new CarFactory();
         private Factory obsticlesFactory = new ObsticlesFactory();
         private IList<IDrawable> obsticles = new List<IDrawable>();
         public int Width { get; private set; }
         public int Height { get; private set; }
+        private int CurrentPosition { get; set; }
+        private readonly char[][] mapFences = new char[2][]; 
         public Map(Factory carFactory, Factory obsticlesFactory)
         {
+            RequeredTicksToMove = 3;
+            Position = new Coordinates();
+            Content = new Dictionary<Coordinates, char>();
+            CurrentPosition = 0;
+            for (int i = 0; i < mapFences.Length; i++)
+            {
+                mapFences[i] = new char[Globals.Y_MAX_BOARD_SIZE];
+                for (int j = 0; j < mapFences[i].Length; j++)
+                {
+                    mapFences[i][j] = j % 3 == 1 ? Globals.BACKGROUND_DEFAULT_VALUE : '+';
+                }
+            }
             this.carFactory = carFactory;
             this.obsticlesFactory = obsticlesFactory;
             var jsonText = File.ReadAllText(Globals.MODELS_PATH + "asd" + Globals.MODELS_FILES_EXTENSION);
@@ -40,6 +54,7 @@ namespace Services.Services.Objects
                         return;
                 }
             }
+            RecreateFences();
         }
 
         private void TakeObject(Factory obsticlesFactory, MapObjects mapObject)
@@ -51,28 +66,35 @@ namespace Services.Services.Objects
         }
 
         public Coordinates Position { get; private set; }
-        public void MoveLeft()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void MoveRight()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void MoveUp()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void MoveDown()
-        {
-            throw new System.NotImplementedException();
-        }
 
         public int Priority { get; private set; }
 
         public IDictionary<Coordinates, char> Content { get; private set; }
+
+        private void RecreateFences()
+        {
+            Content.Clear();
+            for (int i = 0; i < mapFences.Length; i++)
+            {
+                var fenceXCoordinate = i == 0 ? 0 : Globals.X_MAX_BOARD_SIZE - 1;
+                for (int j = 0; j < mapFences[i].Length; j++)
+                {
+                    var fenceYCoordinate = (CurrentPosition + j) % Globals.Y_MAX_BOARD_SIZE;
+                    Content.Add(new Coordinates(fenceXCoordinate, fenceYCoordinate), mapFences[i][j]);
+                }
+
+            }
+        }
+
+        public override void Move()
+        {
+            CurrentTick++;
+            if (CurrentTick == 0)
+            {
+                RecreateFences();
+                CurrentPosition++;
+                Ui.Instance().RequireScreenUpdate();
+            }
+        }
     }
 }

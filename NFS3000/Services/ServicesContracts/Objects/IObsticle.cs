@@ -1,6 +1,6 @@
 ﻿namespace Services.ServicesContracts.Objects
 {
-    public interface IObsticle : ICollectable
+    public interface IObsticle : ICollectable, IMove
     {
     }
 }

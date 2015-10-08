@@ -2,8 +2,10 @@
 using System.Threading;
 using Data;
 using Services.Services.Objects;
+using Services.Services.Objects.Factories;
 using Services.Services.Objects.Singletons;
 using Services.ServicesContracts.Objects;
+using Services.Trash;
 
 namespace GameConsole
 {
@@ -72,6 +74,7 @@ namespace GameConsole
             //TODO Perkelti jaučiu reikia į move funkciją
             Ui.Instance().RequireScreenUpdate();
         }
+
         public void DoTestStuff()
         {
             var car1 = new Car();
@@ -84,11 +87,15 @@ namespace GameConsole
             player2.Car = car2;
             Ui.Instance().AddDrawableItem(car2);
             Ui.Instance().AddDrawableItem(car1);
+            var map = new Map(new CarFactory(), new ObsticlesFactory());
+            Ui.Instance().AddDrawableItem(map);
             paintThread = new Thread(() =>
             {
                 while (true)
                 {
                     Ui.Instance().Draw();
+                    //Reikia physics engine Object
+                    map.Move();
                     Thread.Sleep(Globals.REFRESH_RATE);
                 }
             });

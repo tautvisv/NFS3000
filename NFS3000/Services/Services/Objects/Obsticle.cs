@@ -13,5 +13,10 @@ namespace Services.Services.Objects
         {
             throw new System.NotImplementedException();
         }
+
+        public void Move()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
