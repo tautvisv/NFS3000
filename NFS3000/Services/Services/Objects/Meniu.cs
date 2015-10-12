@@ -10,6 +10,7 @@ namespace Services.Services.Objects
         private IDrawable HighScores { get; set; }
         private IDrawable Upgrades { get; set; }
         private IDrawable SetName { get; set; }
+        private IDrawable Map { get; set; }
         public Coordinates Position { get; private set; }
 
         public int Priority
@@ -20,6 +21,12 @@ namespace Services.Services.Objects
         public IDictionary<Coordinates, char> Content
         {
             get { throw new NotImplementedException(); }
+        }
+
+        public bool ShouldBeDrawn(int screenTop, int screenBottom)
+        // me no exist now
+        {
+            throw new NotImplementedException();
         }
     }
 }

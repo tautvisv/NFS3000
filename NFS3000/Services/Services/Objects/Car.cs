@@ -25,6 +25,10 @@ namespace Services.Services.Objects
         public int Priority { get; protected set; }
 
         public IDictionary<Coordinates, char> Content { get; protected set; }
+        public bool ShouldBeDrawn(int screenTop, int screenBottom)
+        {
+            return Position.Y >= screenTop && Position.Y < screenBottom + Length;
+        }
 
         public string Name { get; set; }
 

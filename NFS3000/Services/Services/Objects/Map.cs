@@ -9,7 +9,6 @@ using Services.Services.Objects.Factories;
 using Services.Services.Objects.Singletons;
 using Services.ServicesContracts.Objects;
 using Services.Trash;
-using System.Text;
 
 namespace Services.Services.Objects
 {
@@ -20,14 +19,12 @@ namespace Services.Services.Objects
         private IList<IDrawable> obsticles = new List<IDrawable>();
         public int Width { get; private set; }
         public int Height { get; private set; }
-        private int CurrentPosition { get; set; }
         private readonly char[][] mapFences = new char[2][]; 
         public Map(Factory carFactory, Factory obsticlesFactory)
         {
             RequeredTicksToMove = 3;
             Position = new Coordinates();
             Content = new Dictionary<Coordinates, char>();
-            CurrentPosition = 0;
             for (int i = 0; i < mapFences.Length; i++)
             {
                 mapFences[i] = new char[Globals.Y_MAX_BOARD_SIZE];
@@ -70,6 +67,12 @@ namespace Services.Services.Objects
         public int Priority { get; private set; }
 
         public IDictionary<Coordinates, char> Content { get; private set; }
+        public bool ShouldBeDrawn(int screenTop, int screenBottom)
+        {
+            Position.Y++;
+            // fu draw me 
+            return true;
+        }
 
         private void RecreateFences()
         {
@@ -79,7 +82,7 @@ namespace Services.Services.Objects
                 var fenceXCoordinate = i == 0 ? 0 : Globals.X_MAX_BOARD_SIZE - 1;
                 for (int j = 0; j < mapFences[i].Length; j++)
                 {
-                    var fenceYCoordinate = (CurrentPosition + j) % Globals.Y_MAX_BOARD_SIZE;
+                    var fenceYCoordinate = (Ui.CurrentPosition + j) % Globals.Y_MAX_BOARD_SIZE;
                     Content.Add(new Coordinates(fenceXCoordinate, fenceYCoordinate), mapFences[i][j]);
                 }
 
@@ -92,7 +95,6 @@ namespace Services.Services.Objects
             if (CurrentTick == 0)
             {
                 RecreateFences();
-                CurrentPosition++;
                 Ui.Instance().RequireScreenUpdate();
             }
         }

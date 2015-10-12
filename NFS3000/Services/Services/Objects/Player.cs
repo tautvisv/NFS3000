@@ -12,5 +12,9 @@ namespace Services.Services.Objects
         public Coordinates Position { get; private set; }
         public int Priority { get; private set; }
         public IDictionary<Coordinates, char> Content { get; private set; }
+        public bool ShouldBeDrawn(int screenTop, int screenBottom)
+        {
+            return true;
+        }
     }
 }

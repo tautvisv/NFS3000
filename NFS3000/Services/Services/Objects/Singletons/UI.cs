@@ -17,6 +17,8 @@ namespace Services.Services.Objects.Singletons
         private IList<IDrawable> drawables;
         private static Ui instance;
         private static readonly object LockInstanceObj = new object();
+        // TODO: Move out to currently not created physics engine
+        public static int CurrentPosition { get; private set; }
 
         public static Ui Instance()
         {
@@ -35,6 +37,7 @@ namespace Services.Services.Objects.Singletons
 
         private Ui()
         {
+            CurrentPosition = 0;
             drawables = new List<IDrawable>();
             UpdateScreen = true;
             for (var y = 0; y < Globals.Y_MAX_BOARD_SIZE; ++y)
@@ -77,20 +80,25 @@ namespace Services.Services.Objects.Singletons
         [STAThread]
         public void Draw()
         {
+            // TODO: remove this car ++
             if (!UpdateScreen)
             {
                 return;
             }
             ClearView();
 
+            CurrentPosition++;
+
             foreach (var drawable in drawables)
             {
+                if (drawable.ShouldBeDrawn(CurrentPosition, CurrentPosition+Globals.Y_MAX_BOARD_SIZE))
                 foreach (var pixel in drawable.Content)
                 {
-                    view[drawable.Position.Y + pixel.Key.Y][drawable.Position.X + pixel.Key.X] = pixel.Value;
+                    view[drawable.Position.Y + pixel.Key.Y - CurrentPosition][drawable.Position.X + pixel.Key.X] = pixel.Value;
                 }
             }
 
+            foreach (var car in drawables.Where(t => t is Car)) { car.Position.Y++; }
             var sb = new StringBuilder();
             foreach (var line in view)
             {

@@ -8,5 +8,12 @@ namespace Services.ServicesContracts.Objects
         Coordinates Position { get; }
         int Priority { get; }
         IDictionary<Coordinates, char> Content { get; }
+        /// <summary>
+        /// Should be drawn on the map.
+        /// </summary>
+        /// <param name="screenTop">By Y map coordinate.</param>
+        /// <param name="screenBottom">By Y map coordinate.</param>
+        /// <returns></returns>
+        bool ShouldBeDrawn(int screenTop, int screenBottom);
     }
 }
