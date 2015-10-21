@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="5edc99a2-87e8-400d-810a-4f1e77116997" name="singletons" linkedPackageId="d25b4d67-2f78-4b47-bc64-affee28e760f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="f8ec53af-3c21-4331-8309-bdba2a6b9f7d">
-      <profileInstance Id="79077ac5-3651-457a-89a7-1af7ff55b226" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="9d7c60ff-0477-4bbc-8c9d-4c54204777c9">
-      <profileInstance Id="07c33a48-65e5-435c-9bbe-08b3a3fd61b1" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="aa071142-d81b-4b2b-aa48-bb10bff91b99">
-      <profileInstance Id="650e37b9-aa7d-4806-9691-baa282876b41" name="CSharpProfile">
-        <elementDefinition Id="80f6aabc-6db1-4147-844e-d9c52dc1def0" />
-      </profileInstance>
-      <elementDefinition Id="328e86fc-98d8-4217-89ed-c554a16f95ce" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="2556ed53-682b-43a7-8e2e-59c8a0647a82" name="UI" isAbstract="false" isLeaf="true" isActiveClass="false">
@@ -1796,6 +1776,35 @@
             </appliedStereotypesInternal>
             <elementDefinition Id="e651484e-0d56-40ac-a662-ba747bb5d96a" />
           </operation>
+          <operation Id="565b49d8-04b2-4b73-9eb4-f49be7ed4511" name="ShouldBeDrawn" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8756ce72-026b-4986-b347-403ca4be712e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c30fc648-3e97-47eb-ba2e-2daa3f0af3a1" name="screenTop" direction="In">
+                  <elementDefinition Id="814487c1-490b-4ef2-8c52-85b4c92cc29d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="56503a97-82e8-4da9-b6e5-1c4f27aee0f8" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4cf6b0d1-456d-451f-8258-bc3c45a2bf9f" name="screenBottom" direction="In">
+                  <elementDefinition Id="4d4b99e4-2638-4f43-815f-36bf240653fe" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="56503a97-82e8-4da9-b6e5-1c4f27aee0f8" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d1ab0331-b1ef-40f9-bb4a-cfcf7438c885" direction="Return">
+                  <elementDefinition Id="5c0c3f70-7f11-4c87-a2ee-f74229bd346f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="17029a58-4736-495f-89d5-b649ae07f19b" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -2103,7 +2112,7 @@
     <logicalClassDesignerModelHasTypes>
       <Interface Id="39b1459d-9d69-4fb4-8e78-6c18137cc290" name="IDrawable" isAbstract="false" isLeaf="false">
         <referencesInternal>
-          <reference Id="a089e024-3524-43b7-aa53-333ac9edf412" handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable" tag="ViewCode">
+          <reference Id="a089e024-3524-43b7-aa53-333ac9edf412" handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable" tag="ViewCode">
             <elementDefinition Id="07e63d1f-9bd4-4906-83ff-9730a8ec42de" />
           </reference>
         </referencesInternal>
@@ -2142,7 +2151,7 @@
         <ownedAttributes>
           <property Id="db529b1a-7962-431a-a74d-f994d9b3f69b" name="Priority" isLeaf="false" isStatic="false" isReadOnly="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <referencesInternal>
-              <reference Id="f77501d2-ad71-474f-b6d6-de6e0c0c732b" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable Member%3DPriority" tag="ViewCode">
+              <reference Id="f77501d2-ad71-474f-b6d6-de6e0c0c732b" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable Member%3DPriority" tag="ViewCode">
                 <elementDefinition Id="d2fb2ad1-74f0-401b-a40d-81570e4d7b8f" />
               </reference>
             </referencesInternal>
@@ -2202,7 +2211,7 @@
           </property>
           <property Id="8eb085cf-6503-4844-a3f7-e5845e578816" name="Content" isLeaf="false" isStatic="false" isReadOnly="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <referencesInternal>
-              <reference Id="50ca72d9-253e-41c7-8fa8-2b8e6f76073d" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable Member%3DContent" tag="ViewCode">
+              <reference Id="50ca72d9-253e-41c7-8fa8-2b8e6f76073d" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable Member%3DContent" tag="ViewCode">
                 <elementDefinition Id="56144013-a37a-45ab-994f-90c3d8b10e12" />
               </reference>
             </referencesInternal>
@@ -2260,67 +2269,156 @@
               <referencedTypeMoniker Id="c0b76c18-dbaf-4c5c-9477-412bac59f2ea" LastKnownName="IDictionary&lt;Coordinates‎, Char‎&gt;" />
             </type_NamedElement>
           </property>
-          <property Id="e9c74e97-7ac3-49a3-9156-819c4332ea1d" name="UpdateScreen" isLeaf="false" isStatic="false" isReadOnly="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="226b157b-0f7e-4361-966d-ab0e80223cf3" name="Position" isLeaf="false" isStatic="false" isReadOnly="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <referencesInternal>
-              <reference Id="5178e4e4-36fc-41dd-9d31-b790bb9cc841" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable Member%3DUpdateScreen" tag="ViewCode">
-                <elementDefinition Id="013d282f-8b90-47ee-82da-fd86284e8cff" />
+              <reference Id="96e1cd70-c042-475a-8917-f506592cbc7e" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable Member%3DPosition" tag="ViewCode">
+                <elementDefinition Id="6425dac6-294e-4e48-afeb-6179e7bb302d" />
               </reference>
             </referencesInternal>
             <appliedStereotypesInternal>
-              <stereotypeInstance Id="3b5e0235-3120-4416-b522-39c4b1837a89" name="property" profile="CSharpProfile">
-                <elementDefinition Id="3a6c0032-200c-45e7-99c3-7e08c25866ac" />
+              <stereotypeInstance Id="43ab66f9-406c-4907-a579-3e109fb853c5" name="property" profile="CSharpProfile">
+                <elementDefinition Id="5268ec58-45fe-4446-baee-2be7c7830f86" />
                 <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="869095cc-fa8d-4e1d-aa04-667cbe88261c">
-                    <propertyInstance Id="65db0362-44b5-4218-9646-0f87b1233ec8" name="ClrAttributes">
-                      <elementDefinition Id="5816013e-b27c-4b76-b225-e81016359af4" />
+                  <stereotypeInstanceHasPropertyInstances Id="3618629a-e771-4645-96db-526aac4a6466">
+                    <propertyInstance Id="56e807d7-fbbe-4a04-b76b-d5ce31c64733" name="ClrAttributes">
+                      <elementDefinition Id="38822ca9-bbdd-4fee-b7fa-1443ced33c76" />
                     </propertyInstance>
-                    <elementDefinition Id="a8baa244-d04a-4f8a-80ce-05f4f57fc01c" />
+                    <elementDefinition Id="8fe72553-538a-4626-bb1e-abd3ba7ecf9b" />
                   </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="825a6804-29f9-4eef-bb4e-eaa913356012">
-                    <propertyInstance Id="7bcbc7cc-5681-4cf1-8be3-b92e959c32dc" name="Get" value="public">
-                      <elementDefinition Id="5cb7c867-7a2a-43a6-b76f-5cecd7c6aa49" />
+                  <stereotypeInstanceHasPropertyInstances Id="02482e06-f1b8-4f11-8267-75b733168627">
+                    <propertyInstance Id="88aed66e-bcf0-4bf1-baee-d6264e5ca991" name="Get" value="public">
+                      <elementDefinition Id="11d4c653-60b5-4463-a905-022263db716b" />
                     </propertyInstance>
-                    <elementDefinition Id="2af57e33-9a5d-412d-92b4-cd2ca2943301" />
+                    <elementDefinition Id="b30dcef6-a169-4733-b121-33ee9d062592" />
                   </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="b3afe66f-67b1-400f-a593-721b80a53784">
-                    <propertyInstance Id="73872802-2ef4-48f4-bf05-81f6415fbdb8" name="HasBody" value="false">
-                      <elementDefinition Id="4d46ee67-70de-4ead-8c4c-fbcd8beb2647" />
+                  <stereotypeInstanceHasPropertyInstances Id="2d86f69b-51d8-4352-82bf-abef3a03d0aa">
+                    <propertyInstance Id="06ccdfeb-1641-4a64-b3cd-7bce49cf3c40" name="HasBody" value="false">
+                      <elementDefinition Id="c03045b4-89fd-42d1-bce5-e7701f398624" />
                     </propertyInstance>
-                    <elementDefinition Id="7ffeb2c1-d8f3-416b-a088-d95761a77196" />
+                    <elementDefinition Id="87ffef66-0691-4a69-925f-84d8f5307bd0" />
                   </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="4a284d36-6e49-4373-9bbf-3edaf28e0c7c">
-                    <propertyInstance Id="127c5647-f505-4fa3-9e13-6fa29421d985" name="IsUnsafe" value="false">
-                      <elementDefinition Id="f1c5ef63-7364-4d9d-90fa-7b64e4608048" />
+                  <stereotypeInstanceHasPropertyInstances Id="3f5f37a0-6bdc-40d3-acff-9c414f2c69b1">
+                    <propertyInstance Id="33b327df-0776-4308-b5d7-dc985f7ffe37" name="IsUnsafe" value="false">
+                      <elementDefinition Id="977069ac-7b94-4b9d-9b3b-3ef99a2052e8" />
                     </propertyInstance>
-                    <elementDefinition Id="6f1b10a9-0320-4d07-a1b4-b6fd44590bc5" />
+                    <elementDefinition Id="350d6451-7504-427a-a0a6-4dd272bd53f3" />
                   </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="88be6023-1827-4d32-8ccb-6c9a28a7d74a">
-                    <propertyInstance Id="3d9d4a4a-80fb-44e9-b725-ec01ec6ee1e2" name="Inheritance" value="none">
-                      <elementDefinition Id="b1472b86-961d-416f-9139-eea178b86d6a" />
+                  <stereotypeInstanceHasPropertyInstances Id="16824d74-9207-4a7b-a9e6-984484734280">
+                    <propertyInstance Id="9f483a96-54fa-43b3-9ae6-d07923e08963" name="Inheritance" value="none">
+                      <elementDefinition Id="2709225e-4d39-4858-a130-bbe5a12f7402" />
                     </propertyInstance>
-                    <elementDefinition Id="ad24b104-4294-4aa8-99f7-d63ea23b490e" />
+                    <elementDefinition Id="46559158-fdf3-45b5-a4fc-48c0a1bbf171" />
                   </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="3db82a80-0f08-441f-8347-c74d40540ff7">
-                    <propertyInstance Id="a6000a3e-115d-4ae8-9420-49d2f7dd4be6" name="PackageVisibility" value="internal">
-                      <elementDefinition Id="3c730c6f-f659-4b1f-b330-befb807352a5" />
+                  <stereotypeInstanceHasPropertyInstances Id="071dd0eb-1714-4ab4-9077-e8299e503f7f">
+                    <propertyInstance Id="7d66c3db-a37c-4d8a-be16-e109f0b10cb0" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="80eea1fe-ffe3-4983-9386-09cb00686deb" />
                     </propertyInstance>
-                    <elementDefinition Id="08631bd6-2328-4d72-af8c-d0b18ed8fbe3" />
+                    <elementDefinition Id="e0f1d501-3ba1-4183-9db7-eabf0c6e9d8f" />
                   </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="94e12d79-98e7-4f96-bcab-4e30f823f1e4">
-                    <propertyInstance Id="e6af5d88-ca05-44e7-928f-4cfa18440285" name="Set" value="none">
-                      <elementDefinition Id="504465b8-dbbc-441b-b5dc-c74b78ab39fa" />
+                  <stereotypeInstanceHasPropertyInstances Id="4c3ced6e-e736-4def-ab40-4a14f932b273">
+                    <propertyInstance Id="a41d2c80-ee2a-41ca-b3ea-bb2607568db4" name="Set" value="none">
+                      <elementDefinition Id="580e8bd4-9626-44c5-b47a-806f61ff7ded" />
                     </propertyInstance>
-                    <elementDefinition Id="eb04b8b2-dc3e-4223-a979-059940a74cb2" />
+                    <elementDefinition Id="0749b2d0-e954-49af-9541-3ee0e337af7d" />
                   </stereotypeInstanceHasPropertyInstances>
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-            <elementDefinition Id="e24f80d5-5c7f-453f-a03f-559e863e5ace" />
+            <elementDefinition Id="ae21f06e-445a-4aa0-8e95-7dff6a0bf2cb" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="17029a58-4736-495f-89d5-b649ae07f19b" LastKnownName="Boolean" />
+              <referencedTypeMoniker Id="4ba98718-3523-40f8-84a8-8dd234f4e5a3" LastKnownName="Coordinates" />
             </type_NamedElement>
           </property>
         </ownedAttributes>
+        <ownedOperations>
+          <operation Id="4e278f6f-5481-4610-909f-8ebd850e882d" name="ShouldBeDrawn" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="c6d04e31-9632-4128-a8d2-00a27aee1d5e" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable Member%3D(Name%3DShouldBeDrawn OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])" tag="ViewCode">
+                <elementDefinition Id="cef69838-0f9f-4435-936c-ebe2681808f3" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="7ef63d5a-66cd-4f82-80f6-05a4bdddf130" name="method" profile="CSharpProfile">
+                <elementDefinition Id="d9138875-aeb7-4b82-ab64-116e62eb739a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c6573a9f-e003-4970-97e2-47d37fa467db">
+                    <propertyInstance Id="0b8787f0-b6fc-4d36-8713-0b8f18c7c289" name="ClrAttributes">
+                      <elementDefinition Id="c15ee632-113e-4132-a7ba-891d46b88929" />
+                    </propertyInstance>
+                    <elementDefinition Id="a678d35a-5d6f-440f-ab3b-80fe12a7d6f6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="59dfb70c-26e3-4cf4-b362-64c671a0fa87">
+                    <propertyInstance Id="941c2d19-3b31-4e15-9436-f9896e33d3fd" name="IsPartial" value="false">
+                      <elementDefinition Id="f9d825d2-483a-42cb-b303-96583cf55d31" />
+                    </propertyInstance>
+                    <elementDefinition Id="33a33085-5b96-4f62-bfce-5c6ccb1b06d6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="55852330-7a32-4a08-b1fe-af9d23e0ae45">
+                    <propertyInstance Id="9d9147de-7884-44c3-8355-b67dfa2db29e" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f6edcd8f-7fba-43b1-b513-66cc8cc894df" />
+                    </propertyInstance>
+                    <elementDefinition Id="d604a7c2-d264-4f5b-8f16-d8952095bece" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e2a9f64b-d7c3-4272-93a3-4cbbde03a8fb">
+                    <propertyInstance Id="e63d7799-f654-42f3-99cb-28f863634c8a" name="Inheritance" value="none">
+                      <elementDefinition Id="6086671d-4c21-43f7-810c-9738da0163cc" />
+                    </propertyInstance>
+                    <elementDefinition Id="f6a693be-4e0c-4431-9aa1-85d6ca56ed3b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="692b5e43-92ff-4d37-a571-5ff18b5a5f22">
+                    <propertyInstance Id="8e064b85-d290-4103-a191-d2f778785771" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="4ad3283e-addc-4e09-9189-acef0d3e3958" />
+                    </propertyInstance>
+                    <elementDefinition Id="ea800e9c-954f-439a-8fb6-43eb1c4f8afb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7c696b73-d298-4e3f-97c6-3ca7dc0eb4fd">
+                    <propertyInstance Id="6b63555d-0b02-429d-9f2a-8661db7351de" name="params" value="false">
+                      <elementDefinition Id="77904125-db1b-4a7b-8ca8-fb0f9b071749" />
+                    </propertyInstance>
+                    <elementDefinition Id="e0c0055d-8ed4-4fb0-acda-ec16e881f509" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="0d3c8f5c-f8b1-4b0b-a790-32f142fefc5a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6e2bc78e-e718-434e-999c-bfc4be7ca053" direction="Return">
+                  <elementDefinition Id="9a673935-3d6a-477f-a62d-3b9838709809" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="17029a58-4736-495f-89d5-b649ae07f19b" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="633295ad-6849-4841-b022-6d37d7a621e7" name="screenTop" direction="In">
+                  <referencesInternal>
+                    <reference Id="c0e0c710-0d56-420c-a827-5f44b2eb5a6a" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable Member%3D(Name%3DShouldBeDrawn OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DscreenTop" tag="ViewCode">
+                      <elementDefinition Id="ae082ac1-f4cf-4ee0-9223-34b86c59986b" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="6566fefa-879c-4b68-8544-a9c933698de7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="56503a97-82e8-4da9-b6e5-1c4f27aee0f8" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6bf372ba-da0c-48b3-aeb4-4fcb7d0bbf6d" name="screenBottom" direction="In">
+                  <referencesInternal>
+                    <reference Id="2d00b217-ef2c-4b04-8c42-5e99d0042825" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIDrawable Member%3D(Name%3DShouldBeDrawn OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DscreenBottom" tag="ViewCode">
+                      <elementDefinition Id="4d22eeb1-6447-4ff5-adde-2f4f5b1ee666" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="f8e07a59-e4f1-4901-9c8c-a08e699a398d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="56503a97-82e8-4da9-b6e5-1c4f27aee0f8" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
@@ -2336,7 +2434,7 @@
     <logicalClassDesignerModelHasTypes>
       <Interface Id="964488d5-df2a-419e-b1ed-0b34078bae77" name="IPlayer" isAbstract="false" isLeaf="false">
         <referencesInternal>
-          <reference Id="15285844-7386-4d0f-8aaa-5b48fb8fe11e" handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer" tag="ViewCode">
+          <reference Id="15285844-7386-4d0f-8aaa-5b48fb8fe11e" handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer" tag="ViewCode">
             <elementDefinition Id="97b2a2d1-659d-4d49-89a9-37fb018f21f5" />
           </reference>
         </referencesInternal>
@@ -2372,10 +2470,16 @@
           </stereotypeInstance>
         </appliedStereotypesInternal>
         <elementDefinition Id="3a3321e4-7735-4527-8f68-2c8dfebd7bd8" />
+        <generalsInternal>
+          <generalization Id="944fc511-ebe4-495c-9012-ff0f05803b77" isSubstitutable="false">
+            <interfaceMoniker Id="39b1459d-9d69-4fb4-8e78-6c18137cc290" LastKnownName="IDrawable" />
+            <elementDefinition Id="f506f7c5-c28d-4fc9-80b4-c3b0fa2033c4" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributes>
           <property Id="cc1fde0a-55e8-45a3-bfc8-57535735a9a3" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <referencesInternal>
-              <reference Id="888f3952-6ba1-4c59-9e9e-cfa684a15952" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer Member%3DName" tag="ViewCode">
+              <reference Id="888f3952-6ba1-4c59-9e9e-cfa684a15952" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer Member%3DName" tag="ViewCode">
                 <elementDefinition Id="8fe268f3-7252-4c15-9558-a7b4076b5a54" />
               </reference>
             </referencesInternal>
@@ -2435,7 +2539,7 @@
           </property>
           <property Id="fc039f25-2a9c-4636-9e19-eca3a2deda33" name="Car" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <referencesInternal>
-              <reference Id="af446039-592d-45fb-8f42-1cc3bb298161" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FDarbai%2Fc%2523%2FNFS3000 new%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll&quot; Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer Member%3DCar" tag="ViewCode">
+              <reference Id="af446039-592d-45fb-8f42-1cc3bb298161" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIPlayer Member%3DCar" tag="ViewCode">
                 <elementDefinition Id="d194d130-8b69-4dc9-8d80-9bebb347fc3e" />
               </reference>
             </referencesInternal>
@@ -2501,8 +2605,33 @@
         <elementDefinition Id="28bf974b-a107-4ef7-aab3-fa9e17e1d180" />
       </referencedType>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4ba98718-3523-40f8-84a8-8dd234f4e5a3" name="Coordinates" isAbstract="false" isLeaf="false" cachedFullName="Models::Services::Services::Objects::Coordinates">
+        <elementDefinition Id="c6ffa116-b806-4754-9c5f-1a9ca09564e2" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="d25b4d67-2f78-4b47-bc64-affee28e760f" name="Models">
     <elementDefinition Id="815de10c-1451-4037-8cd7-c76012333712" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f8ec53af-3c21-4331-8309-bdba2a6b9f7d">
+        <profileInstance Id="79077ac5-3651-457a-89a7-1af7ff55b226" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9d7c60ff-0477-4bbc-8c9d-4c54204777c9">
+        <profileInstance Id="07c33a48-65e5-435c-9bbe-08b3a3fd61b1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="aa071142-d81b-4b2b-aa48-bb10bff91b99">
+        <profileInstance Id="650e37b9-aa7d-4806-9691-baa282876b41" name="CSharpProfile">
+          <elementDefinition Id="80f6aabc-6db1-4147-844e-d9c52dc1def0" />
+        </profileInstance>
+        <elementDefinition Id="328e86fc-98d8-4217-89ed-c554a16f95ce" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

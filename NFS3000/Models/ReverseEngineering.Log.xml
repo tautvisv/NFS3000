@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="file:///E:/PROGRAMS/VISUAL STUDIO 2013/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
 <Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
   <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
   <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="High" Text="Reverse Engineering Started." />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services' -  (Package)" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts' -  (Package)" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects' -  (Package)" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects::ICar' -  (Interface)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Medium" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects::IPlayer' -  (Interface)" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects::IPlayer::Car' -  (Property)" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects::IPlayer::Name' -  (Property)" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::IPlayer to Models::Services::ServicesContracts::Objects::ICar (Association)" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::ICar to Models::Services::ServicesContracts::Objects::ILocation (Generalization)" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::ICar to Models::Services::ServicesContracts::Objects::IDrawable (Generalization)" />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="High" Text="(1) type(s) fully reverse engineered." />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="High" Text="(1) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
-  <Message Timestamp="2015-09-24T11:55:10" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+  <Message Timestamp="2015-10-21T23:09:58" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services' -  (Package)" />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::Services' -  (Package)" />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::Services::Objects' -  (Package)" />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Medium" Text="Element reverse engineered into the UML model: 'Models::Services::Services::Objects::Body' -  (Class)" />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::Services::Objects::Body::Body' -  (Operation)" />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::Services::Objects::Body::Upgrade' -  (Operation)" />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts' -  (Package)" />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects' -  (Package)" />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects::IItem' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::Services::Objects::Body to Models::Services::ServicesContracts::Objects::IItem (InterfaceRealization)" />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::IUsable to Models::Services::ServicesContracts::Objects::IItem (Generalization)" />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="High" Text="(1) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-10-21T23:10:02" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
 </Log>

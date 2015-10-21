@@ -1,0 +1,1354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="80104bec-c80c-437e-8ecd-a9b514ffe130"
+  name="Factories"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="4c1b4653-e602-4769-8721-53fc89dd51e5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DServices.Services.Objects.Factories"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="1b10659d-a6db-4ccf-a902-a8c1cf97fe6c"
+        name="CarFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="17b05e8b-746e-4a2d-b3f5-5775aabc99ff"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DCarFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="74b2dbb0-e7ac-45c3-bf2e-7daa0da7fc8c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91ac32ea-6885-4b86-8505-15936524c642">
+                <propertyInstance
+                  Id="64805119-d75e-4e46-b2b8-606ca8388094"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="07a7bf99-9622-4313-97ca-ba44b8984a71">
+                <propertyInstance
+                  Id="4c77f7e4-6c5a-4bce-a405-f0cfb0fc9634"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7bd9aaa2-a201-4290-acf1-0eb4a7629ea5">
+                <propertyInstance
+                  Id="93b0dbec-3dc0-450a-8bed-4a42ebb7acb7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ee430d3-dc7b-4ca9-a488-af933cba9d9f">
+                <propertyInstance
+                  Id="c54934e9-f93f-41d9-a70b-5794f6750eeb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6eca5f17-cb42-4657-ac43-b7c8850c1d56">
+                <propertyInstance
+                  Id="438996d9-6117-4126-add6-9b1aabf8037a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="e0253b28-bbd5-4a25-8b9e-4ee8f0acab80">
+            <classMoniker
+              Id="06ada5ef-885e-4b0c-b3a5-723d65c245df"
+              LastKnownName="Car"
+              LastKnownLocation="Package3_2221.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="999a2681-7eee-49fc-a568-33a57cae37dd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5774514b-c29c-4b5b-9625-93b1e10952eb"
+              LastKnownName="Factory"
+              LastKnownLocation="Package_1952.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="390c6ddd-a4b4-4685-896c-9b75bddb8ecb"
+            name="CreatePositiveInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="27a249a0-704b-4eb1-bff1-5246d08722d0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DCarFactory Member%3D(Name%3DCreatePositiveInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1873c42f-744b-4b4b-9309-29f659855853"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1056278-02c2-4f1a-9901-b05c35b72c4a">
+                    <propertyInstance
+                      Id="f86d1750-6b46-4d4e-b5f2-d0f6c7dce69d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ea1147e-2aed-4efa-9cf5-aad37d7d559c">
+                    <propertyInstance
+                      Id="f3941fc3-234e-4b63-94f0-d964fad2fb9e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e637e43e-7acd-4c3c-a910-64da20e8f792">
+                    <propertyInstance
+                      Id="3454022f-0721-4b28-b230-5d2817ee202d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91a7cff7-b1cc-46c6-982a-c2a18735d2ca">
+                    <propertyInstance
+                      Id="05bfae4e-8c39-46a4-8b44-ac29b8e8481c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20526728-e8e2-4b5b-a8c3-2405236ffd6f">
+                    <propertyInstance
+                      Id="3ad09094-c4de-41fb-b5ea-9a560512c952"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f8e3332-3a24-4e1e-a804-a753af9467e2">
+                    <propertyInstance
+                      Id="a13eaa7f-7b51-497b-a179-85d9a7f0dd92"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3a131da1-51ea-4eb4-91aa-3dd97faa2bbb"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="634dc659-bb1d-438b-8b28-5874cf391521"
+                      LastKnownName="IDrawable"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4caf3a23-bc6e-4832-b916-bb038ffbeee8"
+                  name="coordinates"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ca733af4-05b2-4cdb-8061-50e28d5b6052"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DCarFactory Member%3D(Name%3DCreatePositiveInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)]) ParameterIdentifier%3Dcoordinates"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c6ffa116-b806-4754-9c5f-1a9ca09564e2"
+                      LastKnownName="Coordinates"
+                      LastKnownLocation="Package3_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="429a652e-59cf-4559-8910-87b3d1d48627"
+            name="CreateNegativeInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="68edd01a-6020-4e92-81c5-f599dadd5609"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DCarFactory Member%3D(Name%3DCreateNegativeInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="18735dc6-e909-4e00-ab75-a17c03b26ac7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="128d4a43-9226-459f-9f14-287d2b545b99">
+                    <propertyInstance
+                      Id="9dc0d784-f051-4aa6-a748-364d0feb76bb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b118b86-84e2-4d99-9087-551422951593">
+                    <propertyInstance
+                      Id="f2e406c2-1d67-45ca-b198-5d6ef0869a21"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfeb3eb0-04c4-4292-a22b-b371c5156093">
+                    <propertyInstance
+                      Id="7ab1535e-2d9e-4371-b6f5-0b7b25b15ffc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76cfe55d-102a-43b5-bbb4-9261a60b3a73">
+                    <propertyInstance
+                      Id="15d6ef1f-fbba-4467-adcb-543d8b36f8b2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9546f22-4a61-4444-a87b-a8765df61865">
+                    <propertyInstance
+                      Id="4b3a1989-d10e-4539-8814-d9c12a89f0db"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74516812-d9cf-47dc-b06e-648c37111804">
+                    <propertyInstance
+                      Id="bd5bb0df-e3dd-418e-a728-a5de503860cb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2fc5f7b0-6347-4d5a-a795-4b755b504aa0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="634dc659-bb1d-438b-8b28-5874cf391521"
+                      LastKnownName="IDrawable"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c84d117e-53b7-4acb-b2ab-1447cde60273"
+                  name="coordinates"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dfa343fe-76f0-43b5-88e5-adbbe195d907"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DCarFactory Member%3D(Name%3DCreateNegativeInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)]) ParameterIdentifier%3Dcoordinates"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c6ffa116-b806-4754-9c5f-1a9ca09564e2"
+                      LastKnownName="Coordinates"
+                      LastKnownLocation="Package3_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a30fb5c7-c6e9-4d41-8678-3029ff21bf05"
+            name="CarFactory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8095ca45-6d8b-48d6-b1c3-da908843131d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DCarFactory Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="19654013-9a77-4fb2-adb3-b0bf44f19bf0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51c80a1c-7ca9-430f-a59b-4d1fb5672797">
+                    <propertyInstance
+                      Id="f2bd5299-dcf2-4d66-ba95-e49fd883147f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3854bfea-10b8-4d8c-a347-8cb7cb5be6e2">
+                    <propertyInstance
+                      Id="08575a4e-7b8c-4637-ad67-5339c57ebdf1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82768ff2-f633-428f-91d9-7efac9dc5204">
+                    <propertyInstance
+                      Id="cdf54dc9-45af-4739-82ed-a5a9af9356cd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30b4e7be-41aa-4396-a1ff-c64b0bab0f59">
+                    <propertyInstance
+                      Id="9bf3adfb-462c-4587-8b24-6e6b61d1a675"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef2d13e2-479e-4510-abc3-7c5610038352">
+                    <propertyInstance
+                      Id="b7c6b592-9d7e-4e41-ab8c-c1c2ac3e071c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5ce7814-827c-4889-92f3-a75bee2189a8">
+                    <propertyInstance
+                      Id="4ccf26e3-ad5d-4a99-8b4b-198c0f82a36f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5774514b-c29c-4b5b-9625-93b1e10952eb"
+        name="Factory"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a8e0b28a-6ec6-48d0-ac52-d4534bd61006"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="dd5a78cf-8b01-42bb-afde-47c03ac97c84"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9be08238-b901-47d6-b4d9-508bb5f0c1cf">
+                <propertyInstance
+                  Id="ff9a9779-3d58-471b-9696-2df941e337b8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="88995504-712a-4c51-b0df-ebbc07bab238">
+                <propertyInstance
+                  Id="920164ef-1925-41fa-ab5d-8a83862d8d89"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a401db9d-0d70-4c80-aab0-137ca6737bfa">
+                <propertyInstance
+                  Id="712d21aa-01b0-4ae1-bbf7-1a2b21e0995b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef97a0cc-dc9d-4c68-8712-7e3515b33b95">
+                <propertyInstance
+                  Id="5d8a8aae-4522-44c4-b02d-469e9e7e9525"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c2ede25-c846-4515-8dac-253ac80f74f7">
+                <propertyInstance
+                  Id="92023040-d65a-4ad6-86ae-62a01e8ca8aa"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d362ee54-1ec3-4989-8647-7d20582e69d1"
+            name="CreatePositiveInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6b29e569-1a99-4cd7-b4fb-7d534b506685"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DFactory Member%3D(Name%3DCreatePositiveInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a3f9d979-5bc4-4a91-b99b-ffc9021a3f4a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4bdc996-9a2c-44c8-88ec-624f837d7368">
+                    <propertyInstance
+                      Id="892350fe-c33a-4f58-831c-4d18ec95f82e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44b8739c-c3f4-45f9-9d7b-538be276d134">
+                    <propertyInstance
+                      Id="3aca45a6-57d6-4c0f-b266-e3d4c0388f7a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d89c7940-e8cb-4c9c-9421-dd8763fa6027">
+                    <propertyInstance
+                      Id="2e0cc4c4-c5a5-4258-8bca-5ec4dfd66d19"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7831c222-f87b-4f98-843d-ea8e541cad4f">
+                    <propertyInstance
+                      Id="97f5efdd-25eb-4f6f-9093-8917ff9abe6f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26c5171e-407e-49f5-b435-29f509977e63">
+                    <propertyInstance
+                      Id="3b0d0a76-3bf2-49e4-8c35-42d5fa2e68c1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5cc0265-a532-4953-af8b-065810f05cab">
+                    <propertyInstance
+                      Id="ecd95eca-07b1-4c64-ac92-1a0a4097ad7c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b2c78425-0cd2-4558-94ad-cefbc9dd3ce5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="634dc659-bb1d-438b-8b28-5874cf391521"
+                      LastKnownName="IDrawable"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="440feb3d-abe4-42dd-887b-e11589317b72"
+                  name="coordinates"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c7d69998-345b-4e8c-ba8f-ce473519ff96"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DFactory Member%3D(Name%3DCreatePositiveInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)]) ParameterIdentifier%3Dcoordinates"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c6ffa116-b806-4754-9c5f-1a9ca09564e2"
+                      LastKnownName="Coordinates"
+                      LastKnownLocation="Package3_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="46ca8c77-d28c-4d65-9944-37fbeb68bf65"
+            name="CreateNegativeInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="60905a32-cdf0-4804-b1fa-cd05f7421ef8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DFactory Member%3D(Name%3DCreateNegativeInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="13db93d8-dd96-4e32-b1f5-cd9bdc393078"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92040140-535d-41a6-85f8-5110d35ed1e3">
+                    <propertyInstance
+                      Id="7ccdde4b-cc7d-4be1-8a84-361aa013e89b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a12baa44-97d0-4e72-b4f9-4d4a69a45e9c">
+                    <propertyInstance
+                      Id="93195e79-54d8-4dac-8fa0-dc7801b31dcb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2781099-12ad-418d-9e3d-d7704ec558d3">
+                    <propertyInstance
+                      Id="fdfdceff-1ed9-4573-99a6-b13d43a5de33"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d271fe0-c081-4580-9b5b-ea3e75735fcd">
+                    <propertyInstance
+                      Id="5a934e04-71ae-4fbf-a15d-2811d418ad91"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1372cad-a4d5-40c9-8fbf-afab844d3fe6">
+                    <propertyInstance
+                      Id="9bde19d2-a62e-4420-98e7-59d883604e4e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba5187de-eb6e-4d81-91c2-44d359648d17">
+                    <propertyInstance
+                      Id="28457ef6-e5a8-4db8-8f3c-e040933eb22b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c02db42a-5469-490c-8ce9-3f373bf38cd5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="634dc659-bb1d-438b-8b28-5874cf391521"
+                      LastKnownName="IDrawable"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="54f1ddc7-34cc-44b9-b5f9-dd5450e79ade"
+                  name="coordinates"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d6013da5-799c-4ddc-ab40-8e51fa9d8b8e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DFactory Member%3D(Name%3DCreateNegativeInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)]) ParameterIdentifier%3Dcoordinates"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c6ffa116-b806-4754-9c5f-1a9ca09564e2"
+                      LastKnownName="Coordinates"
+                      LastKnownLocation="Package3_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bb7f6df6-29f9-4628-bdf4-a143dfea1fd2"
+            name="Factory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7573d1d6-28f2-48ea-acd3-ed28e2b7e4de"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DFactory Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="58f2640d-35de-4aaa-8c1e-58ff798fc16a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24553f81-20d0-4598-a4be-1b81949e6486">
+                    <propertyInstance
+                      Id="ac3603e0-9d69-4d86-a77a-00691d82da39"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd79bb31-a432-4c06-96d6-2912f38f768a">
+                    <propertyInstance
+                      Id="13c5605b-11ec-4629-a6c0-5ac47296cd28"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddefaa48-5d9a-4dad-82ae-0a55b899df31">
+                    <propertyInstance
+                      Id="ae9b8b12-66e5-46bc-a15d-7666ea3d25bf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48661b6d-6e77-465c-826e-0080d8b3b0fd">
+                    <propertyInstance
+                      Id="0242f28c-aa4c-49f8-bb81-739e19d6cf59"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5298db64-4b43-418d-be83-7d2d30720226">
+                    <propertyInstance
+                      Id="ad79553c-9efd-4c99-9190-6b8d59a632e7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e1eaf1e-0ccc-4c5b-bcff-30bdaed140db">
+                    <propertyInstance
+                      Id="20d8212f-8c3d-4537-ad14-bc5a69d91133"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7cb90c87-3d0e-4586-96ec-009482cbe52a"
+        name="ObsticlesFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ce1ec909-36ce-416a-b85d-319c0ffd7168"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DObsticlesFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d7ac4b7a-093d-4c35-9891-836ef54a14a5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="571e0089-4221-491c-8bbb-62afbf95eafb">
+                <propertyInstance
+                  Id="03faa1ce-610a-4b65-ad48-c9fdfdb76e75"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10d1741e-21e8-4d3a-83f7-6d7d2eef4289">
+                <propertyInstance
+                  Id="1e2e8c58-b916-45f4-bbe2-77cc5627c32f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="46605b80-3c03-4180-a99a-01661565e399">
+                <propertyInstance
+                  Id="7048962d-98af-4449-8406-b1fd2bc0464d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="500bd6e5-ad25-4090-a827-6d0cebd7a3d7">
+                <propertyInstance
+                  Id="2a865529-027d-4a87-85a6-05cd4953e6d6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b6413532-e808-4831-b01f-7c27df0495fe">
+                <propertyInstance
+                  Id="a88ffdeb-5e61-40bc-a73c-54ceefefb951"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="9f33864d-590a-44c6-8461-649a1ef78c9c">
+            <classMoniker
+              Id="0bc68093-c28c-43dd-9aef-d15996733293"
+              LastKnownName="Obsticle"
+              LastKnownLocation="Package3_2221.uml" />
+          </dependency>
+          <dependency
+            Id="a31f5fd8-551c-4fc7-b10f-7c69af335e68">
+            <classMoniker
+              Id="b05e332a-f3a6-4859-ba71-e628529e7fd3"
+              LastKnownName="Nitro"
+              LastKnownLocation="Package3_2221.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="328ef305-bdeb-43b2-82f1-6613e95f5335"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5774514b-c29c-4b5b-9625-93b1e10952eb"
+              LastKnownName="Factory"
+              LastKnownLocation="Package_1952.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="39efd451-d450-4238-a94f-2cb9081b5b22"
+            name="CreatePositiveInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d722d035-7025-407f-ac90-ab65c5dcbb72"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DObsticlesFactory Member%3D(Name%3DCreatePositiveInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="733567e7-ed76-4c0f-9d4a-3e25d396e11f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c994cab8-7ae4-4085-8ebc-979965cb58a2">
+                    <propertyInstance
+                      Id="f73ad803-f90b-4a03-8c4f-64f2aac7e28d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61803f6b-baa1-4e43-ad9e-81be2feaf7f5">
+                    <propertyInstance
+                      Id="1344b1d9-8ea7-4ce8-b96b-3d65c7ecc1e1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24a1d389-a432-4159-86a2-aaecdc4a6990">
+                    <propertyInstance
+                      Id="1b6b3070-d5f5-400d-a82f-d1a2f4799a2a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15d6c7c5-c01f-413c-9805-918d770941b3">
+                    <propertyInstance
+                      Id="84cd2ff3-9f7b-4376-94fe-70aba7bec7fb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6ca72f7-2b50-45a3-b3c3-eb46ed2bcf4a">
+                    <propertyInstance
+                      Id="1b82abcf-b423-432f-b706-a7c44cd67deb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31ef68ef-aa04-49f3-b45c-83740991cfa9">
+                    <propertyInstance
+                      Id="2d74f429-8ade-4be0-a003-61ac35c8a515"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e2b16a36-6961-4de5-a016-3046a05f7bce"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="634dc659-bb1d-438b-8b28-5874cf391521"
+                      LastKnownName="IDrawable"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ac3b2569-d03a-4d70-906b-f065bda742a2"
+                  name="coordinates"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="90edeb95-f5e7-44f5-87c8-96e8922d0715"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DObsticlesFactory Member%3D(Name%3DCreatePositiveInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)]) ParameterIdentifier%3Dcoordinates"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c6ffa116-b806-4754-9c5f-1a9ca09564e2"
+                      LastKnownName="Coordinates"
+                      LastKnownLocation="Package3_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="560671cb-ffc9-41d3-9295-57b2587e5298"
+            name="CreateNegativeInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6cc59390-1670-4bd3-a8c7-efe66b0b48dc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DObsticlesFactory Member%3D(Name%3DCreateNegativeInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="04dc4812-6afc-4c30-905b-bbc15d7d2eec"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6555de11-50de-4e11-9ac0-a33d6c282ebf">
+                    <propertyInstance
+                      Id="83e4e826-6644-4bc6-ae16-2ec83c38a238"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba358516-95dd-44ba-a034-d50506d770d1">
+                    <propertyInstance
+                      Id="44c177a3-4939-4aec-bcfb-ec8a1f28843f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96e1151a-2461-4c15-8944-267b96e6325e">
+                    <propertyInstance
+                      Id="7cc962e8-17d0-4f4d-8ee5-4873083a47e2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cabd132-66ea-4a7b-83f9-b43e19e86286">
+                    <propertyInstance
+                      Id="61cea4dd-9af6-4191-982c-084582d2bbaf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c38be00-c115-4cbe-8e69-0a234cd1a16c">
+                    <propertyInstance
+                      Id="c76444ca-c251-4e93-a3e8-259bd9cdef66"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7d8360d-dbd8-46e3-a6a8-949d0606f625">
+                    <propertyInstance
+                      Id="939780f6-9d41-43fa-b22e-6f0e158c06d6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="160fad78-d99a-4eef-b2d5-904175c1e854"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="634dc659-bb1d-438b-8b28-5874cf391521"
+                      LastKnownName="IDrawable"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e2b4fa9e-b02b-422f-9c26-437d0daf59c7"
+                  name="coordinates"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ab5b64e1-7f2e-4c6f-92e6-dcb4eca8dc54"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DObsticlesFactory Member%3D(Name%3DCreateNegativeInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)]) ParameterIdentifier%3Dcoordinates"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c6ffa116-b806-4754-9c5f-1a9ca09564e2"
+                      LastKnownName="Coordinates"
+                      LastKnownLocation="Package3_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c63551fa-fdbc-4159-b31d-e79978e0fc8e"
+            name="ObsticlesFactory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c177c1ea-3ada-42a7-8aa6-21f0366f4bc5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DObsticlesFactory Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="591a4bd4-5ae6-4ac9-8f6e-700f1c77fd94"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adc20b32-5e2e-4212-ad43-ee72e4dcddf7">
+                    <propertyInstance
+                      Id="d18efb44-b108-4e24-82e3-02ea807e12bb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ab1493a-b6c3-4d03-a330-2d1d6b5b477e">
+                    <propertyInstance
+                      Id="47ae8e28-3744-4fc8-b8a5-958399c86df5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65a1ba45-20f4-4e9b-808f-6e7d63ea8dc0">
+                    <propertyInstance
+                      Id="a611f192-be6e-428f-b2a1-93ed919a8189"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c452ab3-f2ec-4c07-8ed8-77909264473c">
+                    <propertyInstance
+                      Id="d730fc03-3e51-4b43-a496-6cb6e48a59dd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d793eeb-87ae-465c-9541-2add419b8c2b">
+                    <propertyInstance
+                      Id="f0f0a2b9-2929-41d7-9c5b-d87385217697"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="906b8c5b-e53f-4de8-af74-cfc5f3ce5461">
+                    <propertyInstance
+                      Id="04ecbbbf-ef1e-4348-b3c5-76351c66e370"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2eff4fb9-ba89-440f-ae91-a01c5bc2d9eb"
+        name="PlayerFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="92315602-edbf-4e6d-8f1d-30d17f95cc96"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DPlayerFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="25f5f968-fbaa-416d-8897-5348e8fdd5d6"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df536510-fe97-46e1-a208-01966420890d">
+                <propertyInstance
+                  Id="d9b2e662-2668-4ae2-93e9-892aba37ea40"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b3e22016-0ec1-4ebd-b8cf-f0eee16e989c">
+                <propertyInstance
+                  Id="ca1b3d48-0943-40e3-8044-7a726bc16619"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2ea9985b-654c-41f6-8497-85c1d676b09d">
+                <propertyInstance
+                  Id="3a201ec8-2f2c-432b-be7a-b3de19373cfa"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5d8365fb-9a01-420a-acd4-7927dcbff956">
+                <propertyInstance
+                  Id="a2ad2fa4-3aff-4829-a0e3-0158193a9fbb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="da974487-32bd-43db-b510-ce8ea23c37ed">
+                <propertyInstance
+                  Id="f71bf7f1-5298-4437-9a94-fa05a6990ebf"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="e8efa6e8-86c8-42fc-81ef-1444e0412035"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5774514b-c29c-4b5b-9625-93b1e10952eb"
+              LastKnownName="Factory"
+              LastKnownLocation="Package_1952.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="37c806b6-f1a1-42af-b5a8-ec6783758b01"
+            name="CreateNegativeInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ff0b41d8-8cc0-48cf-ab20-83ee4c259f75"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DPlayerFactory Member%3D(Name%3DCreateNegativeInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2cf7af9d-e94e-4f5e-a742-70dadd0660f6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62202493-2a9d-45b6-a831-54741377edde">
+                    <propertyInstance
+                      Id="f6e5f9da-07f7-4826-926f-6e1331c7c7c3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1daebfae-0629-47db-9ff3-9409b7f64c3f">
+                    <propertyInstance
+                      Id="4bbe2b08-1b1e-458c-a256-3288b98737ec"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1494876a-ac13-4458-aeb3-c23661796266">
+                    <propertyInstance
+                      Id="d9f479be-2906-43c4-8fda-c1599a5fd3e6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bcd7174b-74d0-4a3d-aa31-58e0b92afb51">
+                    <propertyInstance
+                      Id="ee893852-4dae-4ec3-add3-1cde46788d7a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaf3a432-1eab-42cc-b8bc-0e5a309e49db">
+                    <propertyInstance
+                      Id="0ff2c106-76b8-4af2-bbf5-e747743b4a24"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5de50281-c66b-4031-91f0-e8f2fa909d58">
+                    <propertyInstance
+                      Id="26f57687-fef2-4c6d-b9f7-5974d6380c69"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8c40c69b-5cc3-4daa-af33-4e5e3c4e5893"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="634dc659-bb1d-438b-8b28-5874cf391521"
+                      LastKnownName="IDrawable"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f3b8ae13-3591-4d5a-84b2-76437b79a124"
+                  name="coordinates"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="88c9332c-c041-4d7d-8205-793ee238a20b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DPlayerFactory Member%3D(Name%3DCreateNegativeInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)]) ParameterIdentifier%3Dcoordinates"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c6ffa116-b806-4754-9c5f-1a9ca09564e2"
+                      LastKnownName="Coordinates"
+                      LastKnownLocation="Package3_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4774ffde-d3bd-4b1c-b997-5f8290f9e8eb"
+            name="CreatePositiveInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1b6cf9af-a261-4cd6-a90e-0feb907ba36d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DPlayerFactory Member%3D(Name%3DCreatePositiveInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d3674a4b-dcfe-41e1-ad70-9fac05dc37ed"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38ec5284-5d5a-4058-88fb-14a33d472e8b">
+                    <propertyInstance
+                      Id="3e075568-0f94-49d2-a92c-562dcddc6000"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c4f04ca-0823-4667-a68f-e20c3236ca41">
+                    <propertyInstance
+                      Id="4ccddbcf-b5b6-43f1-b377-a61fdf4784d2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fc7f826-77c9-4b49-a0ce-63dc93504da9">
+                    <propertyInstance
+                      Id="4673cd60-2df8-4e21-8492-0a6a64d863eb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93044262-34cc-48ba-b804-35ad5a97a8c2">
+                    <propertyInstance
+                      Id="16928909-993d-4e74-9233-0203444ca7b5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6e539c1-051d-4865-8146-55948144633b">
+                    <propertyInstance
+                      Id="34db5084-6ff2-40b1-bb08-6ee421eae82d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6eddb932-3894-4af3-ba92-aa1c2537fa76">
+                    <propertyInstance
+                      Id="db8f3b0a-de8b-4b67-bf7b-b184b07355f2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0ab839cb-adb4-4efd-a68a-5b4a3da78116"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="634dc659-bb1d-438b-8b28-5874cf391521"
+                      LastKnownName="IDrawable"
+                      LastKnownLocation="Package6_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0983a7e7-8f37-4a8d-bee2-62a36cc32083"
+                  name="coordinates"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ae031e5b-d0b2-4cf2-8944-035d31181e5f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DPlayerFactory Member%3D(Name%3DCreatePositiveInstance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCoordinates)]) ParameterIdentifier%3Dcoordinates"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c6ffa116-b806-4754-9c5f-1a9ca09564e2"
+                      LastKnownName="Coordinates"
+                      LastKnownLocation="Package3_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a07bf00e-d71d-46de-ab45-b57d74f6d663"
+            name="PlayerFactory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="da2aded4-d16a-41b3-987e-6db63dfa0b95"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects.Factories Type%3DPlayerFactory Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0845e901-ed48-4ed1-a57f-00cd5c9fe479"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03cb569b-3bb0-457e-95f0-6132337f3bc0">
+                    <propertyInstance
+                      Id="98797e5a-fc51-4212-b1cd-01a6f909e9c9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae2b0953-d599-41d6-bc92-769ae184b216">
+                    <propertyInstance
+                      Id="5c911408-c166-4492-9413-37dece555d08"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d167377-d8c6-4c06-837d-caeb13a68f96">
+                    <propertyInstance
+                      Id="653dc3a2-8036-4a20-84a0-7b396eb06549"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7feb73e-8fa8-49c2-bacf-25ed6b5b210e">
+                    <propertyInstance
+                      Id="61dbe6ac-c10b-4763-aa26-2457ea0cb465"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1ce5947-0929-4698-ae81-00fe775f05fd">
+                    <propertyInstance
+                      Id="df5d3e8a-19c4-4067-8873-089b8cb5b3b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57a6141b-1316-4ba5-acb7-716c23f8dcb9">
+                    <propertyInstance
+                      Id="a94532d3-36d0-483b-8eac-828927e19d10"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

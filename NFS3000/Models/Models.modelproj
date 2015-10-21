@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="FactoryUML.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FactoryUML.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>FactoryUML.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package10_2221.uml">
       <SubType>Content</SubType>
     </Content>
@@ -52,6 +59,9 @@
     <Content Include="ModelDefinition\Package9_2221.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package_1952.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package_2221.uml">
       <SubType>Content</SubType>
     </Content>
@@ -61,6 +71,13 @@
     <Content Include="singletons.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>singletons.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="StrategyUML.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="StrategyUML.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>StrategyUML.classdiagram</DependentUpon>
     </Content>
     <Content Include="UML Class diagram.classdiagram">
       <SubType>Content</SubType>

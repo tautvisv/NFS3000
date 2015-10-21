@@ -42,6 +42,112 @@
         LastKnownName="System"
         LastKnownLocation="Package7_2221.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="12cbdf2f-c43f-4555-93ae-3bd613a2fd35"
+        name="Equip part"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="f8874211-47de-4a06-8650-54ac5c0b3ee5"
+            name="EquipPart"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e10deab5-49e7-49c0-9a71-e9a26d8c4c74"
+        name="Eqip engine"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="bdad5f9c-fc95-4c6a-918d-0afb745351ce"
+            isSubstitutable="false">
+            <classMoniker
+              Id="12cbdf2f-c43f-4555-93ae-3bd613a2fd35"
+              LastKnownName="Equip part"
+              LastKnownLocation="Models.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3a64df3a-6771-4e94-91d4-4a08b6a66894"
+            name="EquipPart"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3fa2bb1a-d793-4a03-be50-81ce7712458f"
+        name="Equip tires"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="56c861ee-7705-4121-9a1f-7538e9395167"
+            isSubstitutable="false">
+            <classMoniker
+              Id="12cbdf2f-c43f-4555-93ae-3bd613a2fd35"
+              LastKnownName="Equip part"
+              LastKnownLocation="Models.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cb019b42-1c9a-437b-8ef4-4056d4582805"
+            name="EquipPart"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0233f420-346e-4618-8d2e-444f547fbedf"
+        name="Equip body"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="70236dad-2f2f-43c9-a0cc-bbcc3f0da5be"
+            isSubstitutable="false">
+            <classMoniker
+              Id="12cbdf2f-c43f-4555-93ae-3bd613a2fd35"
+              LastKnownName="Equip part"
+              LastKnownLocation="Models.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="70ef8b4f-04f2-4db8-a38a-69a8a8583c83"
+            name="EquipPart"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
