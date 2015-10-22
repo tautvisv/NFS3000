@@ -6,19 +6,21 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2015-10-21T23:09:58" Importance="High" Text="Reverse Engineering Started." />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services' -  (Package)" />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::Services' -  (Package)" />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::Services::Objects' -  (Package)" />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Medium" Text="Element reverse engineered into the UML model: 'Models::Services::Services::Objects::Body' -  (Class)" />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::Services::Objects::Body::Body' -  (Operation)" />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::Services::Objects::Body::Upgrade' -  (Operation)" />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts' -  (Package)" />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects' -  (Package)" />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects::IItem' -  (Interface)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::Services::Objects::Body to Models::Services::ServicesContracts::Objects::IItem (InterfaceRealization)" />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::IUsable to Models::Services::ServicesContracts::Objects::IItem (Generalization)" />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="High" Text="(1) type(s) fully reverse engineered." />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="High" Text="(1) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
-  <Message Timestamp="2015-10-21T23:10:02" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+  <Message Timestamp="2015-10-22T11:14:41" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services' -  (Package)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts' -  (Package)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects' -  (Package)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects::ICollectable' -  (Interface)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects::ICollectable::Collect' -  (Operation)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects::IDrawable' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Models::Services::ServicesContracts::Objects::IItem' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::ICollectable to Models::Services::ServicesContracts::Objects::IDrawable (Generalization)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::IObsticle to Models::Services::ServicesContracts::Objects::ICollectable (Generalization)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::IUsable to Models::Services::ServicesContracts::Objects::IItem (Generalization)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::IMap to Models::Services::ServicesContracts::Objects::IDrawable (Generalization)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::ICar to Models::Services::ServicesContracts::Objects::IDrawable (Generalization)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Models::Services::ServicesContracts::Objects::IPlayer to Models::Services::ServicesContracts::Objects::IDrawable (Generalization)" />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="High" Text="(2) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-10-22T11:14:42" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
 </Log>

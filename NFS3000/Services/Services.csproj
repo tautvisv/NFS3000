@@ -71,6 +71,7 @@
     <Compile Include="Services\Objects\Map.cs" />
     <Compile Include="Services\Objects\Meniu.cs" />
     <Compile Include="Services\Objects\Obsticle.cs" />
+    <Compile Include="Services\Objects\OpponentCar.cs" />
     <Compile Include="Services\Objects\Player.cs" />
     <Compile Include="Services\Objects\Singletons\FileSingleton.cs" />
     <Compile Include="Services\Objects\Singletons\ModelLoader.cs" />

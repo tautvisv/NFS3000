@@ -478,204 +478,6 @@
         </generalsInternal>
         <targetEnds>
           <association
-            Id="12a97259-ca95-4e8f-8469-291af3e5b3b9"
-            isDerived="false"
-            sourceEndRoleName="ICar"
-            targetEndRoleName="Engine"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="84724c44-95f8-4c15-b6b8-1f5a0c6437e9"
-              LastKnownName="Engine"
-              LastKnownLocation="Package3_2221.uml" />
-            <description>Property Engine references type Engine.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="654a00c0-f907-4486-a2da-2c5973ed176a"
-                  name="ICar"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="f8036ace-3713-4407-8feb-a30caa47ee44"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="2f87822d-279e-4923-9260-2fdfb26fd30e"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="05177c22-1430-420c-847c-a6ad25a98678"
-                  name="Engine"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="37e48afc-76a7-4de2-b90a-afdb25452e7e"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="784ea84b-70d1-4814-a9b7-febff160f733"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="4739b447-fccf-4732-9604-8304d7e74b8c"
-            isDerived="false"
-            sourceEndRoleName="ICar"
-            targetEndRoleName="Body"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="ff9de937-fb4b-4e58-9a83-c18641345334"
-              LastKnownName="Body"
-              LastKnownLocation="Package3_2221.uml" />
-            <description>Property Body references type Body.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="5f99b022-3c07-4150-89cf-bb3f01f4ee74"
-                  name="ICar"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="95500f3d-1f53-45ba-a409-4d2871394bdf"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="ca479b9a-55d1-4cce-8ae3-1aa847d3fdf8"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="6bd8a8cd-c66d-4199-818b-98ea4ded4c0f"
-                  name="Body"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="df8cde42-aea0-4d23-9e07-f2b34de466ad"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="837d49d9-3745-4a09-b622-ba2ae3c90bca"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="3f8d7b9d-a143-406d-ab64-1b0cfbd71dac"
-            isDerived="false"
-            sourceEndRoleName="ICar"
-            targetEndRoleName="Tires"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="e3986c6e-9b34-49e7-a47a-7c60b90d52da"
-              LastKnownName="Tire"
-              LastKnownLocation="Package3_2221.uml" />
-            <description>Property Tires references type Tire.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d74eef0f-7174-421c-bf21-ef8273da7ffc"
-                  name="ICar"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="efbf129a-a75b-4345-925c-0846d4bdd09f"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="dc25ea18-1661-4e41-97a4-a883189ea59b"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="cfb67a69-909f-4adc-8be0-557c1de2a555"
-                  name="Tires"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="2b613165-4834-4a69-ae70-a2301b486312"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="74a09f77-de21-48a7-9c43-e18757ddc2b6"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="0c384dc4-c800-486b-8b35-fdb909382b75"
             isDerived="false"
             sourceEndRoleName="ICar"
@@ -734,6 +536,204 @@
                   <upperValueInternal>
                     <literalString
                       Id="b705ce94-9907-45f5-88aa-27812e664561"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="356241d1-bbea-4a59-bb9b-2e30db7eadeb"
+            isDerived="false"
+            sourceEndRoleName="ICar"
+            targetEndRoleName="Engine"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="aef34376-889a-4534-9023-90b3ecb5efcb"
+              LastKnownName="IItem"
+              LastKnownLocation="Package6_2221.uml" />
+            <description>Property Engine references type IItem.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="618005be-c012-4ead-ac0a-4a7211d0d4fa"
+                  name="ICar"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b5ecc77e-1b39-4965-a77e-6bd6b88f8083"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="419d7106-14e3-4523-861c-4bc1e852ef6d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d501001-bb19-4067-8705-3fbc1bd500de"
+                  name="Engine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e2daf716-f62e-4368-9c27-9985e386f6c7"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c0ff1df7-6dae-4e33-887b-700db04b48de"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a88816f2-0d12-4024-9988-d5767e63928e"
+            isDerived="false"
+            sourceEndRoleName="ICar"
+            targetEndRoleName="Body"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="aef34376-889a-4534-9023-90b3ecb5efcb"
+              LastKnownName="IItem"
+              LastKnownLocation="Package6_2221.uml" />
+            <description>Property Body references type IItem.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6fe256e6-3003-4d20-9557-3d3ef6ac4721"
+                  name="ICar"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0285785f-7758-4700-b176-71a22614b8f8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="89bc5545-bb3f-4a47-bdec-f44bedaa0d03"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="69757442-333e-412e-936a-1324b5b8a373"
+                  name="Body"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f5d553b1-ef2d-4f5f-a4ef-6561cca33151"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b9a5520b-648d-41a9-b420-08b02bf82363"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0cef8994-619d-45a4-8005-b394277b367a"
+            isDerived="false"
+            sourceEndRoleName="ICar"
+            targetEndRoleName="Tires"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="aef34376-889a-4534-9023-90b3ecb5efcb"
+              LastKnownName="IItem"
+              LastKnownLocation="Package6_2221.uml" />
+            <description>Property Tires references type IItem.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea497c85-d1fc-42dd-acba-dad01bbe4ec6"
+                  name="ICar"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9761a546-29a4-4abf-bd5b-1a61c9c2f622"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="04daa936-ddce-4189-a588-d0f77df2e6fb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="15e915df-38d7-4473-b9e9-0950742836bb"
+                  name="Tires"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="560b22c8-d3b0-41b3-96af-8259b28b7c56"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="617d6ca6-9034-4c94-af50-e6e2c7874efa"
                       name="Upper"
                       value="1" />
                   </upperValueInternal>
@@ -897,10 +897,10 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <type_NamedElement>
-              <classMoniker
-                Id="84724c44-95f8-4c15-b6b8-1f5a0c6437e9"
-                LastKnownName="Engine"
-                LastKnownLocation="Package3_2221.uml" />
+              <interfaceMoniker
+                Id="aef34376-889a-4534-9023-90b3ecb5efcb"
+                LastKnownName="IItem"
+                LastKnownLocation="Package6_2221.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -977,10 +977,10 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <type_NamedElement>
-              <classMoniker
-                Id="ff9de937-fb4b-4e58-9a83-c18641345334"
-                LastKnownName="Body"
-                LastKnownLocation="Package3_2221.uml" />
+              <interfaceMoniker
+                Id="aef34376-889a-4534-9023-90b3ecb5efcb"
+                LastKnownName="IItem"
+                LastKnownLocation="Package6_2221.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -1057,10 +1057,10 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <type_NamedElement>
-              <classMoniker
-                Id="e3986c6e-9b34-49e7-a47a-7c60b90d52da"
-                LastKnownName="Tire"
-                LastKnownLocation="Package3_2221.uml" />
+              <interfaceMoniker
+                Id="aef34376-889a-4534-9023-90b3ecb5efcb"
+                LastKnownName="IItem"
+                LastKnownLocation="Package6_2221.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -2034,7 +2034,7 @@
             name="ShouldBeDrawn"
             isLeaf="false"
             isStatic="false"
-            isAbstract="true"
+            isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
             <referencesInternal>

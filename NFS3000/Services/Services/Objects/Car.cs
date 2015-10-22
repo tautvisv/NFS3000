@@ -32,11 +32,11 @@ namespace Services.Services.Objects
 
         public string Name { get; set; }
 
-        public Engine Engine { get; set; }
+        public IItem Engine { get; set; }
 
-        public Body Body { get; set; }
+        public IItem Body { get; set; }
 
-        public Tire Tires { get; set; }
+        public IItem Tires { get; set; }
 
         public IUsable Usable { get; set; }
 

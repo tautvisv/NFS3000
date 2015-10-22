@@ -6,7 +6,7 @@ namespace Services.Services.Objects.Factories
     {
         public override IDrawable CreatePositiveInstance(Coordinates coordinates)
         {
-            throw new System.NotImplementedException();
+            return new Nitro();
         }
 
         public override IDrawable CreateNegativeInstance(Coordinates coordinates)
