@@ -10,6 +10,7 @@ namespace Services.Services.Objects.Singletons
 {
     public class ModelLoader : IModelLoader
     {
+        private static IDictionary<string, IDictionary<Coordinates, char>> flyweightCache { get; set; }
         private static ModelLoader instance;
         private static readonly object lockInstanceObj = new object();
 
@@ -30,12 +31,17 @@ namespace Services.Services.Objects.Singletons
 
         private ModelLoader()
         {
+            flyweightCache = new Dictionary<string, IDictionary<Coordinates, char>>();
         }
 
         public IDictionary<Coordinates, char> LoadModel(string modelFileName)
         {
             lock (lockInstanceObj)
             {
+                if (flyweightCache.ContainsKey(modelFileName))
+                {
+                    return flyweightCache[modelFileName];
+                }
                 var model = new Dictionary<Coordinates, char>();
                 string[] allLines;
                 try
@@ -60,6 +66,7 @@ namespace Services.Services.Objects.Singletons
                         }
                     }
                 }
+                flyweightCache.Add(modelFileName, model);
                 return model;
             }
         }

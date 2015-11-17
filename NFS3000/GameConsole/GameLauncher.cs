@@ -5,7 +5,6 @@ using Services.Services.Objects;
 using Services.Services.Objects.Factories;
 using Services.Services.Objects.Singletons;
 using Services.ServicesContracts.Objects;
-using Services.Trash;
 
 namespace GameConsole
 {

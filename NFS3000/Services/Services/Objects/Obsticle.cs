@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-
+using Data;
 using Services.Services.Objects.Singletons;
 using Services.ServicesContracts.Objects;
 
@@ -18,7 +18,7 @@ namespace Services.Services.Objects
 
         public Obsticle()
         {
-            Content = ModelLoader.Instance().LoadModel("Obsticle");
+            Content = ModelLoader.Instance().LoadModel(ModelsNames.Obsticles);
             Width = Content.Max(t => t.Key.X) - Content.Min(t => t.Key.X);
             Length = Content.Max(t => t.Key.Y) - Content.Min(t => t.Key.Y);
         }

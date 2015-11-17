@@ -11,7 +11,7 @@ namespace Services.Services.Objects
     {
         public Car()
         {
-            Content = ModelLoader.Instance().LoadModel("Car");
+            Content = ModelLoader.Instance().LoadModel(ModelsNames.Car);
             Priority = 100;
             Position = new Coordinates(10, 10);
             Width = Content.Max(t => t.Key.X) - Content.Min(t => t.Key.X);
