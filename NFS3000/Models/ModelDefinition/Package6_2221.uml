@@ -3452,5 +3452,185 @@
         </ownedOperations>
       </Interface>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b3856fb1-64b8-4d39-89e0-bc82100a024e"
+        name="IEngine"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="b8a06ff2-7ff9-4bad-9041-594b026cc852"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIEngine"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f2d3c98a-8fcc-4bfd-9f1e-38bc7f70df5c"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="25140ec3-8583-4d5f-ab29-d5dafd34dac8">
+                <propertyInstance
+                  Id="123bdc44-2806-4be2-a439-37c45ce9ca3f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2d7d6939-8b02-496b-9df0-505cb84bfb1f">
+                <propertyInstance
+                  Id="3d6ea86a-26fd-4b3a-9f42-b88cfb3a085b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9684a706-42b0-4477-b703-f1e04614dda3">
+                <propertyInstance
+                  Id="99954392-e65f-476e-be52-18d1f6285596"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="018252a5-f4b9-4b0a-8912-90b467e1b80f">
+                <propertyInstance
+                  Id="427bcb66-8e74-4e7c-aa51-a182a5c3ce3c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="75562825-e494-4c68-8a80-b29da9bbd6f8"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="aef34376-889a-4534-9023-90b3ecb5efcb"
+              LastKnownName="IItem"
+              LastKnownLocation="Package6_2221.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="21065fbb-86a8-41c2-8566-a2e8ad65ac5b"
+        name="IBody"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="2eeb4354-0497-4b41-a4d0-7a466484819e"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DIBody"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3de09d57-7a6b-44cf-92ea-2286657f4dcf"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6df75435-9f43-469c-a481-e2341eca869d">
+                <propertyInstance
+                  Id="7088da20-dbfc-459a-b5fd-9ba95aa0d71c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d7c5bb6c-e926-4bcd-87cf-94993245e288">
+                <propertyInstance
+                  Id="678bf428-80fe-45d9-9e4a-9c66d760c4f0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d760b152-0f1e-4f41-972e-d44767e93f28">
+                <propertyInstance
+                  Id="980d8bff-08a8-4547-a130-0628e23d2777"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="abc76dce-6918-4f34-8750-86ab33e3b548">
+                <propertyInstance
+                  Id="c1a1d4eb-bda3-49e1-8734-79969abf10f0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="384f301e-03be-495f-b1e5-e3b21f2178eb"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="aef34376-889a-4534-9023-90b3ecb5efcb"
+              LastKnownName="IItem"
+              LastKnownLocation="Package6_2221.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a27a4f18-95b8-4041-8e82-8f847c5e75bc"
+        name="ITires"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="e94f4f58-0404-4187-ac11-0c42ef443654"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts.Objects Type%3DITires"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3305d76f-8380-4290-a696-c41bc1059420"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4df5d01-d34a-4c48-ad42-4d99d746d365">
+                <propertyInstance
+                  Id="acd86647-d8ee-497c-b0d3-93f8c3e3bac9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="80f58917-c06b-41b4-8dbb-d239a565ba1c">
+                <propertyInstance
+                  Id="9dd598bb-4f0e-4b9a-b116-9d192deed0f1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="49d50c5c-fba4-4ad2-ad07-3ce295a69352">
+                <propertyInstance
+                  Id="f0d38359-2136-4930-a763-c5a4a2493253"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cdd9a9df-e6de-488d-b0d6-8fa875103727">
+                <propertyInstance
+                  Id="8aea9ff9-2658-4174-a11f-233a6b5750b7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="ce9eba22-349b-4574-b7fa-294f9b8f8735"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="aef34376-889a-4534-9023-90b3ecb5efcb"
+              LastKnownName="IItem"
+              LastKnownLocation="Package6_2221.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
   </packagedElements>
 </package>

@@ -62,19 +62,19 @@ namespace Services.Services.Objects
             set { throw new NotImplementedException(); }
         }
 
-        public IItem Engine
+        public IEngine Engine
         {
             get { throw new NotImplementedException(); }
             set { throw new NotImplementedException(); }
         }
 
-        public IItem Body
+        public IBody Body
         {
             get { throw new NotImplementedException(); }
             set { throw new NotImplementedException(); }
         }
 
-        public IItem Tires
+        public ITires Tires
         {
             get { throw new NotImplementedException(); }
             set { throw new NotImplementedException(); }

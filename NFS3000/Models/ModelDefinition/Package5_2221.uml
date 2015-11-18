@@ -1012,7 +1012,7 @@
             name="LoadModel"
             isLeaf="false"
             isStatic="false"
-            isAbstract="true"
+            isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
             <referencesInternal>

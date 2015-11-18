@@ -209,22 +209,6 @@
         isActiveClass="false">
         <generalsInternal>
           <generalization
-            Id="9cf2368d-6127-43b2-9a0a-50a08484336d"
-            isSubstitutable="false">
-            <classMoniker
-              Id="06ada5ef-885e-4b0c-b3a5-723d65c245df"
-              LastKnownName="Car"
-              LastKnownLocation="Package3_2221.uml" />
-          </generalization>
-          <generalization
-            Id="a9370979-477f-405c-841f-5e2df569eebf"
-            isSubstitutable="false">
-            <classMoniker
-              Id="87aa1b94-f0a2-4a58-8d66-4beb6759b9a0"
-              LastKnownName="ModelLoader"
-              LastKnownLocation="Package4_2221.uml" />
-          </generalization>
-          <generalization
             Id="48f74fa5-874e-4c8a-b80d-dcd44bc8257b"
             isSubstitutable="false">
             <classMoniker
@@ -233,6 +217,131 @@
               LastKnownLocation="Package3_2221.uml" />
           </generalization>
         </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="45fa656d-9e2b-491a-b17d-4697e99de818"
+        name="IDictionary"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="87e3c5ce-6aac-4ffb-afe0-5b8b52c99c7f"
+        name="Dictionary"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="23f97105-b389-4c2a-b4d6-91dbe94482d7">
+            <interfaceMoniker
+              Id="45fa656d-9e2b-491a-b17d-4697e99de818"
+              LastKnownName="IDictionary"
+              LastKnownLocation="Models.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="11476f54-4de5-47a9-9c81-1a932ffbfca4"
+        name="Coordinates"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4e74f679-d462-4e10-86bc-3a52ae609898"
+            isDerived="false"
+            sourceEndRoleName="Coordinates"
+            targetEndRoleName="Dictionary"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="87e3c5ce-6aac-4ffb-afe0-5b8b52c99c7f"
+              LastKnownName="Dictionary"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5477d2aa-e85d-4358-ab4f-7b09e0f0e5fe"
+                  name="Coordinates"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fbb4a3d8-678d-4a3b-a5b8-8ce1c25168e4"
+                  name="Dictionary"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2177c1d2-6eee-4428-9329-b44b723aff23"
+        name="Char"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="2834edba-9406-4fc9-9232-5ec8ba8ef590"
+            isDerived="false"
+            sourceEndRoleName="Char"
+            targetEndRoleName="Dictionary"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="87e3c5ce-6aac-4ffb-afe0-5b8b52c99c7f"
+              LastKnownName="Dictionary"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b942c3e-3c19-4bfa-a5d9-6678606c7946"
+                  name="Char"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb9e74d5-7581-41bc-a57f-c497341fd020"
+                  name="Dictionary"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </class>
     </packageHasNamedElement>
   </packagedElements>

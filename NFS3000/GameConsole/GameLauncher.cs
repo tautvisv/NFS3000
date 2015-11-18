@@ -87,15 +87,15 @@ namespace GameConsole
 
             //TODO delete me after test
             player1.Car.Engine = new MuscleEngine();
-            player1.Car.Engine.Upgrade();
-            player1.Car.Engine.Upgrade();
+            //player1.Car.Engine.Upgrade();
+            //player1.Car.Engine.Upgrade();
 
             player1.Car.Tires = new SoftTire();
             player1.Car.Body = new LightWeightBody();
 
             // po apsipirkimo, galima pridėti kitą variklį
             player1.Car.Engine = new SportEngine();
-            player1.Car.Engine.Upgrade();
+            //player1.Car.Engine.Upgrade();
             //TODO delete end
 
 
