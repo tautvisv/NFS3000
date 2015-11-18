@@ -3,7 +3,7 @@ using System;
 
 namespace Services.Services.Objects
 {
-    public class Tire : IItem
+    public class Tire : ITires
     {
         public void Upgrade()
         {
