@@ -6,11 +6,11 @@ namespace Services.ServicesContracts.Objects
     {
         string Name { get; set; }
 
-        IItem Engine { get; set; }
+        IEngine Engine { get; set; }
 
-        IItem Body { get; set; }
+        IBody Body { get; set; }
 
-        IItem Tires { get; set; }
+        ITires Tires { get; set; }
 
         IUsable Usable { get; set; }
 

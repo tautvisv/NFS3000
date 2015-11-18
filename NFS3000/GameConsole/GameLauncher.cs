@@ -84,6 +84,21 @@ namespace GameConsole
             car2.SetCarNumber(2);
             player1.Car = car1;
             player2.Car = car2;
+
+            //TODO delete me after test
+            player1.Car.Engine = new MuscleEngine();
+            player1.Car.Engine.Upgrade();
+            player1.Car.Engine.Upgrade();
+
+            player1.Car.Tires = new SoftTire();
+            player1.Car.Body = new LightWeightBody();
+
+            // po apsipirkimo, galima pridėti kitą variklį
+            player1.Car.Engine = new SportEngine();
+            player1.Car.Engine.Upgrade();
+            //TODO delete end
+
+
             Ui.Instance().AddDrawableItem(car2);
             Ui.Instance().AddDrawableItem(car1);
             var map = new Map(new CarFactory(), new ObsticlesFactory());
