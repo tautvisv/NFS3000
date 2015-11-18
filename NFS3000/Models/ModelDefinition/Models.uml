@@ -148,6 +148,93 @@
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dd564d1a-0515-414e-ae04-53a416066741"
+        name="dizeiukas"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="e6308baa-6266-47e1-a8a3-efd462cdd1e9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="84724c44-95f8-4c15-b6b8-1f5a0c6437e9"
+              LastKnownName="Engine"
+              LastKnownLocation="Package3_2221.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4bc7e384-6f9a-426c-8bb3-1edd56fa576d"
+        name="benzas"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7a4fb86f-f8bc-41c4-b821-431e89ebca0b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="84724c44-95f8-4c15-b6b8-1f5a0c6437e9"
+              LastKnownName="Engine"
+              LastKnownLocation="Package3_2221.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="20fb18f9-1ace-4356-aae8-e6f0db61babc"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="913bd7f4-87e8-434e-a163-382d7cf919b8"
+        LastKnownName="Data"
+        LastKnownLocation="Package_2129.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="38bfb751-556e-44c9-bc58-b6c7e9aeea55"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="9cf2368d-6127-43b2-9a0a-50a08484336d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="06ada5ef-885e-4b0c-b3a5-723d65c245df"
+              LastKnownName="Car"
+              LastKnownLocation="Package3_2221.uml" />
+          </generalization>
+          <generalization
+            Id="a9370979-477f-405c-841f-5e2df569eebf"
+            isSubstitutable="false">
+            <classMoniker
+              Id="87aa1b94-f0a2-4a58-8d66-4beb6759b9a0"
+              LastKnownName="ModelLoader"
+              LastKnownLocation="Package4_2221.uml" />
+          </generalization>
+          <generalization
+            Id="48f74fa5-874e-4c8a-b80d-dcd44bc8257b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0bc68093-c28c-43dd-9aef-d15996733293"
+              LastKnownName="Obsticle"
+              LastKnownLocation="Package3_2221.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

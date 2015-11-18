@@ -958,5 +958,155 @@
         </ownedOperations>
       </Interface>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ad9854ba-bcd8-4cf6-ac7a-c1412680911c"
+        name="IModelLoader"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="9f2c3837-e6b5-457f-b6a7-7584d4bae61d"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts Type%3DIModelLoader"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="47451a43-d7cb-4452-bfbb-7b4cbd04e72c"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="25a21b13-6fcb-4b07-a6b5-bc09d5d1cb0e">
+                <propertyInstance
+                  Id="69da4b9d-4060-4429-a3b6-23210c38caf8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cadc50b-d587-4c57-8805-76934f490ddf">
+                <propertyInstance
+                  Id="7962712d-2774-4cef-9b3e-4f4f4bcb8c88"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="45b869b1-9de2-48cb-b79c-d166f66c37cb">
+                <propertyInstance
+                  Id="1c7c2485-db40-4404-a3d0-07a269fc3ab4"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d0ae1206-6382-4916-9aa4-ddeb5784150b">
+                <propertyInstance
+                  Id="c4d13c58-ffac-47c6-9f29-76c43a63826b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="4d17b163-3c5e-4127-bc5b-289837b57256"
+            name="LoadModel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fbd5402c-0c4a-4d29-8e14-70a3f9c1fa7b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts Type%3DIModelLoader Member%3D(Name%3DLoadModel OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7a6c0227-fd72-4379-9aa1-1891f17b9d21"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff828527-f247-4a3f-8623-4d81977bf2ad">
+                    <propertyInstance
+                      Id="2d9cd8d3-90d7-4544-988c-6a8472ae0214"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d6fbcbd-e535-4396-8697-2ab0a38ba8ed">
+                    <propertyInstance
+                      Id="45178196-8b45-4817-87ed-2d812e34f55a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb9c1cce-02c3-46b0-beae-2c85d29a8683">
+                    <propertyInstance
+                      Id="27c8f31a-0571-4f14-ae08-f07b316fbecb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d0f800b-a1b4-4dc7-b418-65402c6c6f2d">
+                    <propertyInstance
+                      Id="255eeba0-0fa5-4319-ab8f-96a0fcfb904b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2434419-1fa2-4da9-84df-660b72994270">
+                    <propertyInstance
+                      Id="86f43c65-7d8e-4a62-b542-7e199be0ba6a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bad39559-71eb-4178-8a5c-256a76370cef">
+                    <propertyInstance
+                      Id="d5b76ca0-599b-4175-9a24-7c36bff12474"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8c99ad62-cd63-4d85-ac7e-d2c5812a5659"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="c167d2b2-65ae-4bd0-81fc-bb37a88dbd55"
+                      LastKnownName="IDictionary&lt;Coordinates‎, Char‎&gt;"
+                      LastKnownLocation="Package9_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6bb97b3f-2ba8-451e-a93b-a9c286656321"
+                  name="modelFileName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e3049536-2d1c-40ce-b407-5ca2fd4a1ab5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.ServicesContracts Type%3DIModelLoader Member%3D(Name%3DLoadModel OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DmodelFileName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Models.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
   </packagedElements>
 </package>

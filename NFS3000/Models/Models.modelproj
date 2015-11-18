@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>FactoryUML.classdiagram</DependentUpon>
     </Content>
+    <Content Include="FlyweightUML.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FlyweightUML.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>FlyweightUML.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package10_2221.uml">
       <SubType>Content</SubType>
     </Content>
@@ -60,6 +67,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package_1952.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2129.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package_2221.uml">

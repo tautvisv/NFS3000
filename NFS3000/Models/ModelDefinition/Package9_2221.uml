@@ -409,5 +409,91 @@
         </signatures>
       </Interface>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="201a140b-7304-4f11-b142-ca696983c704"
+        name="IDictionary&lt;String‎, IDictionary‎&lt;Coordinates‎, Char‎&gt;‎&gt;"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2b56a614-e659-4e5a-9f6c-7e14ce2b61ac"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="47bbd96a-809f-49fd-9868-b93111e4c32a">
+                <propertyInstance
+                  Id="828e6282-84e7-4ea7-b82f-9c3599be35f8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04475759-8ba1-494c-b7ec-b51484d9e98a">
+                <propertyInstance
+                  Id="8fc3dde5-5218-453e-979c-c89463949879"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c5576e25-56be-4e6f-9745-91cafe23409c">
+                <propertyInstance
+                  Id="467f5122-17a2-4520-9ee1-db04c7d50b23"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f250dbb0-678e-43c1-9064-440c0223930f">
+                <propertyInstance
+                  Id="42f5a71f-3f53-463e-a81f-1e9e7463edd2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="8971eea0-7b30-4d7d-908f-bd4fba6200ac">
+            <redefinableTemplateSignatureMoniker
+              Id="fdcda3f8-e3ed-4b5f-8a1c-2fc0a19da848"
+              LastKnownLocation="Package9_2221.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="f7d3df83-a7a5-427f-a545-afd0dbc675ce">
+                  <actuals>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Models.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="93d99131-7440-4fda-8ab8-5d6fafd5817f"
+                      LastKnownLocation="Package9_2221.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="242c049e-18a5-4a75-9dfb-e15f20665c5c">
+                  <actuals>
+                    <interfaceMoniker
+                      Id="c167d2b2-65ae-4bd0-81fc-bb37a88dbd55"
+                      LastKnownName="IDictionary&lt;Coordinates‎, Char‎&gt;"
+                      LastKnownLocation="Package9_2221.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="d734f0bc-fd4d-4bd6-905c-97abe414e445"
+                      LastKnownLocation="Package9_2221.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </Interface>
+    </packageHasNamedElement>
   </packagedElements>
 </package>

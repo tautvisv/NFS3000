@@ -280,6 +280,13 @@
               LastKnownName="ICar"
               LastKnownLocation="Package6_2221.uml" />
           </interfaceRealization>
+          <interfaceRealization
+            Id="8b152ee0-2942-4012-bf38-c278637e8f74">
+            <interfaceMoniker
+              Id="ad9854ba-bcd8-4cf6-ac7a-c1412680911c"
+              LastKnownName="IModelLoader"
+              LastKnownLocation="Package5_2221.uml" />
+          </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association
@@ -481,7 +488,7 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="3f94183b-aace-4c33-9e89-6732d5e28774"
+            Id="3effb435-ad3a-4d36-a7f8-28ad1c8e6cd9"
             isDerived="false"
             sourceEndRoleName="Car"
             targetEndRoleName="Engine"
@@ -495,7 +502,7 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="97581186-7902-4947-83b1-80c57c0f14b9"
+                  Id="d869a48f-1790-4570-bef8-9026e5c78538"
                   name="Car"
                   isLeaf="false"
                   isStatic="false"
@@ -507,13 +514,13 @@
                   isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="fed08c90-ed26-418d-a76d-123c9be22a2f"
+                      Id="191f0e83-c059-4542-9c94-73f603d60177"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="3854cec7-4c42-4eba-b317-987f7c1c5f5d"
+                      Id="20879134-d61b-4752-add0-23e8b062a9a2"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -521,7 +528,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="0b2971a3-9c76-4d63-877b-bab3dcf681e8"
+                  Id="5ee3be0a-a2f4-48e8-9703-7f0ecc393bad"
                   name="Engine"
                   isLeaf="false"
                   isStatic="false"
@@ -532,13 +539,13 @@
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="3b876d0c-c7ed-4ef9-b88f-1ced30ec7cca"
+                      Id="7a676123-8d88-4fab-ae0b-b9078c091fe1"
                       name="Lower"
                       value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="da408bc3-c74e-437d-b972-6b33daa0a2f5"
+                      Id="2c2d84e4-b2c9-4fbc-bbe1-9c148e78503e"
                       name="Upper"
                       value="1" />
                   </upperValueInternal>
@@ -547,7 +554,7 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="932a9ec9-5c99-4dc7-99f8-7b0a2de1bb99"
+            Id="fe37867a-13de-4116-9faa-788dddd0c18a"
             isDerived="false"
             sourceEndRoleName="Car"
             targetEndRoleName="Body"
@@ -561,7 +568,7 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="a7fed5a0-8578-4523-967b-8052b2f9a7a6"
+                  Id="1b287189-3f1b-4456-a59b-cb617b75fbfc"
                   name="Car"
                   isLeaf="false"
                   isStatic="false"
@@ -573,13 +580,13 @@
                   isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="5322bc88-1dd0-4247-8e0e-cbd20cdca735"
+                      Id="b3f8b6d0-7cdf-4172-a51b-5e8928f8d59b"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="fd3d2e59-0b4f-4451-a286-c4edf646b7c2"
+                      Id="01b94cc4-026e-48ef-a223-ab9907273451"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -587,7 +594,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="8432fdb1-dcd6-4cb2-8180-5f752198875b"
+                  Id="4639816a-1ea0-47bd-b4f6-13c63648e52a"
                   name="Body"
                   isLeaf="false"
                   isStatic="false"
@@ -598,13 +605,13 @@
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="3c8fe743-85ac-490d-8c49-27179d71dfb1"
+                      Id="f73e0795-9fb0-4816-a000-efe025c5e60e"
                       name="Lower"
                       value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="008b2452-4bf2-468c-aee2-748140fadec5"
+                      Id="a4cae0a5-ae1e-4a48-b105-aaa74061f90a"
                       name="Upper"
                       value="1" />
                   </upperValueInternal>
@@ -613,7 +620,7 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="92486989-4843-423a-870e-5823ac9cca57"
+            Id="c69ac9cc-e3e2-444c-8bc7-e0ed3c169017"
             isDerived="false"
             sourceEndRoleName="Car"
             targetEndRoleName="Tires"
@@ -627,7 +634,7 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="7459e90f-a426-4f0f-a7b1-2dd12b11eecc"
+                  Id="ae80827d-f6b5-4663-95fb-018150cac6de"
                   name="Car"
                   isLeaf="false"
                   isStatic="false"
@@ -639,13 +646,13 @@
                   isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="1d7c0fe8-9aa9-4d54-8267-3a78f1f4a125"
+                      Id="c02168c4-8ac8-4709-8931-9ee389ce56cf"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="557b3f72-c715-4f55-a534-60f7b6071657"
+                      Id="ed115902-e5e8-4125-8861-8a24d1df198a"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -653,7 +660,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="345cd97f-52a1-48cf-9059-8c77c2e2ec29"
+                  Id="6feedcfb-cf80-4904-b1f4-0946b58f1dbd"
                   name="Tires"
                   isLeaf="false"
                   isStatic="false"
@@ -664,13 +671,13 @@
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="8471fdac-8f70-4b14-95be-a05f233b0058"
+                      Id="2681f5c5-ac65-47dd-8194-f24d47fcf492"
                       name="Lower"
                       value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="054df89a-8f69-4e0a-b87d-a4fcd60ffb48"
+                      Id="c9878cfd-0c63-498a-86a9-dd59cb693368"
                       name="Upper"
                       value="1" />
                   </upperValueInternal>
@@ -1948,7 +1955,7 @@
             </appliedStereotypesInternal>
           </operation>
           <operation
-            Id="eca492ae-1265-4de6-a009-ae68cb670244"
+            Id="58af3161-ad85-49b3-816b-3a57ff35e458"
             name="Car"
             isLeaf="false"
             isStatic="false"
@@ -1957,60 +1964,96 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="6c2c5640-6f43-471b-b9a2-a339d8215abc"
+                Id="c4dee9db-bb17-426a-bb7b-cbcc7df3e6d2"
                 handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DCar Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="04c363f7-7bd5-4664-8930-fae308d8e959"
+                Id="6ce32355-e2e1-4712-a1a7-76ab466d5dd6"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="efd8bd9e-fd5a-4a9b-9e87-92c0edc235ac">
+                    Id="c21318bf-17c8-4d66-b8a1-efaf29f1535d">
                     <propertyInstance
-                      Id="41aaa987-02b9-4461-952b-9f7d9dc111b4"
+                      Id="6d66bf9c-e2ab-41a5-b3df-6539a090ac7c"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="4d98d820-4292-466e-9c85-bd04e6ff9a07">
+                    Id="f46eef0c-0703-4a37-8122-9c7c07de6e92">
                     <propertyInstance
-                      Id="e0d664cf-8b86-46fa-9239-a0312c92c7ee"
+                      Id="2753aa42-4856-435f-a51a-4fb094e2b348"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="89128d17-cc7d-4731-b6ce-a60bb06ef4ff">
+                    Id="4297b877-8f98-4f6b-afab-1763123a8850">
                     <propertyInstance
-                      Id="fe683aef-8c3b-45da-a13b-e5de6252194a"
+                      Id="ac8a1f38-d5e0-4a18-8cde-ac3d5cc91ff8"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="78ef7a3d-448a-443a-85b4-b986d8579f7d">
+                    Id="d7231b78-7232-44cd-967d-e8bfe6423402">
                     <propertyInstance
-                      Id="16050f4f-d0a4-43a6-ae79-257f253283ce"
+                      Id="198b64cb-7e58-4e61-9b3e-3b8c58c6c522"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="9d8f4a89-09ed-4b51-bf84-35350d95afc4">
+                    Id="ba4b3f31-c77b-442f-9ea5-362f2bd136e7">
                     <propertyInstance
-                      Id="0e41118d-fdb8-4865-908b-05463484cf9c"
+                      Id="1be27a24-d783-42ff-84d2-f813229257d4"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="765fce82-2ca0-4408-b515-1b401305330b">
+                    Id="5373db35-b0f6-4e8b-a3c0-629c5d845053">
                     <propertyInstance
-                      Id="379a0fae-544b-4dd1-a567-6d5a73a24868"
+                      Id="561ec43a-d79c-4ea5-863a-831b6873369c"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="734a3022-ffd7-42c5-b5c1-d03290a843b3"
+            name="LoadModel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a1ce4368-0756-47ac-8205-411359611e62"
+                  name="modelFileName"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Models.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d59811a1-1f9d-4103-a50b-71341183a2d9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="c167d2b2-65ae-4bd0-81fc-bb37a88dbd55"
+                      LastKnownName="IDictionary&lt;Coordinates‎, Char‎&gt;"
+                      LastKnownLocation="Package9_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -5170,6 +5213,13 @@
               LastKnownName="IObsticle"
               LastKnownLocation="Package6_2221.uml" />
           </interfaceRealization>
+          <interfaceRealization
+            Id="e1736299-4a02-4689-a7b0-81a3f8bd76de">
+            <interfaceMoniker
+              Id="ad9854ba-bcd8-4cf6-ac7a-c1412680911c"
+              LastKnownName="IModelLoader"
+              LastKnownLocation="Package5_2221.uml" />
+          </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association
@@ -5972,7 +6022,7 @@
             </appliedStereotypesInternal>
           </operation>
           <operation
-            Id="889b4d6b-04ee-4b9b-aad5-963923b24fad"
+            Id="b772b879-ee08-4b51-a553-14aacf93ef07"
             name="Obsticle"
             isLeaf="false"
             isStatic="false"
@@ -5981,60 +6031,96 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="73ca979c-de91-4fab-9396-1efc41824d15"
+                Id="3261a6f4-0f63-4ace-ab23-95c91f9627b5"
                 handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fliuda_000%2FDocuments%2FGitHub%2FNFS3000%2FNFS3000%2FServices%2Fbin%2FDebug%2FServices.dll Namespace%3DServices.Services.Objects Type%3DObsticle Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="860ecb92-a1ea-48d6-899d-ca8743c4b0b0"
+                Id="a0d903bf-c7e5-4b46-a645-c87fde1fb0f0"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="1386e0a1-8147-46dc-b6f6-df69790580ca">
+                    Id="d1557962-5a07-48ff-9ccb-f0f4c5057295">
                     <propertyInstance
-                      Id="770d96bf-f1ba-4729-b002-4d472b52f9c5"
+                      Id="ddcd5952-efdf-48c6-8a3a-548f65df79f9"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="4f77d073-7251-4d75-81c5-000430a4f0c7">
+                    Id="ec8a84a1-fd82-4f11-841e-85ea114922e4">
                     <propertyInstance
-                      Id="401c8c02-d382-40e4-854d-ec551dace3e7"
+                      Id="2c3a8282-77e3-425c-88a5-03f167014359"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="93ce5af6-23bb-43ce-97ef-f482633f50a7">
+                    Id="7b6dcc8b-913f-4422-9e99-8b50e944ea69">
                     <propertyInstance
-                      Id="f8637ad4-f2b8-4267-88dd-6984764c480a"
+                      Id="e4ca57fc-6be7-44a7-b7d7-9c9f66d84c40"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="933142d8-90e7-45c2-a780-f665c1a7bbea">
+                    Id="b39ab3fa-3184-48b3-b050-5742307e2517">
                     <propertyInstance
-                      Id="a59bb913-20af-477f-a8c8-17d46399048e"
+                      Id="a6506329-fe9f-4dc2-9c5b-48dd1379a300"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="452ef977-6315-4654-8df6-7e4b4d1e98fb">
+                    Id="46d8f960-eab5-4c73-9583-4d28e66da9cc">
                     <propertyInstance
-                      Id="945cc4cf-cac6-4637-858c-9c118940bd15"
+                      Id="f0933bc5-2e76-4741-9227-2e14b3917383"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="dc1c65f2-2810-4e5f-8167-53b7cc52b66a">
+                    Id="41d3dae3-2597-48b5-a590-6132509df7a2">
                     <propertyInstance
-                      Id="23fa4bea-ac04-4e9e-b088-bc4ad5b2c3d9"
+                      Id="fdb7f59b-020f-4582-a7ff-acbc5215c679"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="97517687-c115-4c96-9ef7-865c0baf8014"
+            name="LoadModel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a8df77a0-e633-40f1-88cc-87d781be467b"
+                  name="modelFileName"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Models.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e977033b-9f18-46fa-ade4-fe874ec45e5e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="c167d2b2-65ae-4bd0-81fc-bb37a88dbd55"
+                      LastKnownName="IDictionary&lt;Coordinates‎, Char‎&gt;"
+                      LastKnownLocation="Package9_2221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>

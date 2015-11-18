@@ -1462,116 +1462,37 @@
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
-          <association Id="28713edd-4fc5-4d8f-8972-71dbd26c98aa" isDerived="false" sourceEndRoleName="Car" targetEndRoleName="Engine" isLeaf="false" isAbstract="false">
-            <interfaceMoniker Id="ec961647-6987-4789-93d0-569701d5b995" LastKnownName="IItem" />
-            <description>Property Engine references type IItem.</description>
+          <association Id="1c03c894-bf58-46bd-a620-338e4ae22936" isDerived="false" sourceEndRoleName="Car" targetEndRoleName="Car" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0dff87b6-ad8d-4dfa-9e67-e8b6e05f9960" LastKnownName="Car" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="7523fc0e-eb9d-4a38-a04c-5d72b0279ce3" name="Car" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString Id="46653dfc-2d78-4d8f-8b8a-c0a6e00c71f2" name="Lower" value="*">
-                      <elementDefinition Id="fed08c90-ed26-418d-a76d-123c9be22a2f" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="deab7ea5-0ae9-4e8d-a41c-9bb00cca2168" name="Upper" value="*">
-                      <elementDefinition Id="3854cec7-4c42-4eba-b317-987f7c1c5f5d" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="97581186-7902-4947-83b1-80c57c0f14b9" />
+                <memberEnd Id="98f7aca9-05b7-478e-a2f4-d56675c06bd5" name="Car" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d586413c-04d7-403e-ba48-8c74c6302f58" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="944fa184-edf6-4180-9702-755677d06c16" name="Engine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="640b7764-c281-4424-86d1-19e0746e1685" name="Lower" value="1">
-                      <elementDefinition Id="3b876d0c-c7ed-4ef9-b88f-1ced30ec7cca" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="aac4afca-267d-457c-a268-0db77d63654b" name="Upper" value="1">
-                      <elementDefinition Id="da408bc3-c74e-437d-b972-6b33daa0a2f5" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="0b2971a3-9c76-4d63-877b-bab3dcf681e8" />
+                <memberEnd Id="d1417edf-41c2-4973-8576-1e6f0ec560a2" name="Car" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ad281815-3ebb-4db9-a066-3eba28421914" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="3f94183b-aace-4c33-9e89-6732d5e28774" />
+            <elementDefinition Id="53f6c174-fe1f-4e65-909d-d63cc1f94848" />
           </association>
-          <association Id="53e1979c-9e1a-416f-8a2e-b409eb6d3506" isDerived="false" sourceEndRoleName="Car" targetEndRoleName="Body" isLeaf="false" isAbstract="false">
+          <association Id="f859fe83-1423-4dd9-afe1-7eac1b7f676c" isDerived="false" sourceEndRoleName="Car" targetEndRoleName="IItem" isLeaf="false" isAbstract="false">
             <interfaceMoniker Id="ec961647-6987-4789-93d0-569701d5b995" LastKnownName="IItem" />
-            <description>Property Body references type IItem.</description>
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="23ad19e6-ffec-4d36-b712-95daea0aea67" name="Car" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString Id="cf6796ce-9725-40ef-b75e-3e6ead492346" name="Lower" value="*">
-                      <elementDefinition Id="5322bc88-1dd0-4247-8e0e-cbd20cdca735" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="83dc3f88-2397-4d6d-8951-654e8fd1a69e" name="Upper" value="*">
-                      <elementDefinition Id="fd3d2e59-0b4f-4451-a286-c4edf646b7c2" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="a7fed5a0-8578-4523-967b-8052b2f9a7a6" />
+                <memberEnd Id="c8a74589-d610-4ed5-a8ce-6301f4772dd1" name="Car" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="002dc2bf-a346-4fde-a65c-90fb71ddb68c" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="537bd576-4ed3-4ac9-a66f-ea65f19fb5ae" name="Body" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="5490b1a2-0756-4702-bdba-f5b7b4eea813" name="Lower" value="1">
-                      <elementDefinition Id="3c8fe743-85ac-490d-8c49-27179d71dfb1" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="0834e004-e3fb-4b5d-a31b-49915c620b65" name="Upper" value="1">
-                      <elementDefinition Id="008b2452-4bf2-468c-aee2-748140fadec5" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="8432fdb1-dcd6-4cb2-8180-5f752198875b" />
+                <memberEnd Id="b4254596-94d8-42ef-a770-988655adf536" name="IItem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0eaf8304-fe3d-478b-8332-6e92a079c438" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="932a9ec9-5c99-4dc7-99f8-7b0a2de1bb99" />
-          </association>
-          <association Id="763c15fd-acfe-40ab-ba17-0a2cc215bcd5" isDerived="false" sourceEndRoleName="Car" targetEndRoleName="Tires" isLeaf="false" isAbstract="false">
-            <interfaceMoniker Id="ec961647-6987-4789-93d0-569701d5b995" LastKnownName="IItem" />
-            <description>Property Tires references type IItem.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="8cf4d5d6-5dd3-46e9-a751-b25411be16a3" name="Car" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString Id="d6500cc5-4c65-4723-87a5-82a3550cc628" name="Lower" value="*">
-                      <elementDefinition Id="1d7c0fe8-9aa9-4d54-8267-3a78f1f4a125" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="ae28b3d0-1721-43e6-9a49-3f64eb775193" name="Upper" value="*">
-                      <elementDefinition Id="557b3f72-c715-4f55-a534-60f7b6071657" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="7459e90f-a426-4f0f-a7b1-2dd12b11eecc" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="4433246f-0455-4b62-aff1-29bdad9f871f" name="Tires" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="3c71c415-6ea8-47d5-8e9c-fc211fd264c8" name="Lower" value="1">
-                      <elementDefinition Id="8471fdac-8f70-4b14-95be-a05f233b0058" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="6d01647b-3af1-45cb-af08-593be8eafaac" name="Upper" value="1">
-                      <elementDefinition Id="054df89a-8f69-4e0a-b87d-a4fcd60ffb48" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="345cd97f-52a1-48cf-9059-8c77c2e2ec29" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="92486989-4843-423a-870e-5823ac9cca57" />
+            <elementDefinition Id="1fc9d8b9-549c-4b98-9268-78301c29bd40" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -2584,6 +2505,9 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="eca492ae-1265-4de6-a009-ae68cb670244" />
+          </operation>
+          <operation Id="f9fec5a4-93e9-4479-9d38-dc10e42c48cc" name="changeEngine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="55be132b-c557-4cf8-89ee-d15e3748c005" />
           </operation>
         </ownedOperationsInternal>
       </class>
