@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-
 using Services.ServicesContracts;
 
 namespace Services.Services.Objects.Singletons
@@ -47,7 +46,7 @@ namespace Services.Services.Objects.Singletons
 
         public string[] Read()
         {
-            throw new NotImplementedException();
+            return File.ReadAllLines("HighScores.txt");
         }
 
     }

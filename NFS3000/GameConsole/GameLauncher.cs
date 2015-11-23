@@ -11,8 +11,7 @@ namespace GameConsole
     internal class GameLauncher
     {
         Thread paintThread;
-        private Player player1;
-        private Player player2;
+        private Menu menu;
 
         static void Main(string[] args)
         {
@@ -41,7 +40,7 @@ namespace GameConsole
                     {
                         Environment.Exit(0);
                     }
-                    ChangePlayerDirection(key, player1);
+                    menu.Control(key.Key);
                 }
                 else
                 {
@@ -76,40 +75,14 @@ namespace GameConsole
 
         public void DoTestStuff()
         {
-            var car1 = new Car();
-            var car2 = new Car();
-            player2 = new Player { Car = car2 };
-            player1 = new Player { Car = car1 };
-            car1.SetCarNumber(1);
-            car2.SetCarNumber(2);
-            player1.Car = car1;
-            player2.Car = car2;
-
-            //TODO delete me after test
-            player1.Car.Engine = new MuscleEngine();
-            //player1.Car.Engine.Upgrade();
-            //player1.Car.Engine.Upgrade();
-
-            player1.Car.Tires = new SoftTire();
-            player1.Car.Body = new LightWeightBody();
-
-            // po apsipirkimo, galima pridėti kitą variklį
-            player1.Car.Engine = new SportEngine();
-            //player1.Car.Engine.Upgrade();
-            //TODO delete end
-
-
-            Ui.Instance().AddDrawableItem(car2);
-            Ui.Instance().AddDrawableItem(car1);
-            var map = new Map(new CarFactory(), new ObsticlesFactory());
-            Ui.Instance().AddDrawableItem(map);
+            menu = new Menu(Ui.Instance());
+            Ui.Instance().AddDrawableItem(menu);
             paintThread = new Thread(() =>
             {
                 while (true)
                 {
+                    PhysicsEngine.Instance().CalculateLogic();
                     Ui.Instance().Draw();
-                    //Reikia physics engine Object
-                    map.Move();
                     Thread.Sleep(Globals.REFRESH_RATE);
                 }
             });

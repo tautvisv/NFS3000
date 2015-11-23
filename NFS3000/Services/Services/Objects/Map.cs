@@ -17,11 +17,14 @@ namespace Services.Services.Objects
         private Factory carFactory = new CarFactory();
         private Factory obsticlesFactory = new ObsticlesFactory();
         private IList<IDrawable> obsticles = new List<IDrawable>();
+        private readonly PhysicsEngine physicsEngine;
         public int Width { get; private set; }
         public int Height { get; private set; }
-        private readonly char[][] mapFences = new char[2][]; 
-        public Map(Factory carFactory, Factory obsticlesFactory)
+        private readonly char[][] mapFences = new char[2][];
+        public Map(PhysicsEngine physicsEngine)
         {
+            physicsEngine.AddItem(this);
+            this.physicsEngine = physicsEngine;
             RequeredTicksToMove = 3;
             Position = new Coordinates();
             Content = new Dictionary<Coordinates, char>();
@@ -33,8 +36,6 @@ namespace Services.Services.Objects
                     mapFences[i][j] = j % 3 == 1 ? Globals.BACKGROUND_DEFAULT_VALUE : '+';
                 }
             }
-            this.carFactory = carFactory;
-            this.obsticlesFactory = obsticlesFactory;
             var jsonText = File.ReadAllText(Globals.MODELS_PATH + "asd" + Globals.MODELS_FILES_EXTENSION);
             var deserializeObject = JsonConvert.DeserializeObject<MapStructure>(jsonText);
             Width = deserializeObject.MapWidth;
@@ -69,8 +70,7 @@ namespace Services.Services.Objects
         public IDictionary<Coordinates, char> Content { get; private set; }
         public bool ShouldBeDrawn(int screenTop, int screenBottom)
         {
-            Position.Y++;
-            // fu draw me 
+            // f u draw me 
             return true;
         }
 
@@ -82,7 +82,7 @@ namespace Services.Services.Objects
                 var fenceXCoordinate = i == 0 ? 0 : Globals.X_MAX_BOARD_SIZE - 1;
                 for (int j = 0; j < mapFences[i].Length; j++)
                 {
-                    var fenceYCoordinate = (Ui.CurrentPosition + j) % Globals.Y_MAX_BOARD_SIZE;
+                    var fenceYCoordinate = (physicsEngine.CurrentPosition + j) % Globals.Y_MAX_BOARD_SIZE;
                     Content.Add(new Coordinates(fenceXCoordinate, fenceYCoordinate), mapFences[i][j]);
                 }
 

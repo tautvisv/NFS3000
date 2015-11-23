@@ -16,9 +16,8 @@ namespace Services.Services.Objects.Singletons
         private readonly char[][] view = new char[Globals.Y_MAX_BOARD_SIZE][];
         private IList<IDrawable> drawables;
         private static Ui instance;
+        private readonly PhysicsEngine physicsEngine;
         private static readonly object LockInstanceObj = new object();
-        // TODO: Move out to currently not created physics engine
-        public static int CurrentPosition { get; private set; }
 
         public static Ui Instance()
         {
@@ -28,16 +27,16 @@ namespace Services.Services.Objects.Singletons
                 {
                     if (instance == null)
                     {
-                        instance = new Ui();
+                        instance = new Ui(PhysicsEngine.Instance());
                     }
                 }
             }
             return instance;
         }
 
-        private Ui()
+        private Ui(PhysicsEngine physicsEngine)
         {
-            CurrentPosition = 0;
+            this.physicsEngine = physicsEngine;
             drawables = new List<IDrawable>();
             UpdateScreen = true;
             for (var y = 0; y < Globals.Y_MAX_BOARD_SIZE; ++y)
@@ -80,25 +79,21 @@ namespace Services.Services.Objects.Singletons
         [STAThread]
         public void Draw()
         {
-            // TODO: remove this car ++
             if (!UpdateScreen)
             {
                 return;
             }
             ClearView();
 
-            CurrentPosition++;
-
             foreach (var drawable in drawables)
             {
-                if (drawable.ShouldBeDrawn(CurrentPosition, CurrentPosition+Globals.Y_MAX_BOARD_SIZE))
+                if (drawable.ShouldBeDrawn(0, Globals.Y_MAX_BOARD_SIZE))
                 foreach (var pixel in drawable.Content)
                 {
-                    view[drawable.Position.Y + pixel.Key.Y - CurrentPosition][drawable.Position.X + pixel.Key.X] = pixel.Value;
+                    view[drawable.Position.Y + pixel.Key.Y][drawable.Position.X + pixel.Key.X] = pixel.Value;
                 }
             }
 
-            foreach (var car in drawables.Where(t => t is Car)) { car.Position.Y++; }
             var sb = new StringBuilder();
             foreach (var line in view)
             {

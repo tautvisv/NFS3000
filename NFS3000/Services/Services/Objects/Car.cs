@@ -7,7 +7,7 @@ using Services.ServicesContracts.Objects;
 
 namespace Services.Services.Objects
 {
-    public class Car : ICar
+    public class Car : AIObject, ICar
     {
         public Car()
         {
@@ -84,6 +84,12 @@ namespace Services.Services.Objects
             if (Position.Y == Globals.Y_MAX_BOARD_SIZE-Length-1)
                 return;
             Position.Y += 1;
+        }
+
+        public override void Move()
+        {
+            Ui.Instance().RequireScreenUpdate();
+            MoveUp();
         }
     }
 }

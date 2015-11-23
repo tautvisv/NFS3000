@@ -50,6 +50,8 @@
     <Compile Include="ServicesContracts\IDataWriter.cs" />
     <Compile Include="ServicesContracts\IModelLoader.cs" />
     <Compile Include="ServicesContracts\IPaint.cs" />
+    <Compile Include="ServicesContracts\Menu\Button.cs" />
+    <Compile Include="ServicesContracts\Menu\IMenu.cs" />
     <Compile Include="ServicesContracts\Objects\AIObject.cs" />
     <Compile Include="ServicesContracts\Objects\IBody.cs" />
     <Compile Include="ServicesContracts\Objects\ICollectable.cs" />
@@ -60,6 +62,9 @@
     <Compile Include="ServicesContracts\Objects\IMove.cs" />
     <Compile Include="ServicesContracts\Objects\IObsticle.cs" />
     <Compile Include="ServicesContracts\Objects\ITires.cs" />
+    <Compile Include="Services\Menu\ExitButton.cs" />
+    <Compile Include="Services\Menu\ScoreButton.cs" />
+    <Compile Include="Services\Menu\StartButton.cs" />
     <Compile Include="Services\Objects\Car.cs" />
     <Compile Include="Services\Objects\Coordinates.cs" />
     <Compile Include="ServicesContracts\Objects\IIncrementScore.cs" />
@@ -77,7 +82,7 @@
     <Compile Include="Services\Objects\HighScoreItem.cs" />
     <Compile Include="Services\Objects\LightWeightBody.cs" />
     <Compile Include="Services\Objects\Map.cs" />
-    <Compile Include="Services\Objects\Meniu.cs" />
+    <Compile Include="Services\Objects\Menu.cs" />
     <Compile Include="Services\Objects\MuscleEngine.cs" />
     <Compile Include="Services\Objects\Obsticle.cs" />
     <Compile Include="Services\Objects\OpponentCar.cs" />
@@ -85,6 +90,7 @@
     <Compile Include="Services\Objects\RainTires.cs" />
     <Compile Include="Services\Objects\Singletons\FileSingleton.cs" />
     <Compile Include="Services\Objects\Singletons\ModelLoader.cs" />
+    <Compile Include="Services\Objects\Singletons\PhysicsEngine.cs" />
     <Compile Include="Services\Objects\Singletons\ScoreCounter.cs" />
     <Compile Include="Services\Objects\Singletons\Ui.cs" />
     <Compile Include="Services\Objects\SportEngine.cs" />

@@ -54,7 +54,7 @@ namespace Services.Services.Objects.Singletons
                 }
                 catch (FileNotFoundException e)
                 {
-                    throw new Exception(string.Format("Could not found model modelFileName: '{0}' in '{1}'.", modelFileName, Globals.MODELS_PATH), e);
+                    throw new Exception(string.Format("Could not found model text: '{0}' in '{1}'.", modelFileName, Globals.MODELS_PATH), e);
                 }
                 for (int lineNumber = 0; lineNumber < allLines.Length; lineNumber++)
                 {
@@ -67,6 +67,31 @@ namespace Services.Services.Objects.Singletons
                     }
                 }
                 flyweightCache.Add(modelFileName, model);
+                return model;
+            }
+        }
+
+        public IDictionary<Coordinates, char> TextToModel(string text)
+        {
+            lock (lockInstanceObj)
+            {
+                if (flyweightCache.ContainsKey(text))
+                {
+                    return flyweightCache[text];
+                }
+                var model = new Dictionary<Coordinates, char>();
+                string[] allLines = new []{ "", "  " + text };
+                for (int lineNumber = 0; lineNumber < allLines.Length; lineNumber++)
+                {
+                    for (int lineCharNumber = 0; lineCharNumber < allLines[lineNumber].Length; lineCharNumber++)
+                    {
+                        if (allLines[lineNumber][lineCharNumber] != ' ')
+                        {
+                            model.Add(new Coordinates(lineCharNumber, lineNumber), allLines[lineNumber][lineCharNumber]);
+                        }
+                    }
+                }
+                flyweightCache.Add(text, model);
                 return model;
             }
         }

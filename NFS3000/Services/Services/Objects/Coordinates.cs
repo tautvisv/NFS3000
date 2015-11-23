@@ -31,5 +31,10 @@ namespace Services.Services.Objects
         {
             return String.Format("X:{0}, Y:{1}",X,Y);
         }
+
+        public static Coordinates operator +(Coordinates c1, Coordinates c2)
+        {
+            return new Coordinates(c1.X + c2.X, c1.Y + c2.Y);
+        }
     }
 }
