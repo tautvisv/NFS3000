@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Threading;
 using Data;
+using Microsoft.Practices.Unity;
 using Services.Services.Objects;
 using Services.Services.Objects.Factories;
 using Services.Services.Objects.Singletons;
+using Services.ServicesContracts;
 using Services.ServicesContracts.Objects;
 
 namespace GameConsole
@@ -15,11 +17,20 @@ namespace GameConsole
 
         static void Main(string[] args)
         {
+            RegisterElements();
             var game = new GameLauncher();
             game.Initialise();
             game.StartGame();
         }
 
+        public static void RegisterElements()
+        {
+            var container = new UnityContainer();
+            container.RegisterInstance<IModelLoader>(ModelLoader.Instance());
+            container.RegisterInstance<PhysicsEngine>(PhysicsEngine.Instance());
+            container.RegisterInstance<IScoreCounter>(ScoreCounter.Instance());
+            container.RegisterInstance<IPaint>(Ui.Instance());
+        }
         public void Initialise()
         {
             Console.CursorVisible = false;
