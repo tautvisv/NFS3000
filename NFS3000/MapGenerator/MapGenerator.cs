@@ -48,6 +48,7 @@ namespace MapGenerator
             MapWidth = GetIntFromConsole("Please enter map width: ");
             var random = new Random();
             var obsticle = new Obsticle();
+            var nullobsticle = new NullObsticle();
             var obsticles = new MapObjects(obsticle.GetType().ToString());
             for (int i = 0; i < MapLength; i+= random.Next(0, 12))
             {
