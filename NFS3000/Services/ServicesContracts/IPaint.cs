@@ -11,6 +11,7 @@ namespace Services.ServicesContracts
         void Draw();
         void AddDrawableItem(IDrawable drawable);
         void RemoveDrawableItem(IDrawable drawable);
+        void ClearObsticles();
         void RequireScreenUpdate();
     }
 }

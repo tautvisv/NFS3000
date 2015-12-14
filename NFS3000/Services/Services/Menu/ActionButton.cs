@@ -17,10 +17,13 @@ namespace Services.Services.Menu
             player = new Player{Name = "Player1"};
             player.Car = new Car();
             Ui.Instance().AddDrawableItem(player.Car);
+            ScoreCounter.Instance().AddPlayer(player);
+            Ui.Instance().ClearObsticles();
         }
 
         public override List<Button> Action()
         {
+            ScoreCounter.Instance().RemovePlayer(player);
             Ui.Instance().RemoveDrawableItem(player.Car);
             return fatherButtons;
         }

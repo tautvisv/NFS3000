@@ -107,6 +107,10 @@ namespace Services.Services.Objects.Singletons
                 {
                     view[drawable.Position.Y + pixel.Key.Y][drawable.Position.X + pixel.Key.X] = pixel.Value;
                 }
+                else if (drawable is AIObject)
+                {
+                    physicsEngine.RemoveItem((AIObject) drawable);
+                }
             }
 
             var sb = new StringBuilder();
@@ -129,6 +133,16 @@ namespace Services.Services.Objects.Singletons
         public void RemoveDrawableItem(IDrawable drawable)
         {
             drawables.Remove(drawable);
+        }
+
+        public void ClearObsticles()
+        {
+            var toRemove = drawables.Where(t => t is IObsticle).ToList();
+            foreach (var r in toRemove)
+            {
+                drawables.Remove(r);
+                physicsEngine.RemoveItem((AIObject)r);
+            }
         }
 
         public void RequireScreenUpdate()

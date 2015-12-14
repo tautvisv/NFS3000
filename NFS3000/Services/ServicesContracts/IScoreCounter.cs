@@ -11,10 +11,12 @@ namespace Services.ServicesContracts
     public interface IScoreCounter : IDisposable
     {
         void AddPlayer(IPlayer player);
+        void RemovePlayer(IPlayer player);
         int GetScore(IPlayer player);
         IList<HighScoreItem> GetHighScores();
         int UpdateScore(IIncrementScore thisEvent, IPlayer player);
         void ResetScores();
         int GetPlayerCount();
+        IPlayer GetPlayer();
     }
 }

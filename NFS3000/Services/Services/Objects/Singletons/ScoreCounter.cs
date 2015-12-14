@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Services.ServicesContracts;
 using Services.ServicesContracts.Objects;
 
@@ -41,6 +42,12 @@ namespace Services.Services.Objects.Singletons
             Players.Add(player);
             Scores.Add(player, 0);
         }
+
+        public void RemovePlayer(IPlayer player)
+        {
+            Players.Remove(player);
+        }
+
         public int GetScore(IPlayer player)
         {
             return Scores[player];
@@ -64,6 +71,11 @@ namespace Services.Services.Objects.Singletons
         public int GetPlayerCount()
         {
             return Players.Count;
+        }
+
+        public IPlayer GetPlayer()
+        {
+            return Players.FirstOrDefault();
         }
 
         public void Dispose()
