@@ -4,16 +4,18 @@ using Services.ServicesContracts.MeniuItems;
 
 namespace Services.Services.Menu
 {
-    public class ExitButton : Button
+    public class ActionButton : Button
     {
-        public ExitButton(List<Button> fatherButtons) : base(fatherButtons, "Exit")
+        private readonly List<Button> fatherButtons;
+
+        public ActionButton(List<Button> fatherButtons) : base(fatherButtons, "", false)
         {
+            this.fatherButtons = fatherButtons;
         }
 
         public override List<Button> Action()
         {
-            Environment.Exit(0);
-            return new List<Button>();
+            return fatherButtons;
         }
 
         public override void Action(ConsoleKey key)

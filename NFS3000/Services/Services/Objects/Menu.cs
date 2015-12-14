@@ -18,12 +18,10 @@ namespace Services.Services.Objects
             var position = 0;
             painter = ui;
             Position = new Coordinates();
-            MenuButtons = new List<Button>
-            {
-                new StartButton { Position = new Coordinates(10, position += 3) }, 
-                new ScoreButton { Position = new Coordinates(10, position += 3) }, 
-                new ExitButton { Position = new Coordinates(10, position += 3) }
-            };
+            MenuButtons = new List<Button>();
+            MenuButtons.Add(new StartButton(MenuButtons) {Position = new Coordinates(10, position += 3)});
+            MenuButtons.Add(new ScoreButton(MenuButtons) {Position = new Coordinates(10, position += 3)});
+            MenuButtons.Add(new ExitButton(MenuButtons) {Position = new Coordinates(10, position += 3)});
             MenuButtons[SelectedButton].IsSelected = true;
             painter.RequireScreenUpdate();
         }
@@ -34,7 +32,7 @@ namespace Services.Services.Objects
             get { return selectedButton; }
             set { selectedButton = value<0? value % MenuButtons.Count + MenuButtons.Count:value % MenuButtons.Count; }
         }
-        private IList<Button> MenuButtons { get; set; }
+        private List<Button> MenuButtons { get; set; }
         private IDrawable Start { get; set; }
         private IDrawable HighScores { get; set; }
         private IDrawable Upgrades { get; set; }
@@ -67,6 +65,7 @@ namespace Services.Services.Objects
 
         public void Control(ConsoleKey key)
         {
+            MenuButtons[SelectedButton].Action(key);
             switch (key)
             {
                 case ConsoleKey.UpArrow:
@@ -76,7 +75,9 @@ namespace Services.Services.Objects
                     SelectedButton++;
                     break;
                 case ConsoleKey.Enter:
-                    MenuButtons[SelectedButton].Action();
+                    var menu = MenuButtons[SelectedButton].Action();
+                    if (menu.Count > 0)
+                        MenuButtons = menu;
                     break;
             }
             foreach (var button in MenuButtons)
