@@ -126,6 +126,11 @@ namespace Services.Services.Objects.Singletons
             drawables = drawables.OrderBy(t => t.Priority).ToList();
         }
 
+        public void RemoveDrawableItem(IDrawable drawable)
+        {
+            drawables.Remove(drawable);
+        }
+
         public void RequireScreenUpdate()
         {
             UpdateScreen = true;
@@ -136,15 +141,6 @@ namespace Services.Services.Objects.Singletons
             for (int y = 0; y < Globals.Y_MAX_BOARD_SIZE; ++y)
                 for (int x = 0; x < Globals.X_MAX_BOARD_SIZE; ++x)
                     view[y][x] = Globals.BACKGROUND_DEFAULT_VALUE;
-
-            //for (int i = 0; i < Globals.Y_MAX_BOARD_SIZE; i++)
-            //{
-            //    view[i] = new char[Globals.X_MAX_BOARD_SIZE];
-            //    for (int j = 0; j < Globals.X_MAX_BOARD_SIZE; j++)
-            //    {
-            //        view[i][j] = Globals.BACKGROUND_DEFAULT_VALUE;
-            //    }
-            //}
         }
 
         private bool UpdateScreen { get; set; }

@@ -21,9 +21,6 @@ namespace GameConsole
         static void Main(string[] args)
         {
             RegisterElementsAndStartElements();
-            //var game = new GameLauncher();
-            //game.Initialise();
-            //game.StartGame();
         }
 
         public GameLauncher(IMenu menuItm, IPaint ui, PhysicsEngine PhysicsEng)
@@ -32,6 +29,7 @@ namespace GameConsole
             UI = ui;
             ui.AddDrawableItem(menu);
             Physics = PhysicsEng;
+            Initialise();
         }
 
         public static void RegisterElementsAndStartElements()
@@ -44,7 +42,6 @@ namespace GameConsole
             container.RegisterType<IMenu, Menu>();
             container.RegisterType<GameLauncher>();
             var launcer = container.Resolve<GameLauncher>();
-            //launcer.Initialise();
             launcer.StartGame();
         }
         public void Initialise()
@@ -85,29 +82,6 @@ namespace GameConsole
                     Thread.Sleep(Globals.REFRESH_RATE);
                 }
             }
-        }
-
-        public void ChangePlayerDirection(ConsoleKeyInfo key, IPlayer player)
-        {
-            switch (key.Key)
-            {
-                case ConsoleKey.UpArrow:
-                    player.Car.MoveUp();
-                    break;
-                case ConsoleKey.LeftArrow:
-                    player.Car.MoveLeft();
-                    break;
-                case ConsoleKey.RightArrow:
-                    player.Car.MoveRight();
-                    break;
-                case ConsoleKey.DownArrow:
-                    player.Car.MoveDown();
-                    break;
-                default:
-                    return;
-            }
-            //TODO Perkelti jaučiu reikia į move funkciją
-            UI.RequireScreenUpdate();
         }
 
     }

@@ -13,7 +13,7 @@ namespace Services.Services.Objects
         {
             Content = ModelLoader.Instance().LoadModel(ModelsNames.Car);
             Priority = 100;
-            Position = new Coordinates(10, 10);
+            Position = new Coordinates(28, 25);
             Width = Content.Max(t => t.Key.X) - Content.Min(t => t.Key.X);
             Length = Content.Max(t => t.Key.Y) - Content.Min(t => t.Key.Y);
         }

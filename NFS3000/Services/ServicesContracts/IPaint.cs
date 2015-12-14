@@ -10,6 +10,7 @@ namespace Services.ServicesContracts
         void Draw(TextBox textBox);
         void Draw();
         void AddDrawableItem(IDrawable drawable);
+        void RemoveDrawableItem(IDrawable drawable);
         void RequireScreenUpdate();
     }
 }
