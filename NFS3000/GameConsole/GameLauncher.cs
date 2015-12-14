@@ -56,6 +56,15 @@ namespace GameConsole
         {
             paintThread = new Thread(() =>
             {
+                var fenceLeft = new Fence(0, 2);
+                var fenceCenter = new Fence(Globals.X_MAX_BOARD_SIZE/2, 1);
+                var fenceRight = new Fence(Globals.X_MAX_BOARD_SIZE-2,2);
+                UI.AddDrawableItem(fenceLeft);
+                Physics.AddItem(fenceLeft);
+                UI.AddDrawableItem(fenceCenter);
+                Physics.AddItem(fenceCenter);
+                UI.AddDrawableItem(fenceRight);
+                Physics.AddItem(fenceRight);
                 while (true)
                 {
                     Physics.CalculateLogic();

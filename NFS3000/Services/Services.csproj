@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicesContracts\IDataWriter.cs" />
+    <Compile Include="ServicesContracts\IFence.cs" />
     <Compile Include="ServicesContracts\IModelLoader.cs" />
     <Compile Include="ServicesContracts\IPaint.cs" />
     <Compile Include="ServicesContracts\Menu\Button.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Services\Objects\Factories\Factory.cs" />
     <Compile Include="Services\Objects\Factories\ObsticlesFactory.cs" />
     <Compile Include="Services\Objects\Factories\PlayerFactory.cs" />
+    <Compile Include="Services\Objects\Fence.cs" />
     <Compile Include="Services\Objects\HardTire.cs" />
     <Compile Include="Services\Objects\HeavyWeightBody.cs" />
     <Compile Include="Services\Objects\HighScoreItem.cs" />
