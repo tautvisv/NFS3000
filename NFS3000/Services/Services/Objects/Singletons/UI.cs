@@ -34,6 +34,21 @@ namespace Services.Services.Objects.Singletons
             return instance;
         }
 
+        public static Ui Instance(PhysicsEngine physicsEngine)
+        {
+            if (instance == null)
+            {
+                lock (LockInstanceObj)
+                {
+                    if (instance == null)
+                    {
+                        instance = new Ui(physicsEngine);
+                    }
+                }
+            }
+            return instance;
+        }
+
         private Ui(PhysicsEngine physicsEngine)
         {
             this.physicsEngine = physicsEngine;
