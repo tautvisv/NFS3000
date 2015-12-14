@@ -8,7 +8,12 @@ namespace Services.Services.Objects.Singletons
     public sealed class ScoreCounter : IScoreCounter
     {
         private static ScoreCounter instance;
-        private static IList<HighScoreItem> highScores = new List<HighScoreItem>();
+        private static IList<HighScoreItem> highScores = new List<HighScoreItem>
+        {
+            new HighScoreItem("aaa;100"), 
+            new HighScoreItem("ass;75"), 
+            new HighScoreItem("asd;10")
+        };
         private static IDictionary<IPlayer, int> Scores { get; set; }
         private static IList<IPlayer> Players { get; set; }
         private static readonly object lockInstanceObj = new object();

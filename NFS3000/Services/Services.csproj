@@ -62,8 +62,10 @@
     <Compile Include="ServicesContracts\Objects\IMove.cs" />
     <Compile Include="ServicesContracts\Objects\IObsticle.cs" />
     <Compile Include="ServicesContracts\Objects\ITires.cs" />
+    <Compile Include="Services\Menu\ActionButton.cs" />
     <Compile Include="Services\Menu\ExitButton.cs" />
     <Compile Include="Services\Menu\ScoreButton.cs" />
+    <Compile Include="Services\Menu\ScoreResult.cs" />
     <Compile Include="Services\Menu\StartButton.cs" />
     <Compile Include="Services\Objects\Car.cs" />
     <Compile Include="Services\Objects\Coordinates.cs" />
