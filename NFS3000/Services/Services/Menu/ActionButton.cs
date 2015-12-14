@@ -25,6 +25,7 @@ namespace Services.Services.Menu
         {
             ScoreCounter.Instance().RemovePlayer(player);
             Ui.Instance().RemoveDrawableItem(player.Car);
+            Console.BackgroundColor = ConsoleColor.White;
             return fatherButtons;
         }
 

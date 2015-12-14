@@ -53,9 +53,10 @@ namespace Services.Services.Objects.Singletons
                 {
                     var obsticle = (IObsticle) aiObject;
                     if (obsticle.Position.X-2 <= carPozition.Position.X && obsticle.Position.X + 2 >= carPozition.Position.X
-                        && obsticle.Position.Y - 2 <= carPozition.Position.Y && obsticle.Position.Y + 3 >= carPozition.Position.Y)
+                        && obsticle.Position.Y - 2 <= carPozition.Position.Y && obsticle.Position.Y + 1 >= carPozition.Position.Y)
                     {
-                        Environment.Exit(0);
+                        // TODO: add score counting LIUDAS !!! :D ;D
+                        Console.BackgroundColor = Console.BackgroundColor == ConsoleColor.Blue ? ConsoleColor.Red : ConsoleColor.Blue;
                     }
                 }
                 aiObject.Move();
