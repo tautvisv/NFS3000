@@ -84,6 +84,7 @@
     <Compile Include="Services\Objects\Map.cs" />
     <Compile Include="Services\Objects\Menu.cs" />
     <Compile Include="Services\Objects\MuscleEngine.cs" />
+    <Compile Include="Services\Objects\NullObsticle.cs" />
     <Compile Include="Services\Objects\Obsticle.cs" />
     <Compile Include="Services\Objects\OpponentCar.cs" />
     <Compile Include="Services\Objects\Player.cs" />

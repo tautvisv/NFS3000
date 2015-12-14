@@ -17,19 +17,23 @@ namespace GameConsole
 
         static void Main(string[] args)
         {
-            RegisterElements();
-            var game = new GameLauncher();
-            game.Initialise();
-            game.StartGame();
+            RegisterElementsAndStartElements();
+            //var game = new GameLauncher();
+            //game.Initialise();
+            //game.StartGame();
         }
 
-        public static void RegisterElements()
+        public static void RegisterElementsAndStartElements()
         {
             var container = new UnityContainer();
             container.RegisterInstance<IModelLoader>(ModelLoader.Instance());
             container.RegisterInstance<PhysicsEngine>(PhysicsEngine.Instance());
             container.RegisterInstance<IScoreCounter>(ScoreCounter.Instance());
             container.RegisterInstance<IPaint>(Ui.Instance());
+            container.RegisterType<GameLauncher>();
+            var launcer = container.Resolve<GameLauncher>();
+            launcer.Initialise();
+            launcer.StartGame();
         }
         public void Initialise()
         {
