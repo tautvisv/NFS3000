@@ -6,6 +6,7 @@ using Services.Services.Objects;
 using Services.Services.Objects.Factories;
 using Services.Services.Objects.Singletons;
 using Services.ServicesContracts;
+using Services.ServicesContracts.Menu;
 using Services.ServicesContracts.Objects;
 
 namespace GameConsole
@@ -13,7 +14,9 @@ namespace GameConsole
     internal class GameLauncher
     {
         Thread paintThread;
-        private Menu menu;
+        private IMenu menu;
+        private readonly IPaint UI;
+        private readonly PhysicsEngine Physics;
 
         static void Main(string[] args)
         {
@@ -23,6 +26,14 @@ namespace GameConsole
             //game.StartGame();
         }
 
+        public GameLauncher(IMenu menuItm, IPaint ui, PhysicsEngine PhysicsEng)
+        {
+            menu = menuItm;
+            UI = ui;
+            ui.AddDrawableItem(menu);
+            Physics = PhysicsEng;
+        }
+
         public static void RegisterElementsAndStartElements()
         {
             var container = new UnityContainer();
@@ -30,9 +41,10 @@ namespace GameConsole
             container.RegisterInstance<PhysicsEngine>(PhysicsEngine.Instance());
             container.RegisterInstance<IScoreCounter>(ScoreCounter.Instance());
             container.RegisterInstance<IPaint>(Ui.Instance());
+            container.RegisterType<IMenu, Menu>();
             container.RegisterType<GameLauncher>();
             var launcer = container.Resolve<GameLauncher>();
-            launcer.Initialise();
+            //launcer.Initialise();
             launcer.StartGame();
         }
         public void Initialise()
@@ -42,10 +54,20 @@ namespace GameConsole
             Console.ForegroundColor = ConsoleColor.Black;
             //TODO parinkti protingai aukštį bei plotį
             Console.SetWindowSize(Globals.X_MAX_BOARD_SIZE, Globals.Y_MAX_BOARD_SIZE);
-            DoTestStuff();
         }
         public void StartGame()
         {
+            paintThread = new Thread(() =>
+            {
+                while (true)
+                {
+                    Physics.CalculateLogic();
+                    UI.Draw();
+                    Thread.Sleep(Globals.REFRESH_RATE);
+                }
+            });
+            paintThread.Start(); 
+
             while (true)
             {
                 if (Console.KeyAvailable)
@@ -85,23 +107,8 @@ namespace GameConsole
                     return;
             }
             //TODO Perkelti jaučiu reikia į move funkciją
-            Ui.Instance().RequireScreenUpdate();
+            UI.RequireScreenUpdate();
         }
 
-        public void DoTestStuff()
-        {
-            menu = new Menu(Ui.Instance());
-            Ui.Instance().AddDrawableItem(menu);
-            paintThread = new Thread(() =>
-            {
-                while (true)
-                {
-                    PhysicsEngine.Instance().CalculateLogic();
-                    Ui.Instance().Draw();
-                    Thread.Sleep(Globals.REFRESH_RATE);
-                }
-            });
-            paintThread.Start(); 
-        }
     }
 }

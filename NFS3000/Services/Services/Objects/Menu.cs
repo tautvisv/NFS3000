@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using Services.Services.Menu;
 using Services.Services.Objects.Singletons;
@@ -30,7 +31,7 @@ namespace Services.Services.Objects
 
         private int SelectedButton {
             get { return selectedButton; }
-            set { selectedButton = value<0? value % MenuButtons.Count + MenuButtons.Count:value % MenuButtons.Count; }
+            set { selectedButton = value < 0 ? MenuButtons.Count-1 : value % MenuButtons.Count; }
         }
         private List<Button> MenuButtons { get; set; }
         private IDrawable Start { get; set; }
