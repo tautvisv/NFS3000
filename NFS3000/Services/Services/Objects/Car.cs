@@ -56,7 +56,6 @@ namespace Services.Services.Objects
 
         public void MoveLeft()
         {
-            //TODO some boom logic
             if(Position.X == 0)
                 return;
             Position.X -= 1;
@@ -64,7 +63,6 @@ namespace Services.Services.Objects
 
         public void MoveRight()
         {
-            //TODO some boom logic
             if (Position.X > Globals.X_MAX_BOARD_SIZE-Width-2)
                 return;
             Position.X += 1;
@@ -72,7 +70,6 @@ namespace Services.Services.Objects
 
         public void MoveUp()
         {
-            //TODO some boom logic
             if (Position.Y == 0)
                 return;
             Position.Y -= 1;
@@ -80,7 +77,6 @@ namespace Services.Services.Objects
 
         public void MoveDown()
         {
-            //TODO some boom logic
             if (Position.Y == Globals.Y_MAX_BOARD_SIZE-Length-1)
                 return;
             Position.Y += 1;
@@ -90,6 +86,11 @@ namespace Services.Services.Objects
         {
             Ui.Instance().RequireScreenUpdate();
             MoveUp();
+        }
+
+        public int IncrementScore(int score)
+        {
+            return ++score;
         }
     }
 }

@@ -90,5 +90,10 @@ namespace Services.Services.Objects
         {
             throw new NotImplementedException();
         }
+
+        public int IncrementScore(int score)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

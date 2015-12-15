@@ -8,13 +8,9 @@ namespace Services.Services.Objects.Singletons
 {
     public sealed class ScoreCounter : IScoreCounter
     {
+        // TODO: LIUDAI padaryk kad issaugotu high scores i faila ir ijungus is jo pakrautu
         private static ScoreCounter instance;
-        private static IList<HighScoreItem> highScores = new List<HighScoreItem>
-        {
-            new HighScoreItem("aaa;100"), 
-            new HighScoreItem("ass;75"), 
-            new HighScoreItem("asd;10")
-        };
+        private static IList<HighScoreItem> highScores = new List<HighScoreItem>();
         private static IDictionary<IPlayer, int> Scores { get; set; }
         private static IList<IPlayer> Players { get; set; }
         private static readonly object lockInstanceObj = new object();
@@ -54,7 +50,13 @@ namespace Services.Services.Objects.Singletons
         }
         public IList<HighScoreItem> GetHighScores()
         {
-            return highScores;
+            var player = GetPlayer();
+            if (player != null)
+            {
+                var score = Scores[player];
+                highScores.Add(new HighScoreItem(player.Name+";"+score));
+            }
+            return highScores.OrderByDescending(t=>t.Score).Take(10).ToList();
         }
         public int UpdateScore(IIncrementScore thisEvent, IPlayer player)
         {

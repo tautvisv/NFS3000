@@ -78,7 +78,10 @@ namespace Services.Services.Objects
                 case ConsoleKey.Enter:
                     var menu = MenuButtons[SelectedButton].Action();
                     if (menu.Count > 0)
+                    {
+                        SelectedButton = 0;
                         MenuButtons = menu;
+                    }
                     break;
             }
             foreach (var button in MenuButtons)

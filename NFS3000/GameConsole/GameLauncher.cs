@@ -49,7 +49,6 @@ namespace GameConsole
             Console.CursorVisible = false;
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
-            //TODO parinkti protingai aukštį bei plotį
             Console.SetWindowSize(Globals.X_MAX_BOARD_SIZE, Globals.Y_MAX_BOARD_SIZE);
         }
         public void StartGame()

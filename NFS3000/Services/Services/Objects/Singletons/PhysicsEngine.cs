@@ -55,8 +55,15 @@ namespace Services.Services.Objects.Singletons
                     if (obsticle.Position.X-2 <= carPozition.Position.X && obsticle.Position.X + 2 >= carPozition.Position.X
                         && obsticle.Position.Y - 2 <= carPozition.Position.Y && obsticle.Position.Y + 1 >= carPozition.Position.Y)
                     {
-                        // TODO: add score counting LIUDAS !!! :D ;D
+                        if (Console.BackgroundColor == ConsoleColor.White)
+                        {
+                            ScoreCounter.Instance().GetHighScores();
+                        }
                         Console.BackgroundColor = Console.BackgroundColor == ConsoleColor.Blue ? ConsoleColor.Red : ConsoleColor.Blue;
+                    }
+                    else if (Console.BackgroundColor == ConsoleColor.White)
+                    {
+                        ScoreCounter.Instance().UpdateScore(player.Car, player);
                     }
                 }
                 aiObject.Move();
