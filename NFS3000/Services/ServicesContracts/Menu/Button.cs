@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using Data;
 using Services.Services.Objects;
 using Services.Services.Objects.Singletons;
@@ -9,9 +11,9 @@ namespace Services.ServicesContracts.MeniuItems
 {
     public abstract class Button : IDrawable
     {
-        public Button(string name)
+        public Button(List<Button> fatherButtons, string name, bool highlight = true)
         {
-            Highlight = ModelLoader.Instance().LoadModel(ModelsNames.ButtonHighlight);
+            Highlight = highlight ? ModelLoader.Instance().LoadModel(ModelsNames.ButtonHighlight) : new Dictionary<Coordinates, char>();
             ContentText = ModelLoader.Instance().TextToModel(name);
         }
 
@@ -40,6 +42,8 @@ namespace Services.ServicesContracts.MeniuItems
 
         public bool IsSelected { get; set; }
 
-        public abstract void Action();
+        public abstract List<Button> Action();
+
+        public abstract void Action(ConsoleKey key);
     }
 }

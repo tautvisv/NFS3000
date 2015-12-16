@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Services.ServicesContracts;
 using Services.ServicesContracts.Objects;
 
@@ -7,6 +8,7 @@ namespace Services.Services.Objects.Singletons
 {
     public sealed class ScoreCounter : IScoreCounter
     {
+        // TODO: LIUDAI padaryk kad issaugotu high scores i faila ir ijungus is jo pakrautu
         private static ScoreCounter instance;
         private static IList<HighScoreItem> highScores = new List<HighScoreItem>();
         private static IDictionary<IPlayer, int> Scores { get; set; }
@@ -36,13 +38,25 @@ namespace Services.Services.Objects.Singletons
             Players.Add(player);
             Scores.Add(player, 0);
         }
+
+        public void RemovePlayer(IPlayer player)
+        {
+            Players.Remove(player);
+        }
+
         public int GetScore(IPlayer player)
         {
             return Scores[player];
         }
         public IList<HighScoreItem> GetHighScores()
         {
-            return highScores;
+            var player = GetPlayer();
+            if (player != null)
+            {
+                var score = Scores[player];
+                highScores.Add(new HighScoreItem(player.Name+";"+score));
+            }
+            return highScores.OrderByDescending(t=>t.Score).Take(10).ToList();
         }
         public int UpdateScore(IIncrementScore thisEvent, IPlayer player)
         {
@@ -59,6 +73,11 @@ namespace Services.Services.Objects.Singletons
         public int GetPlayerCount()
         {
             return Players.Count;
+        }
+
+        public IPlayer GetPlayer()
+        {
+            return Players.FirstOrDefault();
         }
 
         public void Dispose()
