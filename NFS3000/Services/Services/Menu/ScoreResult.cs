@@ -10,6 +10,7 @@ namespace Services.Services.Menu
 
         public ScoreResult(List<Button> menu, string highScorrer) : base(menu, highScorrer)
         {
+            
             this.menu = menu;
         }
 

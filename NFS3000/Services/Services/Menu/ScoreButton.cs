@@ -17,6 +17,7 @@ namespace Services.Services.Menu
 
         public override List<Button> Action()
         {
+            
             var list = new List<Button>();
             Coordinates lastButtonCoordinates = new Coordinates(10, 3);
             foreach (var score in ScoreCounter.Instance().GetHighScores())
